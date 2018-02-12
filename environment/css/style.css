@@ -1,0 +1,104 @@
+
+h1{
+    font-family: trench;
+    font-size: 100px;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #00b6ff,
+    1px -1px 0 #00b6ff,
+    -1px 1px 0 #00b6ff,
+    1px 1px 0 #00b6ff;
+    
+}
+body{
+    margin-top: -70px;
+}
+.mainTitle{
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    text-align:center;
+    opacity:0;
+}
+
+#brain{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+}
+
+#brain_pic{
+    max-width:100%;
+    max-height:100%;
+    margin: auto;
+}
+
+#container{
+    position: relative;
+}
+ 
+#lines{
+    position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+}
+
+.circles{
+    width:100px;
+    position: absolute;
+    opacity: 0;
+}
+#circle1{
+    top:7.2%;
+    left: 19.5%;
+}
+
+#circle2{
+    top:6.7%;
+    left: 64.7%;
+}
+
+#circle3{
+    top:32%;
+    left:75%;
+}
+
+#circle4{
+    top:64%;
+    left:75.5%;
+}
+
+#circle5{
+    top:84%;
+    left:56%;
+}
+
+#circle6{
+    top:64.5%;
+    left:23%;
+}
+
+#circle7{
+    top:40%;
+    left:19%;
+}
+   
+   
+   
+   /*adds the custom font cerena*/
+@font-face {
+font-family: "trench";
+src: 
+url("fonts/trench100free.otf") format("opentype"),
+url("fonts/trench100free.woff") format("woff"),
+url("fonts/trench100free.ttf") format("truetype");
+    
+}
