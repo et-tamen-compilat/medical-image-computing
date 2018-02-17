@@ -10,10 +10,44 @@ h1{
     1px 1px 0 #00b6ff;
     
 }
+
+.mainContentTitle{
+    font-family: trench;
+    font-size: 80px;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #00b6ff,
+    1px -1px 0 #00b6ff,
+    -1px 1px 0 #00b6ff,
+    1px 1px 0 #00b6ff;
+    
+}
+
+.landingLinks{
+    font-family: trench;
+    text-decoration: none;
+    position: absolute;
+    font-size: 25px;
+    float:left;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #00b6ff,
+    1px -1px 0 #00b6ff,
+    -1px 1px 0 #00b6ff,
+    1px 1px 0 #00b6ff;
+    
+}
+
+#CNNLink{
+    top:5px;
+    left:5px;
+}
 body{
     margin-top: -70px;
 }
+
 .mainTitle{
+    top: 5px;
     position:relative;
     margin:0 auto;
     clear:left;
@@ -42,7 +76,7 @@ body{
 
 #container{
     position: relative;
-    width: 960px;
+    width: 1170px;
 margin: 0 auto;
 }
  
@@ -68,43 +102,51 @@ margin: 0 auto;
 }
 
 #circle1{
+    float: none;
     top:35px;
-    left: 10px;
+    left: 117px;
 }
 
 #circle2{
     top:24px;
-    left: 708px;
+    left: 815px;
 }
 
 #circle3{
     top:163px;
-    left:858px;
+    left:965px;
 }
 
 #circle4{
     top:324px;
-    left:867px;
+    left:972px;
 }
 
 #circle5{
     top:419px;
-    left:571px;
+    left:676px;
 }
 
 #circle6{
     top:324px;
-    left:64px;
+    left:169px;
 }
 
 #circle7{
     top:198px;
-    left:0px;
+    left:105px;
+}
+
+#test2:hover + #test{
+    visibility:visible;
+}
+#test{
+    visibility: hidden;
 }
    
    
    
-   /*adds the custom font cerena*/
+   /*adds the custom font trench*/
 @font-face {
 font-family: "trench";
 src: 

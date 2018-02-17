@@ -21,3 +21,4 @@ openingTimeLine.add({
     offset:5000, //change to 5000
     duration:4000, //change to 4000
 });
+
