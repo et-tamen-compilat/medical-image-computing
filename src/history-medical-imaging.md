@@ -26,35 +26,3 @@ There are many reasons that medical image analysis is needed:
 ## Sources
 *Guide to Medical Image Analysis,ISBN 978-1-4471-2751-2*
 *http://www.imaginis.com/faq/history-of-medical-diagnosis-and-diagnostic-imaging*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
