@@ -23,33 +23,7 @@ h1{
     
 }
 
-.landingLinks{
-    font-family: trench;
-    text-decoration: none;
-    position: absolute;
-    font-size: 25px;
-    float:left;
-    color:white;
-    text-shadow:
-    -1px -1px 0 #00b6ff,
-    1px -1px 0 #00b6ff,
-    -1px 1px 0 #00b6ff,
-    1px 1px 0 #00b6ff;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-    
-}
 
-#CNNLink{
-    top:20px;
-    left:5px;
-}
-
-#HMLLink{
-    top:100px;
-    left:5px;
-}
 body{
     margin-top: -70px;
 }
@@ -144,9 +118,49 @@ margin: 0 auto;
     top:198px;
     left:120px;
 }
+.landingLinks{
+    font-family: trench;
+    text-decoration: none;
+    position: absolute;
+    font-size: 25px;
+    float:left;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #00b6ff,
+    1px -1px 0 #00b6ff,
+    -1px 1px 0 #00b6ff,
+    1px 1px 0 #00b6ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+}
 
-#test2:hover + #CNNLink{
+#CNNLink{
+    top:20px;
+    left:5px;
+}
+
+#HMLLink{
+    top:15px;
+    left:930px;
+}
+
+#HMILink{
+    top:150px;
+    left:1080px;
+}
+
+#c1:hover + #CNNLink{
     visibility:visible;
+    opacity: 1;
+}
+#c2:hover + #HMLLink{
+    visibility:visible;
+    opacity: 1;
+}
+#c3:hover + #HMILink{
+    visibility: visible;
     opacity: 1;
 }
 
