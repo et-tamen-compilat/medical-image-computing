@@ -20,6 +20,10 @@ h1{
     margin-right:auto;
 }
 
+article {
+    text-align:justify;
+}
+
 .mainContentTitle{
     font-family: trench;
     font-size: 80px;
