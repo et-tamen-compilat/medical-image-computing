@@ -193,8 +193,8 @@ body {
 .circleClicked {
     z-index: 10000;
     transition-timing-function: linear;
-    transition: 1s;
-    transform: scale(90);
+    transition: 1.8s;
+    transform: scale(115);
 }
 
 #circle1{

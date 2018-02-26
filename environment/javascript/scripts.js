@@ -2,7 +2,7 @@
 $('a').click(function(e) {
   e.preventDefault();
   var img = $(e.currentTarget).children('img');
-  img.animate({left: '541px', top:'200px', }, {duration:1000});
+  img.animate({left: '541px', top:'200px', }, {duration:500});
   img.toggleClass('circleClicked');
   setTimeout(function(url) { window.location = url },1500, this.href);
     
