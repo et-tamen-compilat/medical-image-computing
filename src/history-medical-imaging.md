@@ -5,10 +5,10 @@ Medical imaging initially started with x-rays which would be passed through the 
 There were lots of improvements to this initial technique over the first half of the 20th century, but in the 1960s came ultrasound scanning. The development of sonar during World War II allowed his to become a reality, - it works by sending a stream of high frequency, low wavelength sound waves to penetrate through the body to hit the organs inside, bouncing back to the detector. This can be used to generate an image under the skin, and also does not subject the body to harmful x-rays, and so is used in pregnant women.
 Another big step was in the 1970s, when digital imaging techniques, such as the computed tomography scanner, more commonly known as the CT scanner, became widely available. This change to digital techniques had many benefits, including:
   
-  - smaller x-ray doses
-  - ability to enhance images with technology
-  - ease of storing records
-  - ability to use computers to analyse images and detect issues.
+  - Smaller x-ray doses
+  - Ability to enhance images with technology
+  - Ease of storing records
+  - Ability to use computers to analyse images and detect issues.
 
 After these new imaging techniques became more common, doctors realised that they needed ways of analysing these images in order to get the maximum use from them. This lead to people discovering new methods of medical image analysis. 
 
@@ -24,5 +24,5 @@ There are many reasons that medical image analysis is needed:
   - Computer-assisted surgery - this newly-emerging field allows computers to diagnose and treat the patient. It allows images to be taken, analysed, and the appropriate response taken in much less time than it would take a human doctor. 
 
 ## Sources
-*Guide to Medical Image Analysis,ISBN 978-1-4471-2751-2*
-*http://www.imaginis.com/faq/history-of-medical-diagnosis-and-diagnostic-imaging*
+  - *Guide to Medical Image Analysis,ISBN 978-1-4471-2751-2*
+  - *http://www.imaginis.com/faq/history-of-medical-diagnosis-and-diagnostic-imaging*
