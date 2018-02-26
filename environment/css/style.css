@@ -28,7 +28,15 @@ body {
     padding-top: 11px;
     color: #76ddff;
 }
+#basicContentBody{
+    opacity: 1;
+    transition: 1s opacity
+}
 
+#basicContentBody.fade-out {
+    opacity: 0;
+    transition: none;
+}
 main h1 {
     font-size:40px;
     margin-bottom:0px;
@@ -89,6 +97,7 @@ img {
     1px 1px 0 #00b6ff;
     
 }
+
 
 
 #HMLLink{
@@ -152,8 +161,12 @@ margin: 0 auto;
     transition: all 0.3s ease;
 }
 
-.circles:hover {
+.circleHover {
     transform: scale(1.3);
+}
+.circleClicked {
+    z-index: 10000;
+    transform: scale(90);
 }
 
 #circle1{
