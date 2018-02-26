@@ -192,6 +192,8 @@ body {
 }
 .circleClicked {
     z-index: 10000;
+    transition-timing-function: linear;
+    transition: 1s;
     transform: scale(90);
 }
 
