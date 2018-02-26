@@ -1,5 +1,8 @@
+body {
+    font-family: "Helvetica Neue";
+}
 
-h1{
+.mainTitle h1{
     font-family: trench;
     font-size: 100px;
     color:white;
@@ -9,6 +12,70 @@ h1{
     -1px 1px 0 #00b6ff,
     1px 1px 0 #00b6ff;
     
+}
+
+.brand a {
+    text-decoration: none;
+    color:#76ddff;
+    transition: all 0.3s ease;
+}
+
+.brand a:hover {
+    color: #c3f0ff;
+}
+
+.brand {
+    padding-top: 11px;
+    color: #76ddff;
+}
+
+main h1 {
+    font-size:40px;
+    margin-bottom:0px;
+}
+
+.content-nav {
+    width: 100%;
+    height: 40px;
+    background-color: #009cda;
+    border-bottom: 1px solid #0093ce;
+    margin-bottom: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: gainsboro;
+    border-top: 1px solid #d0d0d0;
+}
+
+footer p {
+    color: grey;
+}
+
+main {
+    margin-bottom:50px;
+}
+
+#c {
+    position:absolute;
+}
+
+.container {
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+article {
+    text-align:justify;
+}
+
+img {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    max-width: 65%;
 }
 
 .mainContentTitle{
@@ -50,8 +117,12 @@ h1{
     top:100px;
     left:5px;
 }
-body{
+/*body{
     margin-top: -70px;
+}*/
+
+body {
+    margin:0;
 }
 
 .mainTitle{
