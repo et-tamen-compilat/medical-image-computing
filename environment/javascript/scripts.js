@@ -1,5 +1,5 @@
 //causes circles to expand when clicked
-$('a').click(function(e) {
+$('a.link').click(function(e) {
   e.preventDefault();
   var img = $(e.currentTarget).children('img');
   img.animate({left: '541px', top:'200px', }, {duration:500});
@@ -12,6 +12,7 @@ $('a').hover(function(e) {
   e.preventDefault();
   var img = $(e.currentTarget).children('img');
   img.toggleClass('circleHover');
+  $(e.currentTarget).children('p').toggleClass('landingLinkHover');
 });
 
 //content pages fade in

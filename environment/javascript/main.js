@@ -9,7 +9,7 @@ openingTimeLine.add({
 });
 
 openingTimeLine.add({
-    targets: '.circles',
+    targets: ['.circles' ,'.landingLinks'],
     opacity: 1,
     offset:4000, //change to 4000
     duration: 4000, //change to 4000
