@@ -32,7 +32,15 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     padding-top: 11px;
     color: #76ddff;
 }
+#basicContentBody{
+    opacity: 1;
+    transition: 1s opacity
+}
 
+#basicContentBody.fade-out {
+    opacity: 0;
+    transition: none;
+}
 main h1 {
     font-size:40px;
     margin-bottom:0px;
@@ -116,36 +124,13 @@ article {
     
 }
 
-.landingLinks{
-    font-family: trench;
-    text-decoration: none;
-    position: absolute;
-    font-size: 25px;
-    float:left;
-    color:white;
-    text-shadow:
-    -1px -1px 0 #00b6ff,
-    1px -1px 0 #00b6ff,
-    -1px 1px 0 #00b6ff,
-    1px 1px 0 #00b6ff;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-    
-}
 
-#CNNLink{
-    top:20px;
-    left:5px;
-}
 
 #HMLLink{
     top:100px;
     left:5px;
 }
-/*body{
-    margin-top: -70px;
-}*/
+
 
 body {
     margin:0;
@@ -202,8 +187,14 @@ body {
     transition: all 0.3s ease;
 }
 
-.circles:hover {
+.circleHover {
     transform: scale(1.3);
+}
+.circleClicked {
+    z-index: 10000;
+    transition-timing-function: linear;
+    transition: 1.8s;
+    transform: scale(115);
 }
 
 #circle1{
@@ -241,9 +232,49 @@ body {
     top:198px;
     left:120px;
 }
+.landingLinks{
+    font-family: trench;
+    text-decoration: none;
+    position: absolute;
+    font-size: 25px;
+    float:left;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #00b6ff,
+    1px -1px 0 #00b6ff,
+    -1px 1px 0 #00b6ff,
+    1px 1px 0 #00b6ff;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+}
 
-#test2:hover + #CNNLink{
+#CNNLink{
+    top:20px;
+    left:5px;
+}
+
+#HMLLink{
+    top:15px;
+    left:930px;
+}
+
+#HMILink{
+    top:150px;
+    left:1080px;
+}
+
+#c1:hover + #CNNLink{
     visibility:visible;
+    opacity: 1;
+}
+#c2:hover + #HMLLink{
+    visibility:visible;
+    opacity: 1;
+}
+#c3:hover + #HMILink{
+    visibility: visible;
     opacity: 1;
 }
 
