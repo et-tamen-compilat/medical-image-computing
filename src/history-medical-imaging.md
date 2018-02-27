@@ -21,7 +21,7 @@ There are many reasons that medical image analysis is needed:
   - Clinical study - image analysis is used here in order to detect patterns between multiple images, which may support or confirm hypotheses of the study. As the images are digital, they can all be collated i one place, no matter where in the world they are taken, and can be analysed here. The results can also be stores here, which allows for much larger, globally-spanning clinical studies.
   - Diagnosis support - this combines computer-aided detection and diagnosis. Artificial intelligence can be used to detect patterns in images, and doctors can review the results of this when diagnosing patients. They can then input their final diagnosis into the system, and the AI can learn how accurate it's diagnosis was. 
   - Treatment planning - this is used before treatment is given to a patient. Application of this are in surgery and radiology, allowing doctors to be given information on the best course of treatment for a patient, based on previous patient outcomes. 
-  - Computer-assisted surgery - this newly-emerging field allows computers to diagnose and treat the patient. It allows images to be taken, analysed, and the appropriate response taken in much less time than it would take a human doctor. 
+  - Computer-assisted surgery - this newly-emerging field allows computers to diagnose and treat the patient. It allows images to be taken, analysed, and the appropriate response taken in much less time than it would take a human doctor.
 
 ## Sources
   - *Guide to Medical Image Analysis,ISBN 978-1-4471-2751-2*
