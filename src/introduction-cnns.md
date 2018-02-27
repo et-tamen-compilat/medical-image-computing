@@ -33,10 +33,10 @@ In addition, there is another kind of layer called a max pooling or down-samplin
 
 The different types of layers described are combined through a repeated stacking process illustrated below, known as deep stacking. Convolutional layers followed by activation functions, as well as interspersed down-sampling layers, essentially replace width and height with depth until the image is relatively small. 
 
-![](/content-images/CNNdiagram.png)
+![](/content-images/CNNdiagram2.png)
 
 Once this happens, it can be passed through the last step of the design: a fully connected layer, i.e. the traditional kinds of neural network layers we have seen before. 
 
 ## CNNs, since when?
 
-The first major success of convolutional neural networks was AlexNet, developed by Alex Krizhevsky, in 2012 at the University of Toronto, to solve the ImageNet challenge, which was an image classification problem, with the goal to classify over 1.2 million images into 1000 different categories. AlexNet won this competition, with an error rate of 15.3%, compared to 26.2% for the next best entry. This was done using a convolutional neural net architecture, using the same techniques described here. The network consisted of 5 convolutional layers, each followed by a ReLU activation layer, as well as 3 fully-connected layers. Three of the five convolution-activation pairs were followed by max-pooling layers. From this breakthrough, many new uses have arisen for CNNs, many of which go beyond image classification and rely on segmentation.    
+The first major success of convolutional neural networks was AlexNet, developed by Alex Krizhevsky, in 2012 at the University of Toronto. It aimed to solve the ImageNet challenge, an image classification problem with over 1.2 million images to classify into 1000 different categories. AlexNet won this competition, with an error rate of 15.3%, compared to 26.2% for the next best entry. This was done using a convolutional neural net architecture, using the same techniques described here. The network consisted of 5 convolutional layers, each followed by a ReLU activation layer, as well as 3 fully-connected layers. Three of the five convolution-activation pairs were followed by max-pooling layers. From this breakthrough, many new uses have arisen for CNNs, many of which go beyond image classification and rely on segmentation.    
