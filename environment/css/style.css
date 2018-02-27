@@ -254,7 +254,7 @@ body {
 }
 
 .landingLinkHover{
-    font-size: 26px;
+    transform: scale(1.05);
 }
 
 #CNNLink{
