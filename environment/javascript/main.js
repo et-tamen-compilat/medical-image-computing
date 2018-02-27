@@ -1,7 +1,13 @@
-var openingTimeLine = anime.timeline();
-
+$(document).ready(function() {
+   if ($.cookie('hasBeenHere') == null) {
+          var openingTimeLine = anime.timeline();
+openingTimeLine.add({
+    targets: ['#brain_pic', '#lines'],
+    opacity: 1
+});
 openingTimeLine.add({
   targets: 'path',
+  opacity: 1,
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutCubic',
   duration: 4000, //change to 4000
@@ -20,5 +26,13 @@ openingTimeLine.add({
     opacity: 1,
     offset:5000, //change to 5000
     duration:4000, //change to 4000
+});   
+    $.cookie('hasBeenHere', true);
+}else{
+    $(".landingLinks, .circles, #lines, #brain_pic, #openingTitle").delay(1000).animate({opacity:1}, 700);
+  
+}
 });
+
+
 
