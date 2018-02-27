@@ -194,7 +194,7 @@ body {
 
 .circleClicked {
     z-index: 10000;
-    transition-timing-function: linear;
+    transition-timing-function: ease-out;
     transition: 1.8s;
     transform: scale(115);
 }
@@ -248,13 +248,13 @@ body {
     1px -1px 0 #00b6ff,
     -1px 1px 0 #00b6ff,
     1px 1px 0 #00b6ff;
-    transition: all 0.3s ease;
-    pointer-events: none;
-  cursor: default;    
+transition: all 0.3s ease;
+    
 }
 
 .landingLinkHover{
-    transform: scale(1.05);
+     transform: scale(1.05);
+
 }
 
 #CNNLink{
