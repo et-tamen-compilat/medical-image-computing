@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     
-    if ($.cookie('hasBeenHere') != true) {
+    if ($.cookie('hasBeenHere') != 1) {
           var openingTimeLine = anime.timeline();
         openingTimeLine.add({
             targets: ['#brain_pic', '#lines'],
@@ -29,13 +29,10 @@ $(document).ready(function() {
             offset:5000, //change to 5000
             duration:4000, //change to 4000
         });
-    var date = new Date();
-    date.setTime(date.getTime() + (5 * 1000));
-    $.cookie('hasBeenHere', true, {expires:date, path: '/'});
-    console.log(date);
+    var date = new Date();//cookie expires every 10 minutes for the moment.
+    date.setTime(date.getTime() + (10 * 60 * 1000));
+    $.cookie('hasBeenHere', 1, {expires:date, path: '/'});
     }else{
-        console.log("hell");
-        console.log(date);
         $(".landingLinks, .circles, #lines, #brain_pic, #openingTitle").delay(1000).animate({opacity:1}, 700);
     }
 });
