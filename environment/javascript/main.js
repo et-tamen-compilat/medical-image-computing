@@ -1,4 +1,8 @@
+
 $(document).ready(function() {
+     var date = new Date();
+ var minutes = 30;
+ date.setTime(date.getTime() + (minutes * 60 * 1000));
    if ($.cookie('hasBeenHere') == null) {
           var openingTimeLine = anime.timeline();
 openingTimeLine.add({
@@ -27,7 +31,7 @@ openingTimeLine.add({
     offset:5000, //change to 5000
     duration:4000, //change to 4000
 });   
-    $.cookie('hasBeenHere', true);
+    $.cookie('hasBeenHere', true, {expires:date});
 }else{
     $(".landingLinks, .circles, #lines, #brain_pic, #openingTitle").delay(1000).animate({opacity:1}, 700);
   
