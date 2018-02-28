@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     
-    if ($.cookie('hasBeenHere') == true) {
+    if ($.cookie('hasBeenHere') != true) {
           var openingTimeLine = anime.timeline();
         openingTimeLine.add({
             targets: ['#brain_pic', '#lines'],
@@ -35,6 +35,7 @@ $(document).ready(function() {
     console.log(date);
     }else{
         console.log("hell");
+        console.log(date);
         $(".landingLinks, .circles, #lines, #brain_pic, #openingTitle").delay(1000).animate({opacity:1}, 700);
     }
 });
