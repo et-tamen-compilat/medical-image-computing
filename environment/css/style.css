@@ -319,16 +319,14 @@ url("fonts/trench100free.woff") format("woff"),
 url("fonts/trench100free.ttf") format("truetype");
     
 }
-a
-{
+a{
   text-decoration: none;
   color: #232323;
   
   transition: color 0.3s ease;
 }
 
-a:hover
-{
+a:hover{
   color: tomato;
 }
 
@@ -432,12 +430,13 @@ a:hover
 {
   position: absolute;
   width: 250px;
+  height: 1000px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   text-decoration: none;
  
-  background: #2C3642;
+  background: #A9A9A9;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
