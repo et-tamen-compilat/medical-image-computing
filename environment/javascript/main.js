@@ -31,8 +31,10 @@ $(document).ready(function() {
         });
     var date = new Date();
     date.setTime(date.getTime() + (5 * 1000));
-    $.cookie('hasBeenHere', true, {expires:date});
+    $.cookie('hasBeenHere', true, {expires:date, path: '/'});
+    console.log(date);
     }else{
+        console.log("hell");
         $(".landingLinks, .circles, #lines, #brain_pic, #openingTitle").delay(1000).animate({opacity:1}, 700);
     }
 });
