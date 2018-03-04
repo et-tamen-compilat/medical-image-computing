@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+* {margin: 0; padding: 0;}
+
+canvas {display: block;}
+
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<script type="text/javascript">
+var c = document.getElementById("c");
+var reset = function() {
+	c.height = window.innerHeight;
+	c.width = window.innerWidth;
+};
+var ctx = c.getContext("2d");
+var randcolour= ["#3AE8E2","#40E83A","#0FO","#FR33","#66CDAA","#00FF7F","#ADFF2F","#FFFFF0","#EE9A00","#FF7F00","#FF0000","#8B0000"];
+//making the canvas full screen
+reset();
+
+//chinese characters - taken from the unicode charset
+var chinese = "01";
+//converting the string into an array of single characters
+chinese = chinese.split("");
+
+var fontSize = 17;
+var columns = c.width/fontSize; //number of columns for the rain
+//an array of drops - one per column
+var drops = [];
+//x below is the x coordinate
+//1 = y co-ordinate of the drop(same for every drop initially)
+for(var x = 0; x < columns; x++)
+	drops[x] = 1; 
+
+//drawing the characters
+function draw()
+{
+	//Black BG for the canvas
+	//translucent BG to show trail
+	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+	ctx.fillRect(0, 0, c.width, c.height);
+	
+	ctx.fillStyle = randcolour[Math.floor((randcolour.length-1)*Math.random())]; //green text
+	ctx.font = fontSize + "px arial";
+	//looping over drops
+	for(var i = 0; i < drops.length; i++)
+	{
+		//a random chinese character to print
+		var text = chinese[Math.floor(Math.random()*chinese.length)];
+		//x = i*font_size, y = value of drops[i]*font_size
+		ctx.fillText(text, i*fontSize, drops[i]*fontSize);
+		
+		//sending the drop back to the top randomly after it has crossed the screen
+		//adding a randomness to the reset to make the drops scattered on the Y axis
+		if(drops[i]*fontSize > c.height && Math.random() > 0.975)
+			drops[i] = 0;
+		
+		//incrementing Y coordinate
+		drops[i]++;
+	}
+}
+
+window.addEventListener("resize", function() {
+	reset(); 
+});
+
+setInterval(draw, 33);
+</script>
+
+</body>
+</html>

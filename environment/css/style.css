@@ -18,6 +18,10 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     
 }
 
+.face {
+    border-radius:360px;
+}
+
 .brand a {
     text-decoration: none;
     color:#76ddff;
@@ -285,9 +289,41 @@ transition: all 0.3s ease;
     opacity: 1;
 }
 
+.links ul {
+    list-style-type: none;
+    display:inline-block;
+    padding:0;
+    margin:0;
+}
    
-   
-   
+.links ul li {
+    display:inline-block;
+    padding:10px;
+}
+
+.links {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top:10px;
+}
+
+.links ul a {
+    text-decoration: none;
+    font-size:20px;
+}
+
+a {
+  text-decoration: none;
+  /*color: #337ab7;*/
+  color:#278bf7;
+  transition:all 0.3s ease;    
+}
+
+a:hover {
+  color: #236098;
+}
+
    /*adds the custom font trench*/
 @font-face {
 font-family: "trench";
@@ -296,4 +332,18 @@ url("fonts/trench100free.otf") format("opentype"),
 url("fonts/trench100free.woff") format("woff"),
 url("fonts/trench100free.ttf") format("truetype");
     
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+.Site-content {
+    flex: 1;
+}
+  
+.center h1 {
+    text-align: center;
 }
