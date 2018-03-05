@@ -2,14 +2,14 @@
 
 Semantic segmentation consists of separating an image into different regions. It is particularly relevant to Medical Imaging, in which localization is key to the analysis of scans. In effect, segmentation classifies each pixel to the part of the image it belongs to. While the CNNs we've seen so far only need to produce an output for what an image could be, semantic segmentation requires the networks to produce an output for each pixel. This task can be solved through variations of CNNs, some of which specialise in radiology purposes, as we will see. 
 
-## FCNs:
+## FCNs
 Fully Convolutional Networks represent the underlying model of recent attempts to solve semantic segmentation using CNNs. These architectures omit the use of fully connected layers. As well as being faster, this approach generates segmentation maps from images of any size, (as opposed to the fixed-size constraint of fully connected layers). Essentially, the last fully connected layer is replaced by a convolution layer, of dimensions 1x1 in order to capture the global context of the image. Then, the last step consists in “upsampling” from low-resolution to high-resolution. Transposed convolution (or deconvolution) layers do so by scaling up the activation positions (/// explain? ///), as seen below. 
 
 ![](content-images/SegmentationDiagram1.png)
 
 However, this upsampling method is not sufficient to compensate the loss of information during the downsampling of pooling layers. Moreover, the success of such a network relies on a large amount of training data, up to this day not available in Medical Imaging. Thus, two types of architectures have been explored since the introduction of FCNs in 2014 to address these issues.
 
-## U-Net & encoder-decoder architecture:
+## U-Net & encoder-decoder architecture
 
 The first approach can be exemplified by U-Net, a CNN specialised in Biomedical Image Segmentation. This architecture begins the same as a typical CNN, with convolution-activation pairs and max-pooling layers to reduce the image size, while increasing depth. However, after having reduced the image to a small size, there are a series of up-convolutions, which are almost an inverse of the max-pooling layers, as well as convolution-activation pairs. These gradually increase the image size, till eventually a full-sized image, representing the segmentation map of the original image, is recovered. The series of layers reducing the image size is called the encoder, and the series of layers recovering the image size is called the decoder. U-Net is, therefore, called an encoder-decoder architecture. 
 
@@ -21,7 +21,10 @@ This architecture thus differs from regular FCNS on several levels. Firstly, its
 
 The U-Net architecture was proposed by 3 computer scientists at the University of Freiburg, who used it to win the ISBI cell tracking challenge in 2015. Another success of the U-Net architecture was in 2016, when it was used to segment MRI scans of prostates. The architecture called V-Net was trained on data from the Promise20 dataset. The architecture was designed to work on 3-dimensional data, which is actually 4-dimensional if you consider the feature channels. These 3D scans are called volumetric images. V-Net combined a U-Net architecture, but the layers were in blocks, that were designed to learn the residual functions, with ResNet-like shortcut connections between the input and output of these blocks.
 
-## Dilated convolutions:
+## Dilated convolutions
 However, an encoder-decoder architecture is not the only solution of semantic segmentation. An encoder-decoder architecture reduces dimension to get a "global view" of the image, before increasing dimension to get back local context. One wonders, whether it is possible for each pixel in the image to get the global context of the image, without reducing the size of the image. This is what was proposed at ICLR (International Conference on Learning Representations) 2016, with dilated convolutions.
 
 ![](content-images/DilatedImage.png)
+
+## Sources
+- [V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation](https://arxiv.org/pdf/1606.04797.pdf) - Fausto Milletari, Nassir Navab, Seyed-Ahmad Ahmadi
