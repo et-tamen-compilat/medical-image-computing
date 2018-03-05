@@ -164,18 +164,20 @@ body {
     width: auto;
     height: auto;
     max-width:100%;
+    opacity: 0;
     max-height:100%;
     margin: auto;
 }
 
 #container{
     position: relative;
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
 }
  
 #lines{
     position: absolute;
+    opacity: 0;
      margin: auto;
      top: 0;
      right: 0;
@@ -206,37 +208,37 @@ body {
 #circle1{
     float: none;
     top:35px;
-    left: 132px;
+    left: 282px;
 }
 
 #circle2{
     top:24px;
-    left: 830px;
+    left: 980px;
 }
 
 #circle3{
     top:163px;
-    left:980px;
+    left:1130px;
 }
 
 #circle4{
     top:324px;
-    left:987px;
+    left:1137px;
 }
 
 #circle5{
     top:419px;
-    left:691px;
+    left:841px;
 }
 
 #circle6{
     top:324px;
-    left:184px;
+    left:336px;
 }
 
 #circle7{
     top:198px;
-    left:120px;
+    left:270px;
 }
 
 .landingLinks{
@@ -262,18 +264,28 @@ transition: all 0.3s ease;
 }
 
 #CNNLink{
-    top:1px;
-    left:3px;
+    top:13px;
+    left:153px;
 }
 
 #HMLLink{
     top:15px;
-    left:930px;
+    left:1080px;
 }
 
 #HMILink{
     top:150px;
-    left:1080px;
+    left:1230px;
+}
+
+#INNLink{
+    top:313px;
+    left: 1238px;
+}
+
+#SSLink{
+    top:192px;
+    left:120px;
 }
 
 #c1:hover + #CNNLink{
@@ -324,6 +336,19 @@ a:hover {
   color: #236098;
 }
 
+#c4:hover + #INNLink{
+    visibility: visible;
+    opacity: 1;
+}
+
+#c7:hover + #SSLink{
+    visibility: visible;
+    opacity: 1;
+}   
+
+
+
+   
    /*adds the custom font trench*/
 @font-face {
 font-family: "trench";
@@ -346,4 +371,146 @@ url("fonts/trench100free.ttf") format("truetype");
   
 .center h1 {
     text-align: center;
+}
+
+a{
+  text-decoration: none;
+  /*color: #232323;*/
+  
+  transition: color 0.3s ease;
+}
+
+a:hover{
+  color: tomato;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: -20px;
+  left: 30px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 250px;
+  height: 1000px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  text-decoration: none;
+ 
+  background: #A9A9A9;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-family: trench;
+  color: white;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
