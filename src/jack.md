@@ -1,4 +1,4 @@
-<img class="face" src="images/JackPic.png" width="200" height="200">
+<img class="face" src="images/JackPic.jpg" width="200" height="200">
 
 <div class="center">
 # Jack Morrison
