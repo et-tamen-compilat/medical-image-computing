@@ -1,4 +1,4 @@
-<img class="face" src="https://via.placeholder.com/200x200" width="200" height="200">
+<img class="face" src="images/hugopic.png" width="200" height="200">
 
 <div class="center">
 # Hugo Mayo
