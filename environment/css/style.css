@@ -273,6 +273,11 @@ transition: all 0.3s ease;
     left:1080px;
 }
 
+#AboutUsLink{
+    top:330px;
+    left:240px;
+}
+
 #HMILink{
     top:150px;
     left:1230px;
