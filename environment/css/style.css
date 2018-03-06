@@ -482,7 +482,7 @@ a:hover{
 {
   position: absolute;
   width: 250px;
-  height: 1000px;
+  height: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -506,6 +506,15 @@ a:hover{
   color: white;
   font-size: 22px;
 }
+/*
+.Site .content-nav {
+    overflow: scroll;
+}
+
+.Site {
+    overflow: hidden;
+}
+*/
 
 /*
  * And let's slide it in from the left
