@@ -18,7 +18,7 @@ Despite the success of MADELINE, there was not much progress until the late 1970
 
 1982 was the year that interest in neural networks started to pick up again, when John Hopfield suggested creating a network which had bidirectional lines, similar to how neurons actually work. Also, a multi-layered network called a 'Hybrid Network' was created.
 
-Also in 1982, Japan announced it was focusing on more advanced neural networks, which incentivised American funding into the area, and thus created more research in the area.
+Furthermore, in 1982, Japan announced it was focusing on more advanced neural networks, which incentivised American funding into the area, and thus created more research in the area.
 
 Neural networks use back propagation (explained in detail in the neural network pages), and this important step came in 1986, when three researchers from the Stanford psychology department decided to extend an algorithm created by Widrow and Hoff in 1962. This therefore allowed multiple layers to be used in a neural network, creating what are known as 'slow learners', which will learn over a long period of time.
 
