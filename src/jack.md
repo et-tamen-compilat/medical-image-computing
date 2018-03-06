@@ -1,4 +1,4 @@
-<img class="face" src="https://via.placeholder.com/200x200" width="200" height="200">
+<img class="face" src="images/JackPic.jpg" width="200" height="200">
 
 <div class="center">
 # Jack Morrison
@@ -6,9 +6,9 @@
 
 <div class="links">
 <ul>
-  <li><a href="https://github.com/[insert]">GitHub</a></li>
-  <li><a href="mailto:[insert]">Email</a></li>
-  <li><a href="https://www.linkedin.com/in/[insert]/">LinkedIn</a></li>
+  <li><a href="https://github.com/jackmorrison12">GitHub</a></li>
+  <li><a href="mailto:jack.morrison17@imperial.ac.uk">Email</a></li>
+  <li><a href="https://www.linkedin.com/in/jackmorrisongb/">LinkedIn</a></li>
   <li><a href="/cvs/[insert].pdf">CV</a></li>
 </ul>
 </div>

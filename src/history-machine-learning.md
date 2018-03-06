@@ -66,10 +66,6 @@ This was created because Intel had just been optimising their Intel Xeon Scalabl
 
 They realised that matrix multiplications and convolutions were the main computations done in machine learning, and so optimised their processor for these.
 
-### Field Programmable Gate Arrays
-
-Some people have argued that FPGAs 
-
 ## Sources
 
 - [*__Stanford__*](https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html)
