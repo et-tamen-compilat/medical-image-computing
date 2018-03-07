@@ -52,7 +52,6 @@ A tensor core can compute 64 fixed point operations per clock cycle, as it provi
 This means lots of operations can be processed in a single clock cycle, which is much more efficient than a CPU, and even more than an unoptimised GPU.
 
 ![](content-images/TensorMatrices.png)
-Source: https://devblogs.nvidia.com/inside-volta/
 
 ### Google Tensor Processing Unit (TPU) - 2016
 
