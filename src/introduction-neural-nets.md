@@ -1,11 +1,13 @@
 # Introduction to Neural Networks
 
 ## Basics
-A mathematical function is a mapping, that assigns values in a set of inputs to a set of outputs. For instance, a mathematical function might have a set of inputs $\{1, 2, 3\}$, and a set of outputs, $\{4, 5, 6\}$, and the mapping might be $(1 \to 4), (2 \to 5), (3 \to 6)$. In the case, of the this function, there is a fairly straightforward rule to obtain the outputs from the inputs, add 3. However, imagine the set of inputs was a set of retinal scan images, encoded as a grid of pixels, and the output was whether there was an eye tumour or not. It is not so straightforward, to see how one might go and transform a grid of pixels into whether there is an eye tumour. 
+A mathematical function is a mapping that assigns values in a set of inputs to a set of outputs. For instance, a mathematical function might have a set of inputs $\{1, 2, 3\}$, and a set of outputs, $\{4, 5, 6\}$, and the mapping might be $(1 \to 4), (2 \to 5), (3 \to 6)$. In the case of this function, there is a fairly straightforward rule to obtain the outputs from the inputs: add 3. 
 
-However, if somebody could encode this function as a set of rules, i.e. a computer program, it would allow people to be diagnosed much more easily and cheaply. Of course, there are likely to be edge cases, that make it very difficult for such a computer program to be right 100% of the time, but it may be possible to obtain a computer program that approximates this function within a reasonable bound of accuracy. The goal of machine learning is to obtain a highly accurate approximation of this function. But rather than having a programmer attempt to write a program for this themself, the goal is to have a computer find a set of rules, that approximates this function. So rather than the programmer writing an approximation of the function, the programmer writes the program that finds the approximation of the function. 
+Now, imagine a set of retinal scan images as input, encoded as a grid of pixels, and an output determining the presence or not of an eye tumour. As you can see, this mapping won’t be merely as straightforward as our previous mathematical function. However, if one could encode this function as a set of rules, i.e. a computer program, it would allow patients to be diagnosed much more easily and cheaply. Of course, there are likely to be edge cases, that make it very difficult for such a computer program to be right 100% of the time, but it may be possible to obtain a computer program that approximates this function within a reasonable bound of accuracy. Welcome to Artificial Intelligence!
 
-The set of rules, is structured as a neural network. To do this, the program starts with a randomly constructed neural network, that may not, at first, approximate the function very well at all. But then actual data is fed into the network, where each data has already been assigned the correct "expected" output. As each input is fed in, the actual output is compared with the expected output, and if the actual output is wrong, then the network is changed to make it more likely to give the expected output next time.   
+The aim of machine learning is to obtain a highly accurate approximation of such a function. But rather than having a programmer attempt to write a program for this, the goal is to have a computer find a set of rules that approximates this function. In other words, rather than the programmer writing an approximation of the function, the programmer writes the program that finds the approximation of the function. 
+
+The set of rules is structured as a neural network. To do this, the program starts with a randomly constructed neural network, which may not, at first, approximate the function very well at all, before being trained to become more likely to give the expected output. In order to understand how this process can be applied to Medical Imaging, let us first grasp the design of a classic neural network. 
 
 $$
 \def\mathellipsis{…}
@@ -73,3 +75,36 @@ $$
 $$
 
 This is not the nicest way of looking at it. I prefer thinking of it as a pipeline:
+
+
+<!--  Mention that neural network with more than  1 hidden layer → deep neural network?
++ Mention in more detail activation function and bias ?  -->
+
+##Back-propagation: the key to optimised learning
+
+As layers are added to perceptrons, finding the correct combination of weights to compute our function becomes much more complex. Therefore, in the same way that an essay generally involves writing several drafts and progressively correcting these, a neural network goes through a training process to optimise its output.
+
+This process consists in feeding “training data” - data annotated with the correct output to expect - into the neural network, and then comparing our actual output to the expected output for each data component. This comparison is quantified by the “cost” of the function. The cost of the network is thus obtained by adding up the error of each output unit, computed as the square of the differences between each output weight’s actual and expected value. The aim is therefore to minimise the error of each output weight. 
+
+By modelling the error as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight w0 and an error function f. The algorithm aims to find the local minimum of f by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially w0. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
+
+![](/content-images/gradientdescent.png)
+<!--(Change image annotations)-->
+
+However, how can we adjust the error value of an output weight? In other words, which parameters do we need to vary in order to see such a change? 
+Recall that each weight w is calculated in the following way:
+
+$$
+w= \sigma(\sum_{i = 1}^(n-1)w_ia_i + b)
+$$
+    where: 
+	    $x$ represents the activation of the previous layer
+	    $w_i$ are the weights of the previous layer connected to w
+	    $b$ is the bias applied
+	    $\sigma$ represents the activation of the current layer 
+
+For each output weight, adjusting the first three components listed, by increasing or decreasing these accordingly, will thus change its voting weight. However, these components rely on the previous layer, itself consisting of weights computed from the second-to-last layer. The use of the word “back propagation” thus becomes apparent: it relies on recursively applying this process to each previous layer, moving backwards through the network in doing so. 
+
+By applying this procedure to each output weight over all the training data, the average changes to the error values will loosely correspond to a “step” in the gradient descent algorithm. Such are the mechanics of back propagation, and they will be repeated till the errors of all weights settle into their minimum – or as close as possible.   
+
+
