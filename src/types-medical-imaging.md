@@ -173,4 +173,4 @@ X-rays, which are a type of electromagnetic radiation invisible to humans, pass 
 - [*__NHS - PET Scans__*](https://www.nhs.uk/conditions/pet-scan/)
 - [*__Cleveland Clinic - PET Scans__*](https://my.clevelandclinic.org/health/diagnostics/10123-positron-emission-tomography-pet-scan)
 - [*__NHS - Ultrasound__*](https://www.nhs.uk/conditions/ultrasound-scan/)
-- [*__NHS -X-ray__*](https://www.nhs.uk/conditions/x-ray/)
+- [*__NHS - X-ray__*](https://www.nhs.uk/conditions/x-ray/)
