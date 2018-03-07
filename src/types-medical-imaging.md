@@ -81,7 +81,7 @@ They are used to detect the progress of cancer, and can be used to get high reso
 
 ### What are some common uses?
 
-They are commonly used in people who have already been diagnosed with cancer, as they can clearly show how far a cancer has spread or responded to treatments such as chemotherapy. They are also used in the planning of surgery, such as brain or heart operations. Dementia can also be diagnosed with a PET scan, as it can see if the brain's normal function is changed.
+They are commonly used in people who have already been diagnosed with __cancer__, as they can clearly show how far a cancer has spread or responded to treatments such as chemotherapy. They are also used in the __planning__ of surgery, such as brain or heart operations. __Dementia__ can also be diagnosed with a PET scan, as it can see if the brain's normal function is changed.
 
 ### How does it work?
 
@@ -104,23 +104,65 @@ A radiotracer, usually fluorodeoxyglucose (FDG), is injected into your arm, and 
 
 ### What is an Ultrasound Machine?
 
+An ultrasound uses high-frequency waves to show what is inside a part of the body. It is also known as a sonogram. 
+
 ### What do they produce images of?
+
+Ultrasounds can produce images of unborn children in real time, as shown below.
+
+![](content-images/Ultrasound.png)
+
 ### What are some common uses?
+
+The most common use are to __monitor unborn babies__, however they are also used in __diagnosis__ and during certain procedures for __guiding__ surgeons.
+
 ### How does it work?
+
+The device has a probe, which emits high-frequency sound waves. They bounce off of different parts of the body, creating echoes, and when these bounce back to the probe, it can also detect them. This can create a live image on another scanner. The scan can last from 15 to 45 minutes. They can be done externally, internally or endoscopically.
+
 ### What are any advantages and disadvantages?
+
 #### Advantages
+
+- Usually there are no after-effects of ultrasound scans. This means normal activity can be resumed straight after.
+- The results are seen in real time, so there is no need to wait.
+
 #### Disadvantages
+
+- Some probe covers have latex, which can be a problem if the patient is allergic to latex.
+- Endoscopic ultrasounds can cause a sore throat or bloating, or in extreme cases, internal bleeding.
 
 ## X-Rays
 
-## What is an X-Ray Machine?
+## What is an X-Ray?
+
+An x-ray is a very common procedure used to get images of inside of the body. It uses radiation in the x-ray part of the electromagnetic spectrum.
 
 ### What do they produce images of?
+
+They are used to produce images of bones, usually to see if and where there are breaks. They are also used by dentists and orthodontists to look at teeth. Bone tumours can also be seen on x-rays.
+
 ### What are some common uses?
+
+They can be used to __guide__ surgeons as they are operating. They can also be used to __detect__ broken bones, and to __plan__ the best course of treatment for this.
+
 ### How does it work?
+
+X-rays, which are a type of electromagnetic radiation invisible to humans, pass through the body. The energy is absorbed by different parts of the body at different rates, and a detector on the other side of the person will see how much was absorbed, and will be abel to generate an image from this. Denser parts of the body, such as bone, show up as white, as few x-rays could pass through. Sometimes, a contrast agent is given to the patient in order for soft tissues to be seen more easily on the image. The x-ray is extremely fast, and the whole procedure should only take a few minutes.
+
+![](content-images/Xray.png)
+
 ### What are any advantages and disadvantages?
+
 #### Advantages
+
+- The machine does not surround the whole body, so will not cause anxiety in people with claustrophobia.
+- The procedure only takes a few minutes.
+
 #### Disadvantages
+
+- Some contrast agents may cause unwanted side effects.
+- X-rays expose the patient to unwanted radiation, which could potentially cause cancer, however the 
 
 ## Sources
 
@@ -130,3 +172,5 @@ A radiotracer, usually fluorodeoxyglucose (FDG), is injected into your arm, and 
 - [*__NHS - MRI Scans__*](https://www.nhs.uk/conditions/mri-scan/)
 - [*__NHS - PET Scans__*](https://www.nhs.uk/conditions/pet-scan/)
 - [*__Cleveland Clinic - PET Scans__*](https://my.clevelandclinic.org/health/diagnostics/10123-positron-emission-tomography-pet-scan)
+- [*__NHS - Ultrasound__*](https://www.nhs.uk/conditions/ultrasound-scan/)
+- [*__NHS -X-ray *](https://www.nhs.uk/conditions/x-ray/)
