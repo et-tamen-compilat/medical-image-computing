@@ -18,7 +18,9 @@ They are frequently used in __diagnosis__, for example to find tumours, or to se
 
 ### How does it work?
 
-The patient lies on their back on a panel. This panel passes into the scanner, which rotates around the section of your body currently in the scanner. The patient needs to lay still so that the scan can get a clear image. Usually, the radiologist who is operating the machine stands in another room to avoid the radiation, but can communicate with the patient via an intercom. The scan can take from 10 to 20 minutes, but results are available as soon as a computer has analysed the scans.
+As shown in the image below, the patient lies on their back on a panel. This panel passes into the scanner, which rotates around the section of your body currently in the scanner. The patient needs to lay still so that the scan can get a clear image. Usually, the radiologist who is operating the machine stands in another room to avoid the radiation, but can communicate with the patient via an intercom. The scan can take from 10 to 20 minutes, but results are available as soon as a computer has analysed the scans.
+
+![](content-images/CTScanner.png)
 
 ### What are any advantages and disadvantages?
 
