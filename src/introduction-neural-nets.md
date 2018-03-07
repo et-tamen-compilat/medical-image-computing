@@ -97,14 +97,15 @@ Recall that each weight w is calculated in the following way:
 $$
 w= \sigma(\sum_{i = 1}^{n-1}w_ia_i + b)
 $$
-    where: 
-	    $x$ represents the activation of the previous layer
-	    $w_i$ are the weights of the previous layer connected to w
-	    $b$ is the bias applied
-	    $\sigma$ represents the activation of the current layer 
+
+where 
+- $x$ represents the activation of the previous layer
+- $w_i$ are the weights of the previous layer connected to w
+- $b$ is the bias applied
+- $\sigma$ represents the activation of the current layer 
 
 For each output weight, adjusting the first three components listed, by increasing or decreasing these accordingly, will thus change its voting weight. However, these components rely on the previous layer, itself consisting of weights computed from the second-to-last layer. The use of the word “back propagation” thus becomes apparent: it relies on recursively applying this process to each previous layer, moving backwards through the network in doing so. 
 
-By applying this procedure to each output weight over all the training data, the average changes to the error values will loosely correspond to a “step” in the gradient descent algorithm. Such are the mechanics of back propagation, and they will be repeated till the errors of all weights settle into their minimum – or as close as possible.   
+By applying this procedure to each output weight over all the training data, the average changes to the error values will loosely correspond to a “step” in the gradient descent algorithm. Such are the mechanics of back-propagation, and they will be repeated till the errors of all weights settle into their minimum – or as close as possible.   
 
 
