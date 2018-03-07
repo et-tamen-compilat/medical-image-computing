@@ -88,14 +88,14 @@ This process consists in feeding “training data” - data annotated with the c
 
 By modelling the error as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight w0 and an error function f. The algorithm aims to find the local minimum of f by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially w0. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
 
-![](/content-images/gradientdescent.png)
+![](/content-images/gradientdescent.jpg)
 <!--(Change image annotations)-->
 
 However, how can we adjust the error value of an output weight? In other words, which parameters do we need to vary in order to see such a change? 
 Recall that each weight w is calculated in the following way:
 
 $$
-w= \sigma(\sum_{i = 1}^(n-1)w_ia_i + b)
+w= \sigma(\sum_{i = 1}^{n-1}w_ia_i + b)
 $$
     where: 
 	    $x$ represents the activation of the previous layer
