@@ -13,4 +13,4 @@
 </ul>
 </div>
 
-Hello. My name is Jack. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet dignissim posuere. Aenean sapien nunc, sagittis sed ex fermentum, malesuada suscipit nisi. Nam felis turpis, gravida sit amet congue eget, pretium in nunc. Vestibulum dignissim dolor arcu, in iaculis sapien varius ac. Nunc dapibus porttitor purus eu posuere. Nam malesuada ultricies commodo. Proin a orci dapibus, bibendum diam non, facilisis turpis.
+Hello. My name is Jack. I am a first year computing undergraduate at Imperial College London. My favourite area of computing is prodedural programming. Before studying at Imperial, I studied at The Billericay School and Westcliff High School for Boys Sixth Form. 
