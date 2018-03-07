@@ -148,7 +148,7 @@ They can be used to __guide__ surgeons as they are operating. They can also be u
 
 ### How does it work?
 
-X-rays, which are a type of electromagnetic radiation invisible to humans, pass through the body. The energy is absorbed by different parts of the body at different rates, and a detector on the other side of the person will see how much was absorbed, and will be abel to generate an image from this. Denser parts of the body, such as bone, show up as white, as few x-rays could pass through. Sometimes, a contrast agent is given to the patient in order for soft tissues to be seen more easily on the image. The x-ray is extremely fast, and the whole procedure should only take a few minutes.
+X-rays, which are a type of electromagnetic radiation invisible to humans, pass through the body. The energy is absorbed by different parts of the body at different rates, and a detector on the other side of the person will see how much was absorbed, and will be able to generate an image from this. Denser parts of the body, such as bone, show up as white, as few x-rays could pass through. Sometimes a contrast agent is given to the patient in order for soft tissues to be seen more easily on the image. The x-ray is extremely fast, and the whole procedure should only take a few minutes.
 
 ![](content-images/Xray.png)
 
@@ -162,7 +162,7 @@ X-rays, which are a type of electromagnetic radiation invisible to humans, pass 
 #### Disadvantages
 
 - Some contrast agents may cause unwanted side effects.
-- X-rays expose the patient to unwanted radiation, which could potentially cause cancer, however the 
+- X-rays expose the patient to unwanted radiation, which could potentially cause cancer, however the amount of radiation given off is minimal.
 
 ## Sources
 
@@ -173,4 +173,4 @@ X-rays, which are a type of electromagnetic radiation invisible to humans, pass 
 - [*__NHS - PET Scans__*](https://www.nhs.uk/conditions/pet-scan/)
 - [*__Cleveland Clinic - PET Scans__*](https://my.clevelandclinic.org/health/diagnostics/10123-positron-emission-tomography-pet-scan)
 - [*__NHS - Ultrasound__*](https://www.nhs.uk/conditions/ultrasound-scan/)
-- [*__NHS -X-ray *](https://www.nhs.uk/conditions/x-ray/)
+- [*__NHS -X-ray__*](https://www.nhs.uk/conditions/x-ray/)
