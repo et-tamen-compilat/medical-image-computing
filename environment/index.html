@@ -10,45 +10,82 @@
     
     <body bgcolor="black">
         <div id="openingTitle" class="mainTitle">
-            <h1 style="top:-20px">MEDICAL IMAGING</h1>
+            <h1 style="top:-200px; margin-bottom:100px; margin-top: 0">MEDICAL IMAGING</h1>
         </div>
         <div id="container" style="top:-60px">
             <div id="brain">
-                <img id="brain_pic" src="images/brain.png"></img>
+                <img id="brain_pic" src="images/homepageNew.png"></img>
             </div>
+            
+            <!--SVG Commands: M moves path to a point, h/v draws horizontal/vertical line x pixels,
+                H/V draws horizontal/vertical line to that point. L draws line to point,
+                l draws line x and y pixels. Basically lowercase is relative, uppercase is
+                absolute.-->
                 <svg id ="lines" width=100% height="100%" viewBox="0 0 1500 2000">
-                    <!--rhs of brain-->
-                    <path d="M1200 820 h 400 L1800 400" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M1230 880 h 200" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M1230 902 h 400 L1660 860 h 700" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M1230 920 h 500" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M1250 1000 h 1000" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M1250 1050 h 700 L 2400 1400"  stroke="#91ECF8" stroke-width="5"/>
+
+                    <!-- g tag groups all paths and they inherit its attributes -->
+                    <g id ="paths" stroke="#C2E9FB" stroke-width="7" fill-opacity:0>
+                         <!--rhs of brain-->
+                        <path d= "M1525 490 h 100 l 10 -10"/>
+                        <path d= "M1550 525 h 100"/>
+                        <path d="M1560 570 h 200 l 35 -35 h 200"/>
+                        <path d="M1610 630 h 300"/>
+                        <path d="M1630 670 l 30 30 h 30 "/>
+                        <path d="M1670 760 h 100 l 20 -20"/>
+                        <path d="M1700 800 h 400"/>
+                        <path d="M1711 877 h 400 L2500 400"/>
+                        <path d="M1711 890 h 300 "  />
+                        <path d="M1711 918 h 600 L2350 870 h400"  />
+                        <path d="M1711 935 h 300"  />
+                        <path d="M1711 950 h 200"  />
+                        <path d="M1709 984 h 300"  />
+                        <path d="M1711 1010 h 500 L 2250 970"  />
+                        <path d="M1711 1102 h 700 " />
+                        <path d="M1711 1115 h 250 " />
+                        <path d="M1720 1200 h 550 L2400 1350 h250" />
+                        <path d="M1660 1299 h 150 " />
+                        <path d="M1670 1370 h 200 L2300 1800" />                   
+                        <path d="M1640 1455 h 100 L 1770 1490" />
+                        <path d="M1590 1500 h 100" />
+                        <path d="M1570 1520 h 300 L 1950 1600" />
                     
-                    <!-- hello-->
-                    <!--bottom of brain-->
-                    <path d="M1210 1270 L 1500 1520 V 1700 " stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M1020 1530 V 1765 L 1200 1850" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M1030 1525 V 1755 L 1200 1838" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M932 1600 V 1900" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M630 1600 L 750 1710" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M600 1605 L 720 1710 V 1800" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M590 1630 V 1800" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M590 1630 L 680 1710" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M525 1615 V 1800 L 425 1900" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M450 1580 V 1700" stroke="#91ECF8" stroke-width="5"/>
+                        <!--bottom of brain-->
+                        <path d="M1360 1540 L 1305 1600" />
+                        <path d="M1400 1565 L 1350 1615 V 1850 l 50 50" />
+                        <path d="M695 1450 V 1800 L 720 1820" />
+                        <path d="M672 1450 V 1600" />
+                        <path d="M645 1430 V 1550" />
+                        <path d="M615 1420 V 1800 L 550 1890" />
+                        <path d="M547 1401 V 1650" />
+                        <path d="M505 1390 V 1700 L 485 1720" />
+                        <path d="M452 1350 V 1500" />
                     
-                    <!--lhs of brain-->
-                    <path d="M205 820 h -400 L-800 400" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M180 880 h -200" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M180 902 h -400 L-240 860 h -400" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M180 920 h -500" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M165 1000 h -1000" stroke="#91ECF8" stroke-width="5"/>
-                    <path d="M165 1050 h -300 L -600 1400"  stroke="#91ECF8" stroke-width="5"/>
-                    
-                    
+                        <!--lhs of brain-->
+                        <path d="M240 1101 V 1350 L 100 1490 V 1700 L50 1750"/>
+                        <path d="M220 1101 V 1200"/>
+                        <path d="M190 1101 V 1250 L 170 1270"/>
+                        <path d="M130 1080 V 1225"/>
+                        <path d="M90 1081 V 1200 L 10 1280 h -500"/>
+                        <path d="M75 1081 V 1150"/>
+                        <path d="M60 1081 V 1190"/>
+                        <path d="M5 1030 V 1150 L -15 1170"/>
+                        <path d="M-40 1020 V 1075"/>
+                        <path d="M-70 1000 V 1115"/>
+                        <path d="M-130 900 V 1035 L -110 1055"/>
+                        <path d="M-160 850 V 1050"/>
+                        <path d="M-175 830 V 1050 L -195 1070"/>
+    
+                        
+                        <!--top of brain-->
+                        <path d="M-175 700 L -205 670 h -305 L -660 820 h -240"/>
+                        <path d="M-166 600 V 500"/>
+                        <path d="M-148 590 V 500 L -188 460 h -300 L -578 370 h -450"/>
+                        <path d="M-135 575 V 400 L -115 380 V 300"/>
+                        <path d="M -86 450 V 300 L -56 270"/>
+                        <path d="M -70 450 V 400"/>
+                        <path d="M 5 390 v -100"/>
+                    </g>
                 </svg>
-         
 
                 <a class="link" href="introduction-cnns.html" id="c1">
                     <img src="images/circles.png" class="circles" id="circle1"></img>
@@ -68,8 +105,10 @@
                     <p class="landingLinks" id="INNLink">Introduction <br>to Neural<br> Networks</p>
                 </a>
                 
-                <img src="images/circles.png" class="circles" id="circle5"></img>
-                
+                <a class="link" href="types-medical-imaging.html" id="c5">
+                    <img src="images/circles.png" class="circles" id="circle5"></img>
+                    <p class="landingLinks" id="TMILink">Types of <br> Medical<br> Imaging</p>
+                </a>
                 <a class="link" href="about-us.html" id="c6">
                     <img src="images/circles.png" class="circles" id="circle6"></img>
                     <p class="landingLinks" id="AboutUsLink">About Us</p>
@@ -78,6 +117,16 @@
                 <a class="link" href="semantic-segmentation.html" id="c7">
                   <img src="images/circles.png" class="circles" id="circle7"></img>
                   <p class="landingLinks" id="SSLink">Semantic<br>Segmentation</p>
+                </a>
+                
+                <a class="link" href="uses-of-ai-in-radiology.html" id="c8">
+                  <img src="images/circles.png" class="circles" id="circle8"></img>
+                  <p class="landingLinks" id="AIRLink">Uses of AI<br>in Radiology</p>
+                </a>
+                
+                <a class="link" href="lung-cancer.html" id="c9">
+                  <img src="images/circles.png" class="circles" id="circle9"></img>
+                  <p class="landingLinks" id="LCLink">Detection of <br> Lung Cancer</p>
                 </a>
                 
                     

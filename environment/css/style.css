@@ -5,7 +5,6 @@ body {
 main h1, main h2, main h3, main h4, main h5, main h6 {
     text-align: left;
 }
-
 .mainTitle h1{
     font-family: trench;
     font-size: 100px;
@@ -130,10 +129,7 @@ article {
 
 
 
-#HMLLink{
-    top:100px;
-    left:5px;
-}
+
 
 
 body {
@@ -161,11 +157,10 @@ body {
 }
 
 #brain_pic{
-    width: auto;
-    height: auto;
-    max-width:100%;
+    top:100px;
+    width: 800px;
+    height: 450px;
     opacity: 0;
-    max-height:100%;
     margin: auto;
 }
 
@@ -212,33 +207,43 @@ body {
 }
 
 #circle2{
-    top:24px;
-    left: 980px;
+    top:14px;
+    left: 1110px;
 }
 
 #circle3{
-    top:163px;
-    left:1130px;
+    top:147px;
+    left:1170px;
 }
 
 #circle4{
-    top:324px;
-    left:1137px;
+    top:255px;
+    left:1150px;
 }
 
 #circle5{
-    top:419px;
-    left:841px;
+    top:377px;
+    left:1067px;
 }
 
 #circle6{
-    top:324px;
-    left:336px;
+    top:238px;
+    left:390px;
 }
 
 #circle7{
-    top:198px;
-    left:270px;
+    top:135px;
+    left:300px;
+}
+
+#circle8{
+    top:360px;
+    left:520px;
+}
+
+#circle9{
+    top:395px;
+    left:865px;
 }
 
 .landingLinks{
@@ -254,7 +259,7 @@ body {
     1px -1px 0 #00b6ff,
     -1px 1px 0 #00b6ff,
     1px 1px 0 #00b6ff;
-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     
 }
 
@@ -268,88 +273,46 @@ transition: all 0.3s ease;
     left:153px;
 }
 
-#HMLLink{
-    top:15px;
-    left:1080px;
-}
-
 #AboutUsLink{
-    top:330px;
-    left:240px;
+    top:248px;
+    left:290px;
 }
 
 #HMILink{
-    top:150px;
-    left:1230px;
+    top:130px;
+    left:1275px;
+}
+
+#HMLLink{
+    top:0px;
+    left:1220px;
 }
 
 #INNLink{
-    top:313px;
-    left: 1238px;
+    top:240px;
+    left: 1258px;
 }
 
 #SSLink{
-    top:192px;
-    left:120px;
+    top:138px;
+    left:140px;
 }
 
-#c1:hover + #CNNLink{
-    visibility:visible;
-    opacity: 1;
-}
-#c2:hover + #HMLLink{
-    visibility:visible;
-    opacity: 1;
-}
-#c3:hover + #HMILink{
-    visibility: visible;
-    opacity: 1;
+#TMILink{
+    top:370px;
+    left:1170px;
 }
 
-.links ul {
-    list-style-type: none;
-    display:inline-block;
-    padding:0;
-    margin:0;
-}
-   
-.links ul li {
-    display:inline-block;
-    padding:10px;
+#AIRLink{
+    top:360px;
+    left: 390px;
 }
 
-.links {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top:10px;
+#LCLink{
+    top:430px;
+    left:960px;
 }
 
-.links ul a {
-    text-decoration: none;
-    font-size:20px;
-}
-
-a {
-  text-decoration: none;
-  /*color: #337ab7;*/
-  color:#278bf7;
-  transition:all 0.3s ease;    
-}
-
-a:hover {
-  color: #236098;
-}
-
-#c4:hover + #INNLink{
-    visibility: visible;
-    opacity: 1;
-}
-
-#c7:hover + #SSLink{
-    visibility: visible;
-    opacity: 1;
-}   
 
 
 
@@ -364,167 +327,3 @@ url("fonts/trench100free.ttf") format("truetype");
     
 }
 
-.Site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  
-.Site-content {
-    flex: 1;
-}
-  
-.center h1 {
-    text-align: center;
-}
-
-a{
-  text-decoration: none;
-  /*color: #232323;*/
-  
-  transition: color 0.3s ease;
-}
-
-a:hover{
-  color: tomato;
-}
-
-#menuToggle {
-  display: block;
-  position: relative;
-  top: -20px;
-  left: 30px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 250px;
-  height: 100%;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  text-decoration: none;
- 
-  background: #A9A9A9;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-family: trench;
-  color: white;
-  font-size: 22px;
-}
-/*
-.Site .content-nav {
-    overflow: scroll;
-}
-
-.Site {
-    overflow: hidden;
-}
-*/
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
