@@ -16,10 +16,10 @@ There were over 18,000 algorithms developed during the challenge, with the goal 
 
 ## Problems... and potential solutions?
 
-Lots of doctors are wary of hwo to store lots of data for machine learning programs to work properly, due to patient confidentiality laws. However, the FDA did approve a cloud-based deep learning algorithm for cardiac imaging in 2017, which shows that in the future, it will be more common placed in patient diagnosis.
+Lots of doctors are wary of how to store lots of data for machine learning programs to work properly, due to patient confidentiality laws. However, the FDA did approve a cloud-based deep learning algorithm for cardiac imaging in 2017, which shows that in the future, it will be more common placed in patient diagnosis.
 
 ## Sources
 
 - [*__Medical Futurist__*](http://medicalfuturist.com/the-future-of-radiology-and-ai/)
-- [*__Data Science Bowl*](https://datasciencebowl.com/competitions/turning-machine-intelligence-against-lung-cancer/)
+- [*__Data Science Bowl__*](https://datasciencebowl.com/competitions/turning-machine-intelligence-against-lung-cancer/)
 - [*__Cancer Research UK__*](http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer)
