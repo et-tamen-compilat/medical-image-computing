@@ -25,4 +25,4 @@ One recent example of segmentation in radiology was a collaboration between the 
 ##Combining image data with reports
 
 ## Sources
-- [https://arxiv.org/abs/1704.03379](Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities)
+- [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
