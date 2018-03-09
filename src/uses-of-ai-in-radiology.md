@@ -26,3 +26,7 @@ One recent example of segmentation in radiology was a collaboration between the 
 
 ## Sources
 - [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
+- [Three-Dimensional CT Image Segmentation by Combining 2D Fully Convolutional Network with 3D Majority Voting](https://pdfs.semanticscholar.org/b434/c05142542255a112c387c48e6f60bb9e8c1c.pdf?_ga=2.65766829.2007236436.1520623311-1322847124.1520623311)
+- [A Unified Framework for Automatic Wound Segmentation and Analysis with Deep Convolutional Neural Networks](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7318881&tag=1)
+- [VoxResNet: Deep Voxelwise Residual Networks for
+Volumetric Brain Segmentation](https://arxiv.org/pdf/1608.05895.pdf)
