@@ -1,4 +1,4 @@
-<img class="face" src="https://via.placeholder.com/200x200" width="200" height="200">
+<img class="face" src="images/juliePicture.jpg" width="200" height="200">
 
 <div class="center">
 # Julie Emile
@@ -13,4 +13,4 @@
 </ul>
 </div>
 
-Hello. My name is Julie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet dignissim posuere. Aenean sapien nunc, sagittis sed ex fermentum, malesuada suscipit nisi. Nam felis turpis, gravida sit amet congue eget, pretium in nunc. Vestibulum dignissim dolor arcu, in iaculis sapien varius ac. Nunc dapibus porttitor purus eu posuere. Nam malesuada ultricies commodo. Proin a orci dapibus, bibendum diam non, facilisis turpis.
+Hello. My name is Julie. I'm small, awesome and very tired so this is all you're getting at the moment.
