@@ -80,32 +80,33 @@ This is not the nicest way of looking at it. I prefer thinking of it as a pipeli
 <!--  Mention that neural network with more than  1 hidden layer → deep neural network?
 + Mention in more detail activation function and bias ?  -->
 
-##Back-propagation: the key to optimised learning
+## Backpropagation: the key to optimised learning
 
 As layers are added to perceptrons, finding the correct combination of weights to compute our function becomes much more complex. Therefore, in the same way that an essay generally involves writing several drafts and progressively correcting these, a neural network goes through a training process to optimise its output.
 
-This process consists in feeding “training data” - data annotated with the correct output to expect - into the neural network, and then comparing our actual output to the expected output for each data component. This comparison is quantified by the “cost” of the function. The cost of the network is thus obtained by adding up the error of each output unit, computed as the square of the differences between each output weight’s actual and expected value. The aim is therefore to minimise the error of each output weight. 
+This process consists in feeding "training data", data annotated with the correct output to expect, into the neural network, and then comparing our actual output to the expected output for each piece of data, by passing it to the cost function. The accuracy of the neural network is quantified by the cost function. There are different functions that can be used for the cost function of a neural network. Typically, the cost of the network is obtained by adding up the error of each output unit, computed as the square of the differences between each output weight’s actual and expected value. The aim is therefore to minimise the error of each output weight. 
 
-By modelling the error as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight w0 and an error function f. The algorithm aims to find the local minimum of f by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially w0. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
+By modelling cost as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight $w_0$ and a cost function $f$. The algorithm aims to find the local minimum of $f$ by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially $w_0$. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
 
 ![](/content-images/gradientdescent.jpg)
 <!--(Change image annotations)-->
 
 However, how can we adjust the error value of an output weight? In other words, which parameters do we need to vary in order to see such a change? 
-Recall that each weight w is calculated in the following way:
+Recall that each weight $w$ is calculated in the following way:
 
 $$
 w= \sigma(\sum_{i = 1}^{n-1}w_ia_i + b)
 $$
 
-where 
+Where:
+
 - $x$ represents the activation of the previous layer
-- $w_i$ are the weights of the previous layer connected to w
+- $w_i$ are the weights of the previous layer connected to $w$
 - $b$ is the bias applied
 - $\sigma$ represents the activation of the current layer 
 
-For each output weight, adjusting the first three components listed, by increasing or decreasing these accordingly, will thus change its voting weight. However, these components rely on the previous layer, itself consisting of weights computed from the second-to-last layer. The use of the word “back propagation” thus becomes apparent: it relies on recursively applying this process to each previous layer, moving backwards through the network in doing so. 
+For each output, adjusting the first three components listed, by increasing or decreasing these accordingly, will thus change its "voting" weight. However, these components rely on the previous layer, itself consisting of weights computed from the penultimate layer. The use of the word "backpropagation" thus becomes apparent: it relies on recursively applying this process to each previous layer, moving backwards through the network in doing so. 
 
-By applying this procedure to each output weight over all the training data, the average changes to the error values will loosely correspond to a “step” in the gradient descent algorithm. Such are the mechanics of back-propagation, and they will be repeated till the errors of all weights settle into their minimum – or as close as possible.   
+By applying this procedure to each neuron over all the training data, the average changes to the error values will loosely correspond to a "step" in the gradient descent algorithm. Such are the mechanics of back-propagation, and they will be repeated till the errors of all weights settle into their minimum, or as close as possible. However, The size of each step, is not just determined by the gradient. Usually, it is the gradient multiplied by a variable called the learning rate. The larger the learning rate, the greater the steps. A large learning rate means backpropagation is faster. But it may also be the case, that gradient descent goes too far past the local minimum. Too small a learning rate, and backpropagation may take an unnecessarily long time to reach the local minimum.
 
 
