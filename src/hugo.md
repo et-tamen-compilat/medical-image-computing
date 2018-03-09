@@ -1,4 +1,4 @@
-<img class="face" src="images/hugoppic.jpg" width="200" height="200">
+<img class="face" src="images/hugopic2.png" width="200" height="200">
 
 <div class="center">
 # Hugo Mayo
