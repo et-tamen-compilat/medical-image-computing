@@ -22,7 +22,7 @@ Furthermore, in 1982, Japan announced it was focusing on more advanced neural ne
 
 Neural networks use back propagation (explained in detail in the neural network pages), and this important step came in 1986, when three researchers from the Stanford psychology department decided to extend an algorithm created by Widrow and Hoff in 1962. This therefore allowed multiple layers to be used in a neural network, creating what are known as 'slow learners', which will learn over a long period of time.
 
-The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since this, there have been many more advances in the field.
+The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since then, there have been many more advances in the field.
 
 ## 21st Century
 
