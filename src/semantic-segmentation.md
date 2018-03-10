@@ -38,9 +38,7 @@ Let F0 be the input image, here with dimensions 3x3.
 
 The global view thus expands exponentially, whilst the number of parameters grows linearly. In doing so, dilated convolution manages to achieve a large receptive field without up-sampling, and with a limited amount of weights & convolutional layers. This method therefore proves to be effective for semantic segmentation. In particular, it has been compared to FCNs in segmentation for medical image analysis in a paper published in March 2017. Below, we can see the segmentation results obtained.
 
-![](content-images/brainSegmentation.png)
-
-Comparison of segmentation results  on the head of the VHK (Visible Human Korean) dataset
+![Comparison of segmentation results  on the head of the VHK (Visible Human Korean) dataset](content-images/brainSegmentation.png)
 
 This figure shows that FCNs based on dilated convolution could obtain smoother and more accurate segmentation results than the standard FCNs. This is confirmed by the quantitative testing that was taken out: when training the 2 networks on 80% of the VHK and testing it on the other 20%, the performance of the dilated convolution network increased on average by a significant 19.6%. Thus, this study suggests the potential of this method in semantic segmentation, and we can expect more studies to be conducted on medical imaging scans in the upcoming years. 
 
@@ -50,4 +48,4 @@ This figure shows that FCNs based on dilated convolution could obtain smoother a
 - [3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650.pdf)
 - [Fully Convolutional Networks for Semantic Segmentation](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf)
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf)
-- [Comparison of the Deep-Learning-Based Automated Segmentation Methods for the Head Sectioned Images of the Virtual Korean Human Project:] (https://arxiv.org/pdf/1703.04967.pdf)   
+- [Comparison of the Deep-Learning-Based Automated Segmentation Methods for the Head Sectioned Images of the Virtual Korean Human Project](https://arxiv.org/pdf/1703.04967.pdf)   
