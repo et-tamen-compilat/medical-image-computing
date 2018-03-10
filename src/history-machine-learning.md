@@ -22,7 +22,7 @@ Furthermore, in 1982, Japan announced it was focusing on more advanced neural ne
 
 Neural networks use back propagation (explained in detail in the neural network pages), and this important step came in 1986, when three researchers from the Stanford psychology department decided to extend an algorithm created by Widrow and Hoff in 1962. This therefore allowed multiple layers to be used in a neural network, creating what are known as 'slow learners', which will learn over a long period of time.
 
-The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since then, there have been many more advances in the field.
+The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since then, there have been many more advances in the field, such as in 1998, when research at AT&T Bell Laboratories on digit recognition resulted in good accuracy in detecting handwritten postcodes from the US Postal Service. This used back-propagation, which is explained in detail on the Introduction to Neural Networks page.
 
 ## 21st Century
 
@@ -65,6 +65,10 @@ This was created because Intel had just been optimising their Intel Xeon Scalabl
 
 They realised that matrix multiplications and convolutions were the main computations done in machine learning, and so optimised their processor for these.
 
+### Cloud Computing
+
+Google let people rent tensory pocessing units too.
+
 ## Sources
 
 - [*__Stanford__*](https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html)
@@ -77,4 +81,5 @@ They realised that matrix multiplications and convolutions were the main computa
 - [*__NVIDIA__*](https://devblogs.nvidia.com/inside-volta/)
 - [*__Google TensorFlow__*](https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [*__Intel Nervana Neural Network__*](https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/)
--[*_Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
+- [*_Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
+- [*__Handwritten Digit Recognition with a Back-Propagation Network__*](http://yann.lecun.com/exdb/publis/pdf/lecun-90c.pdf)
