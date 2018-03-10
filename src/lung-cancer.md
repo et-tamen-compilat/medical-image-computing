@@ -12,6 +12,10 @@ Lung cancer can start off as a small nodule which occurs in an asymptomatic pati
 
 CT scans are currently the best way to look for these, and PET-CT scans are the best way to look at the behaviour of them, which allows doctors to predict the risk of cancer they impose. Nodules can come in many different shapes, and lots of different features, such as size, location and growth, help radiologists predict if it is cancerous.
 
+Radiologists who are looking for nodules are prone to missing them, as they can be very well hidden, and so this is where machine learning can come into play - to help make the detection of nodules more accurate. The software currently used, called Computer Assisted Detection (CAD), is highly sensitive, but not very specific, so gives a lot of false positives, and so not accurate enough to be used in practice.
+
+This is why machine learning is now being considered; in order to improve specificity. The LUNA (LUng Nodule Analysis) Challenge from in 2016 focused on reducing the number of false positives given by ordinary CAD software. The other big challenge was the Data Science Bowl, described in detail below.
+
 ## 2017 Data Science Bowl
 
 This was a competition aimed at detecting lung cancer using machine learning. The competitors were given 1000 anonymous pictures of lung scans, and had to use these to find patters in data which could later lead to detection and diagnosis, to improve lung cancer screening technology.
