@@ -7,7 +7,7 @@ Now, imagine a set of retinal scan images as input, encoded as a grid of pixels,
 
 The aim of machine learning is to obtain a highly accurate approximation of such a function. But rather than having a programmer attempt to write a program for this, the goal is to have a computer find a set of rules that approximates this function. In other words, rather than the programmer writing an approximation of the function, the programmer writes the program that finds the approximation of the function. 
 
-The set of rules is structured as a neural network. To do this, the program starts with a randomly constructed neural network, which may not, at first, approximate the function very well at all, before being trained to become more likely to give the expected output. In order to understand how this process can be applied to Medical Imaging, let us first grasp the design of a classic neural network. 
+The set of rules is structured as a neural network. To do this, the program starts with a randomly constructed neural network, which may not, at first, approximate the function very well at all, before being trained to become more likely to give the expected output. In order to understand how this process can be applied to Medical Imaging, let us first grasp the design of a standard neural network. 
 
 $$
 \def\mathellipsis{…}
@@ -15,13 +15,15 @@ $$
 
 ## Perceptrons
 
+![](/content-images/perceptron.png)
+
 A perceptron is essentially a function $f$, defined by $n$ weights $w_0, w_1, \mathellipsis, w_n$. It takes inputs $x_1, \mathellipsis, x_n$. The output $f$ is as follows:
 
 $$
 f(x) = g(w_0 + \sum_{i = 1}^n x_iw_i) 
 $$
 
-So, $f$ first takes a weighted sum of its inputs based on $w_1, \mathellipsis, w_n$. Then adds the offset $w_0$. Then passes the output to another function $g$. What's $g$? It is an activation function. You have lots of different types of possible activation functions. Let us forget about activations functions for the time being. 
+So, $f$ first takes a weighted sum of its inputs based on $w_1, \mathellipsis, w_n$. Then, it adds the offset $w_0$ before passing the output to another function $g$. What's $g$? It is an activation function, but let us forget about these for the time being. 
 
 It is convenient to think of there being an $x_0$ that is always equal to $1$. This allows us to say: 
 
@@ -41,7 +43,7 @@ $$
 f(x) = g(\mathbf{x}^T\mathbf{w}) 
 $$
 
-Now let us go back to the activation function. Suppose, that it didn't exist, then you would get a linear function. Linear functions are nice, since they are easily to work with. A linear function can be defined just using a set of weights, $w_0, \mathellipsis, w_n$. But they are problematic, in that they cannot represent non-linear functions, and in machine learning you want to be able to learn non-linear functions. So by throwing in a non-linear activation function, you can do this. There are lot's of activation functions to choose from. One common one is called logistic sigmoid, and is:
+Now let us go back to the activation function. Suppose, that it didn't exist, then you would get a linear function. Linear functions are nice, since they are easily to work with. A linear function can be defined just using a set of weights, $w_0, \mathellipsis, w_n$. But they are problematic, in that they cannot represent non-linear functions, and in machine learning you want to be able to learn non-linear functions. Throwing in a non-linear activation function allows us to do this. There are many types of activation functions to choose from. One common one is called logistic sigmoid, and is:
 
 $$
 \sigma(z) = \frac{1}{1 + e^{-z}} 
@@ -62,7 +64,7 @@ f(x) = g(\mathbf{w}\mathbf{x})
 $$
 
 ## Multilayer Perceptrons
-Multilayer perceptrons are like what is above, but you have hidden layers of perceptrons. So the inputs are from the input layer, and are called input nodes. Then outputs are called the output layer. If there is one hidden layer, then rather than the input layer feeding into the output layer, the input layer feeds into the hidden layer, which feeds into the output layer. 
+Multilayer perceptrons are like what is above, but you have hidden layers of perceptrons. So the inputs are from the input layer, and are called input nodes. Then outputs form the output layer. If there is one hidden layer, then rather than the input layer feeding into the output layer, the input layer feeds into the hidden layer, which feeds into the output layer. 
 
 If there are multiple hidden layers, then the first hidden layers feeds into the second one, etc, until the final hidden layer feeds into the output layer. If you have $l$ layers, then you have $l - 1$ transformations between layers. 
 
@@ -73,6 +75,8 @@ Suppose the weight matrices are called $W_1, \mathellipsis, W_{l - 1}$, then:
 $$
 \text{output} = g(W_{l - 1}\;g(W_{l - 2}\;\mathellipsis\;x))
 $$
+
+![](/content-images/multiLayeredPerceptron.png)
 
 This is not the nicest way of looking at it. I prefer thinking of it as a pipeline:
 
@@ -86,7 +90,7 @@ As layers are added to perceptrons, finding the correct combination of weights t
 
 This process consists in feeding "training data", data annotated with the correct output to expect, into the neural network, and then comparing our actual output to the expected output for each piece of data, by passing it to the cost function. The accuracy of the neural network is quantified by the cost function. There are different functions that can be used for the cost function of a neural network. Typically, the cost of the network is obtained by adding up the square of the difference between each output neuron's actual and expected value. The aim is therefore to minimise the error of each output neuron. 
 
-By modelling cost as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight $w_0$ and a cost function $f$. The algorithm aims to find the local minimum of $f$ by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially $w_0$. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
+By modelling cost as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight $w_0$ and a cost function $J$. The algorithm aims to find the local minimum of $J$ by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially $w_0$. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
 
 ![](/content-images/gradientdescent.jpg)
 <!--(Change image annotations)-->
@@ -95,7 +99,7 @@ However, how can we adjust the error value of an output weight? In other words, 
 Recall that each weight $w$ is calculated in the following way:
 
 $$
-w= \sigma(\sum_{i = 1}^{n-1}w_ia_i + b)
+w= g(\sum_{i = 1}^{n-1}w_ia_i + b)
 $$
 
 Where:
@@ -103,7 +107,7 @@ Where:
 - $x$ represents the activation of the previous layer
 - $w_i$ are the weights of the previous layer connected to $w$
 - $b$ is the bias applied
-- $\sigma$ represents the activation of the current layer 
+- $g$ represents the activation of the current layer 
 
 For each output, adjusting the first three components listed, by increasing or decreasing these accordingly, will thus change its "voting" weight. However, these components rely on the previous layer, itself consisting of weights computed from the penultimate layer. The use of the word "backpropagation" thus becomes apparent: it relies on recursively applying this process to each previous layer, moving backwards through the network in doing so. 
 
