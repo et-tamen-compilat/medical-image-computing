@@ -368,3 +368,7 @@ url("fonts/trench100free.ttf") format("truetype");
     
 }
 
+.caption {
+    text-align: center;
+    font-style: italic;
+}
