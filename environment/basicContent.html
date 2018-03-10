@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <title>Medical Imaging</title>
+        <title>$title$</title>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
       </script>      
     </head>
@@ -14,17 +14,34 @@
             <div class="Site-content">
                 <script>document.body.className += ' fade-out';</script>
                 <nav class="content-nav">
-                        
+                    
                     <div class="container">
                     <div class="brand"><a href="/">Deep Learning in Medical Image Analysis</a></div>
                     </div>
                    
                 </nav>
-                <div class="container">
-                    <main>
-                        <article>$body$</article>
-                    </main>
-                </div>
+                $if(cover)$
+                    <div class="full-image" style="background-image:url('/content-images/$cover$');">
+                        <div class="semitone">
+                            <h1>$title$</h1>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <main>
+                            <article>                            
+                                $body$
+                            </article>
+                        </main>
+                    </div>
+                $else$
+                    <div class="container">
+                        <main>
+                            <article>                                                         
+                                $body$
+                            </article>
+                        </main>
+                    </div>
+                $endif$     
             </div>
             <footer>
                 <div class="container"><p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p></div>

@@ -1,4 +1,7 @@
-# Uses of AI in Radiology
+---
+cover: "thumbsUpBlue.png"
+title: "Uses of AI in Radiology"
+---
 
 ##Classification
 
