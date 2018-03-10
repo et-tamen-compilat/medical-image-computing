@@ -14,15 +14,27 @@ CT scans are currently the best way to look for these, and PET-CT scans are the 
 
 Radiologists who are looking for nodules are prone to missing them, as they can be very well hidden, and so this is where machine learning can come into play - to help make the detection of nodules more accurate. The software currently used, called Computer Assisted Detection (CAD), is highly sensitive, but not very specific, so gives a lot of false positives, and so not accurate enough to be used in practice.
 
-This is why machine learning is now being considered; in order to improve specificity. The LUNA (LUng Nodule Analysis) Challenge from in 2016 focused on reducing the number of false positives given by ordinary CAD software. The other big challenge was the Data Science Bowl, described in detail below.
+This is why machine learning is now being considered; in order to improve specificity. The LUNA (LUng Nodule Analysis) Challenge from in 2016, which focused on reducing the number of false positives given by ordinary CAD software. The other big challenge was the Data Science Bowl. Both of these are described in detail below.
 
-## 2017 Data Science Bowl
+## Lung Nodule Analysis (LUNA) Challenge 2016
+
+The competition was had 2 main challenges: Nodule Detection (NDET) and False Positive Reduction (NPRED). These uses raw CT scans to detect locations of possible nodules, and give these locations probabilities of being a nodule. The task essentially says whether each location is or is not a nodule.
+
+The competitors were given a set of data containing 888 CT scans, which needed to be split into testing and training data. The algorithm they develop has to be done on the training data, and then results are calculated by running the algorithm on the testing data, and seeing the accuracy of the results. The testing data is split into 10 subsets, so that there can be cross-validation to make sure that the algorithm is consistent.
+
+## Data Science Bowl 2017
 
 This was a competition aimed at detecting lung cancer using machine learning. The competitors were given 1000 anonymous pictures of lung scans, and had to use these to find patters in data which could later lead to detection and diagnosis, to improve lung cancer screening technology.
 
 The algorithms could detect which legions in the lungs are cancerous, which is an improvement on current methods like CT scans, which often give false-positive readings.
 
 There were over 18,000 algorithms developed during the challenge, with the goal of giving them to actual radiologists, so that they can be used in real time in order to diagnose patients.
+
+## Project AiAi
+
+This is an open source project for lung cancer screening using x-rays. While these may not be as accurate as CT scans, so make detection harder, x-ray machines are much more common-places in hospitals, especially in developing countries, and therefore this technology would be much more widely available than the equivalent with CT scanners.
+
+Their aim is to reduce screening time and cost by 90%, and increase survival probability by 5x. The project used machine learning on over 250,000 chest x-rays to build a CAD tool.
 
 ## Problems... and potential solutions?
 
@@ -37,4 +49,6 @@ In March 2018, Google introduced a new Cloud Healthcare API, which aims to creat
 - [*__Cancer Research UK__*](http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer)
 - [*__ZD Net__*](http://www.zdnet.com/article/google-takes-health-care-to-the-cloud-with-new-api-partnerships/)
 - [*__Google Blog__*](https://blog.google/topics/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/)
- - [*__Medium__*](https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda)
+- [*__Medium__*](https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda)
+- [*__Project LUNA__*](https://luna16.grand-challenge.org/results/)
+- [*__Project AiAi__*](https://aiai.care/)
