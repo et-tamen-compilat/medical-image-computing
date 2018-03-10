@@ -9,28 +9,35 @@
       </script>      
     </head>
     
+    
     <body id="basicContentBody" bgcolor="white">
-        <div class="Site">
-            <div class="Site-content">
-                <script>document.body.className += ' fade-out';</script>
-                <nav class="content-nav">
-                        
-                    <div class="container">
-                    <div class="brand"><a href="/">Deep Learning in Medical Image Analysis</a></div>
-                    </div>
-                   
-                </nav>
+        <script>document.body.className += ' fade-out';</script>
+        <nav class="sidenav">
+            <ul>
+                <li><a href="history-medical-imaging.html"> History of <br> Medical Imaging</a></li>
+                <li><a href="types-medical-imaging.html"> Types of <br> Medical Imaging</a></li>
+                <li><a href="uses-of-ai-in-radiology.html">Uses of AI <br> in Radiology</a></li>
+                <li><a href="lung-cancer.html">Detection of <br> Lung Cancer</a></li>
+                <li><a href="history-machine-learning.html">History of <br> Machine Learning</a></li>
+                <li><a href="introduction-neural-net.html">Introduction to <br> Neural Networks</a></li>
+                <li><a href="introduction-cnns.html">Convolutional <br> Neural Networks</a></li>
+                <li><a href="semantic-segmentation.html">Semantic<br>Segmentation</a></li>
+            </ul>
+        </nav>
+        <div class="mainBody">
+            <nav class="content-nav">
                 <div class="container">
-                    <main>
-                        <article>$body$</article>
-                    </main>
+                    <div class="brand"><a href="/">Deep Learning in Medical Image Analysis</a></div>
                 </div>
-            </div>
-            <footer>
-                <div class="container"><p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p></div>
-            </footer>
+            </nav>
+            <main class="content">
+                <article>$body$</article>
+            </main>
+        <footer class="basicContentFooter">
+            <div class="container"><p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p></div>
+        </footer>
         </div>
-    </body>
+       
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
