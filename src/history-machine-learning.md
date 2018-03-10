@@ -65,9 +65,9 @@ This was created because Intel had just been optimising their Intel Xeon Scalabl
 
 They realised that matrix multiplications and convolutions were the main computations done in machine learning, and so optimised their processor for these.
 
-### Cloud Computing
+### GPUs in Cloud Computing
 
-Google let people rent tensory pocessing units too.
+A recent trend is the renting of GPUs from big companies such as Google and Amazon, rather than buying them, as this can be a much cheaper alternative to purchasing lots of GPUs. It also allows many more GPUs to be used, as a high quantity can be rented, and therefore work can be done more efficiently. Google also introduced a specific Cloud Machine Learning Engine in 2017 using their TPUs mentioned above, and allows anyone to easily create a neural network without all of the required equipment. This will hopefully encourage more innovation in the field in the near future.
 
 ## Sources
 
@@ -83,3 +83,5 @@ Google let people rent tensory pocessing units too.
 - [*__Intel Nervana Neural Network__*](https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/)
 - [*_Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
 - [*__Handwritten Digit Recognition with a Back-Propagation Network__*](http://yann.lecun.com/exdb/publis/pdf/lecun-90c.pdf)
+- [*__Google Cloud Platform__*](https://cloud.google.com/gpu/)
+- [*__Google Cloud Machine Learning Engine__*](https://cloud.google.com/ml-engine/)
