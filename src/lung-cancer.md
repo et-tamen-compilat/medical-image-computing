@@ -1,4 +1,4 @@
-# Lung Cancer
+# Detection of Lung Cancer
 
 Lung cancer is an area in which artificial intelligence is starting to become more prominent. Lung cancer is the third most common type of cancer in the UK, and accounts for 13% of all diagnoses. 130 people a day are diagnosed with lung cancer. The survival rates for over 10 years are only 5%, however 89% of cases are preventable. This is why people are suggesting that machine learning could be used to diagnose these cases more effectively, give treatment earlier, and increase survival rates.
 
@@ -18,8 +18,12 @@ There were over 18,000 algorithms developed during the challenge, with the goal 
 
 Lots of doctors are wary of how to store lots of data for machine learning programs to work properly, due to patient confidentiality laws. However, the FDA did approve a cloud-based deep learning algorithm for cardiac imaging in 2017, which shows that in the future, it will be more common placed in patient diagnosis.
 
+In March 2018, Google introduced a new Cloud Healthcare API, which aims to create a secure service which can be used to implement Artificial Intelligence and Machine Learning on lots of healthcare data. Working with the Stanford School of Medicine and other partners, their aim is to "help transform the healthcare industry through the use of cloud technologies and machine learning".
+
 ## Sources
 
 - [*__Medical Futurist__*](http://medicalfuturist.com/the-future-of-radiology-and-ai/)
 - [*__Data Science Bowl__*](https://datasciencebowl.com/competitions/turning-machine-intelligence-against-lung-cancer/)
 - [*__Cancer Research UK__*](http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer)
+- [*__ZD Net__*](http://www.zdnet.com/article/google-takes-health-care-to-the-cloud-with-new-api-partnerships/)
+- [*__Google Blog__*](https://blog.google/topics/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/)
