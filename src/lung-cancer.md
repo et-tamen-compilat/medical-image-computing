@@ -36,6 +36,12 @@ This is an open source project for lung cancer screening using x-rays. While the
 
 Their aim is to reduce screening time and cost by 90%, and increase survival probability by 5x. The project used machine learning on over 250,000 chest x-rays to build a CAD tool.
 
+## Genetic Deep Learning
+
+A startup called Innovation DX is using genetic deep learning for lung cancer screening. Genetic deep learning is an evolution of convolutional neural networks, which are explained in detail on other pages. They *"injected convolution and pooling layers with pseudorandom hyperparameters into a minimal architecture and then optimized the weights through back propagation on the training set"*. A pseudorandom hyperparameter is a parameter whose value is set before the learning takes place, and satisfies at least one statistical test for randomness, even though it is produced by a definite mathematical procedure. They inserted these into a basic neural network, and then used back propagation, explained in detail on the Introduction ot Neural Networks page, to optimise the neural network with the training data.
+
+Optimisations like this to convolutional neural networks allow them to be specially adapted to medical problems, and make them more efficient in detection and diagnosis. This is why lots of competitions, such as the two above, are trying to entice computer scientists to develop these.
+
 ## Problems... and potential solutions?
 
 Lots of doctors are wary of how to store lots of data for machine learning programs to work properly, due to patient confidentiality laws. However, the FDA did approve a cloud-based deep learning algorithm for cardiac imaging in 2017, which shows that in the future, it will be more common placed in patient diagnosis.
@@ -52,3 +58,4 @@ In March 2018, Google introduced a new Cloud Healthcare API, which aims to creat
 - [*__Medium__*](https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda)
 - [*__Project LUNA__*](https://luna16.grand-challenge.org/results/)
 - [*__Project AiAi__*](https://aiai.care/)
+- [*__Genetic Deep Learning for Lung Cancer Screening__*](https://www.dropbox.com/s/0xw2r5t5ge0sjam/Genetic%20Deep%20Learning%20for%20Lung%20Cancer%20Screening.pdf?dl=0)
