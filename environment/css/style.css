@@ -147,26 +147,17 @@ body {
     opacity:0;
 }
 
-#brain{
-    margin: auto;
-    display: flex;
-    width: 100%;
-    height:100%;
-    top: 0;
-    left: 0;
-}
-
 #brain_pic{
     top:100px;
-    width: 800px;
-    height: 450px;
+    width: 620px;
+    height: 349px;
     opacity: 0;
     margin: auto;
 }
 
 #container{
     position: relative;
-    width: 1500px;
+    width: 960px;
     margin: 0 auto;
 }
  
@@ -181,7 +172,7 @@ body {
 }
 
 .circles{
-    width:100px;
+    width:auto;
     height:auto;
     position: absolute;
     opacity: 0;
@@ -201,56 +192,50 @@ body {
 }
 
 #circle1{
-    float: none;
-    top:35px;
-    left: 282px;
+    top:22px;
+    left: 108px;
 }
 
 #circle2{
-    top:14px;
-    left: 1110px;
+    top:10px;
+    left: 760px;
 }
 
 #circle3{
-    top:147px;
-    left:1170px;
+    top:110px;
+    left:770px;
 }
 
 #circle4{
-    top:255px;
-    left:1150px;
+    top:195px;
+    left:760px;
 }
 
 #circle5{
-    top:377px;
-    left:1067px;
+    top:288px;
+    left:728px;
 }
 
 #circle6{
-    top:238px;
-    left:390px;
+    top:279px;
+    left:299px;
 }
 
 #circle7{
-    top:135px;
-    left:300px;
+    top:182px;
+    left:200px;
 }
 
 #circle8{
-    top:360px;
-    left:520px;
-}
-
-#circle9{
-    top:395px;
-    left:865px;
+    top:103px;
+    left:128px;
 }
 
 .landingLinks{
     font-family: trench;
     text-decoration: none;
     position: absolute;
-    font-size: 25px;
+    font-size: x-large;
     float:left;
     opacity: 0;
     color:white;
@@ -269,48 +254,43 @@ body {
 }
 
 #CNNLink{
-    top:13px;
-    left:153px;
-}
-
-#AboutUsLink{
-    top:248px;
-    left:290px;
+    top:185px;
+    left:30px;
 }
 
 #HMILink{
-    top:130px;
-    left:1275px;
+    top:0px;
+    left:835px;
 }
 
 #HMLLink{
     top:0px;
-    left:1220px;
+    left:15px;
 }
 
 #INNLink{
-    top:240px;
-    left: 1258px;
+    top:88px;
+    left: 10px;
 }
 
 #SSLink{
-    top:138px;
-    left:140px;
+    top:280px;
+    left:160px;
 }
 
 #TMILink{
-    top:370px;
-    left:1170px;
+    top:95px;
+    left:850px;
 }
 
 #AIRLink{
-    top:360px;
-    left: 390px;
+    top:280px;
+    left: 810px;
 }
 
 #LCLink{
-    top:430px;
-    left:960px;
+    top:180px;
+    left:840px;
 }
 .links ul {
     list-style-type: none;
