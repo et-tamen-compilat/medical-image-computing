@@ -25,8 +25,11 @@ The U-Net architecture was proposed by 3 computer scientists at the University o
 However, an encoder-decoder architecture is not the only solution to semantic segmentation. An encoder-decoder architecture reduces dimension to get a "global view" of the image, before increasing dimension to get back local context – thus increasing the amount of parameters (or weights) in the network. One wonders whether it is possible for each pixel in the image to get the global context of the image, without reducing the size of the image. This is what was proposed at ICLR (International Conference on Learning Representations) 2016, with dilated convolutions.
 
 ![](content-images/DilatedImage.png)
-
-  Layer 1: output F1                    Layer 2: output F2                     Layer 3: output F3
+<!--Add this image description:
+Layer 1: output F1
+Layer 2: output F2
+Layer 3: output F3
+-->
 
 As illustrated in the diagram above, dilated convolution increases the global (or receptive) field, in other words the implicit area captured by each of the initial input, without losing resolution or coverage. Indeed, the red dots correspond to the inputs, and the blue area to the receptive field of each of these. 
 
