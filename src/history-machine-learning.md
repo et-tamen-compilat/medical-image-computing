@@ -12,7 +12,7 @@ Frank Rosenblatt designed the first artificial neural network in 1958, called Pe
 
 Another extremely early instance of a neural network came in 1959, when Bernard Widrow and Marcian Hoff created two models of them at Stanford University. The first was called ADELINE, and it could detect binary patterns, for example in a stream of bits, it could predict what the next one would be. The next generation was called MADELINE, and it could eliminate echo on phone lines, so had a useful real world application. It is still in use today.
 
-Despite the success of MADELINE, there was not much progress until the late 1970s for many reasons, mainly the popularity of the Von Neumann architecture.
+Despite the success of MADELINE, there was not much progress until the late 1970s for many reasons, mainly the popularity of the Von Neumann architecture. This is an architecture where instructions and data are stored in the same memory, which is arguably simpler to understand than a neural network.
 
 ## 1980s and 1990s
 
@@ -22,7 +22,7 @@ Furthermore, in 1982, Japan announced it was focusing on more advanced neural ne
 
 Neural networks use back propagation (explained in detail in the neural network pages), and this important step came in 1986, when three researchers from the Stanford psychology department decided to extend an algorithm created by Widrow and Hoff in 1962. This therefore allowed multiple layers to be used in a neural network, creating what are known as 'slow learners', which will learn over a long period of time.
 
-The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since this, there have been many more advances in the field.
+The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since then, there have been many more advances in the field, such as in 1998, when research at AT&T Bell Laboratories on digit recognition resulted in good accuracy in detecting handwritten postcodes from the US Postal Service. This used back-propagation, which is explained in detail on the Introduction to Neural Networks page.
 
 ## 21st Century
 
@@ -65,6 +65,10 @@ This was created because Intel had just been optimising their Intel Xeon Scalabl
 
 They realised that matrix multiplications and convolutions were the main computations done in machine learning, and so optimised their processor for these.
 
+### GPUs in Cloud Computing
+
+A recent trend is the renting of GPUs from big companies such as Google and Amazon, rather than buying them, as this can be a much cheaper alternative to purchasing lots of GPUs. It also allows many more GPUs to be used, as a high quantity can be rented, and therefore work can be done more efficiently. Google also introduced a specific Cloud Machine Learning Engine in 2017 using their TPUs mentioned above, and allows anyone to easily create a neural network without all of the required equipment. This will hopefully encourage more innovation in the field in the near future.
+
 ## Sources
 
 - [*__Stanford__*](https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html)
@@ -77,3 +81,7 @@ They realised that matrix multiplications and convolutions were the main computa
 - [*__NVIDIA__*](https://devblogs.nvidia.com/inside-volta/)
 - [*__Google TensorFlow__*](https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [*__Intel Nervana Neural Network__*](https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/)
+- [*_Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
+- [*__Handwritten Digit Recognition with a Back-Propagation Network__*](http://yann.lecun.com/exdb/publis/pdf/lecun-90c.pdf)
+- [*__Google Cloud Platform__*](https://cloud.google.com/gpu/)
+- [*__Google Cloud Machine Learning Engine__*](https://cloud.google.com/ml-engine/)
