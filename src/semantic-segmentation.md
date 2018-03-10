@@ -22,12 +22,30 @@ This architecture thus differs from regular FCNs on several levels. Firstly, its
 The U-Net architecture was proposed by 3 computer scientists at the University of Freiburg, who used it to win the ISBI cell tracking challenge in 2015. Another success of the U-Net architecture was in 2016, when it was used to segment MRI scans of prostates. The architecture called V-Net was trained on data from the Promise20 dataset. The architecture was designed to work on 3-dimensional data, which is actually 4-dimensional if you consider the feature channels. These 3D scans are called volumetric images. V-Net combined a U-Net architecture, but the layers were in blocks, that were designed to learn the residual functions, with ResNet-like shortcut connections between the input and output of these blocks. One problem with segmenting 3D images, is that the training data to the neural network has to be segmented manually by a human, and it is typically much harder for a human to segment a 3D image, than a 2D image. One approach suggested by researchers in 2016, was to only 2D slices of these 3D volumetric images. These were called sparse annotatons, and elastic deformations were applied to allow the network to be trained. This architecture, based on U-Nets, was trained on *Xenopus* kidneys.
 
 ## Dilated convolutions
-However, an encoder-decoder architecture is not the only solution of semantic segmentation. An encoder-decoder architecture reduces dimension to get a "global view" of the image, before increasing dimension to get back local context. One wonders, whether it is possible for each pixel in the image to get the global context of the image, without reducing the size of the image. This is what was proposed at ICLR (International Conference on Learning Representations) 2016, with dilated convolutions.
+However, an encoder-decoder architecture is not the only solution to semantic segmentation. An encoder-decoder architecture reduces dimension to get a "global view" of the image, before increasing dimension to get back local context – thus increasing the amount of parameters (or weights) in the network. One wonders whether it is possible for each pixel in the image to get the global context of the image, without reducing the size of the image. This is what was proposed at ICLR (International Conference on Learning Representations) 2016, with dilated convolutions.
 
 ![](content-images/DilatedImage.png)
+
+  Layer 1: output F1                    Layer 2: output F2                     Layer 3: output F3
+
+As illustrated in the diagram above, dilated convolution increases the global (or receptive) field, in other words the implicit area captured by each of the initial input, without losing resolution or coverage. Indeed, the red dots correspond to the inputs, and the blue area to the receptive field of each of these. 
+
+Let F0 be the input image, here with dimensions 3x3. 
+
+- The 1st layer applies a dilation rate k=1, corresponding to a normal convolution, to F0. Each element, or dot, in F1 therefore has a receptive field of 3x3.
+- The 2nd layer applies a dilation rate k=2 to F1, ie. “skips” 1 pixel per input. Each element in F2 has a receptive field of 7x7.
+- The 3rd layer applies a dilation rate k=4 to F2, skipping 3 pixels per input and resulting in a receptive field of 15x15 pixels for each unit.
+
+The global view thus expands exponentially, whilst the number of parameters grows linearly. In doing so, dilated convolution manages to achieve a large receptive field without up-sampling, and with a limited amount of weights & convolutional layers. This method therefore proves to be effective for semantic segmentation. In particular, it has been compared to FCNs in segmentation for medical image analysis in a paper published in March 2017. Below, we can see the segmentation results obtained.
+
+![Comparison of segmentation results  on the head of the VHK (Visible Human Korean) dataset](content-images/brainSegmentation.png)
+
+This figure shows that FCNs based on dilated convolution could obtain smoother and more accurate segmentation results than the standard FCNs. This is confirmed by the quantitative testing that was taken out: when training the 2 networks on 80% of the VHK and testing it on the other 20%, the performance of the dilated convolution network increased on average by a significant 19.6%. Thus, this study suggests the potential of this method in semantic segmentation, and we can expect more studies to be conducted on medical imaging scans in the upcoming years. 
+
 
 ## Sources
 - [V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation](https://arxiv.org/pdf/1606.04797.pdf) - Fausto Milletari, Nassir Navab, Seyed-Ahmad Ahmadi
 - [3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650.pdf)
 - [Fully Convolutional Networks for Semantic Segmentation](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf)
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf)
+- [Comparison of the Deep-Learning-Based Automated Segmentation Methods for the Head Sectioned Images of the Virtual Korean Human Project](https://arxiv.org/pdf/1703.04967.pdf)   
