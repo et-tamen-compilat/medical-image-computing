@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <title>Medical Imaging</title>
+        <title>$title$</title>
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
       </script>      
     </head>
     
     
     <body id="basicContentBody" bgcolor="white">
+<!--<<<<<<< HEAD-->
         <script>document.body.className += ' fade-out';</script>
         <nav class="sidenav">
             <ul>
@@ -30,16 +31,30 @@
                     <div class="brand"><a href="/">Deep Learning in Medical Image Analysis</a></div>
                 </div>
             </nav>
-            <main class="content">
-                <article>$body$</article>
-            </main>
-        <footer class="basicContentFooter">
-            <div class="container"><p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p></div>
-        </footer>
+            $if(cover)$
+                    <div class="full-image" style="background-image:url('/content-images/$cover$');">
+                        <div class="semitone">
+                            <h1>$title$</h1>
+                        </div>
+                    </div>
+                        <main>
+                            <article>                            
+                                $body$
+                            </article>
+                        </main>
+                $else$
+                        <main>
+                            <article>                                                         
+                                $body$
+                            </article>
+                        </main>
+                $endif$   
+            <footer class="basicContentFooter">
+                <div class="container"><p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p></div>
+            </footer>
         </div>
+        
        
-    
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="javascript/jquery.cookie.js"></script>
     <script src="javascript/anime.min.js"></script>
