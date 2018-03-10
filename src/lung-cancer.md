@@ -1,10 +1,16 @@
 # Detection of Lung Cancer
 
-Lung cancer is an area in which artificial intelligence is starting to become more prominent. Lung cancer is the third most common type of cancer in the UK, and accounts for 13% of all diagnoses. 130 people a day are diagnosed with lung cancer. The survival rates for over 10 years are only 5%, however 89% of cases are preventable. This is why people are suggesting that machine learning could be used to diagnose these cases more effectively, give treatment earlier, and increase survival rates.
+Lung cancer is an area in which artificial intelligence is starting to become more prominent. It is the third most common type of cancer in the UK, and accounts for 13% of all diagnoses. 130 people a day are diagnosed with lung cancer. The survival rates for over 10 years are only 5%, however 89% of cases are preventable. This is why people are suggesting that machine learning could be used to diagnose these cases more effectively, give treatment earlier, and increase survival rates.
 
-Earlier detection is important because it allows lots of treatment options which would not be available if the cancer is found at a later stage. CT scans, which are the most common method of detection currently, can give false-positive readings, and this is why doctors and computer scientists think that machine learning can be used to increase the accuracy and reliability of scan reading.
+Earlier detection is important because it allows lots of treatment options which would not be available if the cancer is found at a later stage. CT scans, which are the most common method of detection currently, can give false-positive readings and this is why doctors and computer scientists think that machine learning can be used to increase the accuracy and reliability of scan reading.
 
 ![](content-images/lung1.png)
+
+## How would it work?
+
+Lung cancer can start off as a small nodule which occurs in an asymptomatic patient. Screening imaging is the process of looking for these, and diagnosing them before they get worse. When a patient starts getting symptoms, and we detect these small nodules which aren't the cause of the symptoms, these are called incidentally detected nodules. Nodules are classed as being between 1 and 3cm in diameter, and a mass is over 3cm in diameter. Anything below 1cm in diameter is a micronodule.
+
+CT scans are currently the best way to look for these, and PET-CT scans are the best way to look at the behaviour of them, which allows doctors to predict the risk of cancer they impose. Nodules can come in many different shapes, and lots of different features, such as size, location and growth, help radiologists predict if it is cancerous.
 
 ## 2017 Data Science Bowl
 
@@ -27,3 +33,4 @@ In March 2018, Google introduced a new Cloud Healthcare API, which aims to creat
 - [*__Cancer Research UK__*](http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer)
 - [*__ZD Net__*](http://www.zdnet.com/article/google-takes-health-care-to-the-cloud-with-new-api-partnerships/)
 - [*__Google Blog__*](https://blog.google/topics/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/)
+ - [*__Medium__*](https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda)
