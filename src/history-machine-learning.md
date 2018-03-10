@@ -12,7 +12,7 @@ Frank Rosenblatt designed the first artificial neural network in 1958, called Pe
 
 Another extremely early instance of a neural network came in 1959, when Bernard Widrow and Marcian Hoff created two models of them at Stanford University. The first was called ADELINE, and it could detect binary patterns, for example in a stream of bits, it could predict what the next one would be. The next generation was called MADELINE, and it could eliminate echo on phone lines, so had a useful real world application. It is still in use today.
 
-Despite the success of MADELINE, there was not much progress until the late 1970s for many reasons, mainly the popularity of the Von Neumann architecture.
+Despite the success of MADELINE, there was not much progress until the late 1970s for many reasons, mainly the popularity of the Von Neumann architecture. This is an architecture where instructions and data are stored in the same memory, which is arguably simpler to understand than a neural network.
 
 ## 1980s and 1990s
 
@@ -77,3 +77,4 @@ They realised that matrix multiplications and convolutions were the main computa
 - [*__NVIDIA__*](https://devblogs.nvidia.com/inside-volta/)
 - [*__Google TensorFlow__*](https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [*__Intel Nervana Neural Network__*](https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/)
+-[*_Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
