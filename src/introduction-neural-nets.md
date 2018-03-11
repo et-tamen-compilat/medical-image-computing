@@ -90,7 +90,7 @@ As layers are added to perceptrons, finding the correct combination of weights t
 
 This process consists in feeding "training data", data annotated with the correct output to expect, into the neural network, and then comparing our actual output to the expected output for each piece of data, by passing it to the cost function. The accuracy of the neural network is quantified by the cost function. There are different functions that can be used for the cost function of a neural network. Typically, the overall cost of the network is obtained by the mean squarred error method, demonstrated below. The difference between each output neuron's actual and expected value is calculated and squared, before adding all of these up. Typically, halving this result is convenient for backpropagation, as it simplifies the derivative of the cost, used in later calculations.  
 
-![](/content-images/cost.gif)
+<img src="/content-images/cost.gif" width="40%">
 
 The aim is therefore to minimise the error of each output neuron. By modelling cost as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight $w_0$ and a cost function $J$. The algorithm aims to find the local minimum of $J$ by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially $w_0$. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
 
