@@ -55,6 +55,10 @@ $$
 
 It looks like this:
 
+![](/content-images/sebastianraschka.png)
+
+As the input to the logistic sigmoid gets tends towards positive infinity, its output gets closer and closer to 1, whereas as it gets tends towards negative infinity, its output gets closer and closer to 0. Perceptrons with the logistic sigmoid as the activation function, it a good way of modelling classification problems. This is because the output is between 0 and 1. So, the output of the perceptron represents the probability of it being one class, and 1 minus the output represents the probability of it being another class.
+
 If there are $m$ perceptrons, then let us the call the $m$ weight vectors, $w^1, \mathellipsis, w^m$. Supposing the input, is the column vector consisting of $x_1, \mathellipsis, x_n$, and the weight matrix consists of the columns $w^1, \mathellipsis, w^n$, then the output vector of the combined perceptron network is:
 
 $$
