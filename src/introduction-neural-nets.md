@@ -81,12 +81,10 @@ At each of these transformations, a weight matrix is applied, and then the activ
 Suppose the weight matrices are called $W_1, \mathellipsis, W_{l - 1}$, then:
 
 $$
-\text{output} = g(W_{l - 1}\;g(W_{l - 2}\;\mathellipsis\;x))
+f(x) = g(W_{l - 1}\;g(W_{l - 2}\;\mathellipsis\;x))
 $$
 
 ![](/content-images/multiLayered.png)
-
-This is not the nicest way of looking at it. I prefer thinking of it as a pipeline:
 
 
 <!--  Mention that neural network with more than  1 hidden layer → deep neural network?
