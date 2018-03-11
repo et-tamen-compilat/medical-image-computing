@@ -74,10 +74,20 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 
 .sidenav > ul > li{
     list-style-type: none;
-    padding-bottom: 15px;
-    
+    padding-bottom: 5px;    
 }
 
+.sidenav ul li {
+    padding-bottom:5px;   
+}
+
+.sidenav ul li.heading {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top:10px;
+}
 
 .mainBody{
     display: flex;
