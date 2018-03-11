@@ -9,6 +9,10 @@ The aim of machine learning is to obtain a highly accurate approximation of such
 
 The set of rules is structured as a neural network. To do this, the program starts with a randomly constructed neural network, which may not, at first, approximate the function very well at all, before being trained to become more likely to give the expected output. In order to understand how this process can be applied to Medical Imaging, let us first grasp the design of a standard neural network. 
 
+There are two basic types of machine learning. Approximating functions that map to a small set of outputs, e.g. tumour present or no tumour present. This is called classification. Or approximating functions that can take a large range of values e.g. a number representing the size of something. This is called regression. Mathematically, the output of a classification problem is discrete, and the output of a regression problem is continuous. A special type of the classification problem is the binary classificatation problem, where there are only two possible outputs. In medical imaging, we are most interested in classification, but similar principles apply to regression. A regression problem can be thought of as finding the line of best fit, whereas a classification problem is trying to separate two different classes, with a decision boundary.
+
+![](/content-images/SearchEngineLand.png)
+
 $$
 \def\mathellipsis{…}
 $$
