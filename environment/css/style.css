@@ -1,11 +1,13 @@
 body {
-    font-family: "Helvetica Neue";
+    /*font-family: "Helvetica Neue";*/
+    font-family:"PT Sans";
     margin:0;
     height:100%;
 }
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
     text-align: left;
+    font-family: "PT Serif";
 }
 .mainTitle h1{
     font-family: trench;
@@ -58,9 +60,9 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 
 .sidenav{
     /*background-color: #eaeaea;*/
-    font-family: trench;
+    /*font-family: trench;*/
     text-decoration: none;
-    font-size: x-large;
+    /*font-size: x-large;*/
     color:#76ddff;
     list-style-type: none;
     transition: all 0.3s ease;
@@ -457,4 +459,8 @@ main article {
     /* margin-top: auto; */
     /* margin-bottom: auto; */
     font-size: 20px;
+}
+
+main nav ul {
+    padding-left:0;
 }
