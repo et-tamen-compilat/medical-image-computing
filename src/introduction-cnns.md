@@ -34,6 +34,7 @@ In addition, there is another kind of layer called a max pooling or down-samplin
 The different types of layers described are combined through a repeated stacking process illustrated below, known as deep stacking. Convolutional layers followed by activation functions, as well as interspersed down-sampling layers, essentially replace width and height with depth until the image is relatively small. 
 
 ![](/content-images/CNNdiagram2.png)
+<!-- image source: https://uk.mathworks.com/discovery/convolutional-neural-network.html -->
 
 Once this happens, it can be passed through the last step of the design: a fully connected layer, i.e. the traditional kinds of neural network layers we have seen before. 
 

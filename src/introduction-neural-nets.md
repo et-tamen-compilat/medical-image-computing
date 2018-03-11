@@ -114,4 +114,6 @@ For each output, adjusting the first three components listed, by increasing or d
 
 Such are the mechanics of back-propagation, and they will be repeated till the errors of all weights settle into their minimum, or as close as possible. However, The size of each step, is not just determined by the gradient. Usually, it is the gradient multiplied by a variable called the learning rate. The larger the learning rate, the greater the steps. A large learning rate means backpropagation is faster. But it may also be the case, that gradient descent goes too far past the local minimum. Too small a learning rate, and backpropagation may take an unnecessarily long time to reach the local minimum.
 
-
+##Sources
+- [The Backpropagation Algorithm](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf), R. Rojas: Neural Networks, Springer-Verlag, Berlin, 1996
+- [What is backpropagation really doing?](https://www.youtube.com/watch?v=Ilg3gGewQ5U), video by 3Blue1Brown

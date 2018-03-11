@@ -6,6 +6,8 @@ Semantic segmentation consists of separating an image into different regions. It
 Fully Convolutional Networks represent the underlying model of recent attempts to solve semantic segmentation using CNNs. These architectures omit the use of fully connected layers. As well as being faster, this approach generates segmentation maps from images of any size, (as opposed to the fixed-size constraint of fully connected layers). Essentially, the last fully connected layer is replaced by a convolution layer, of dimensions 1x1 in order to capture the global context of the image. Then, the last step consists in “upsampling” from low-resolution to high-resolution. This is done by upsampling layers. In FCNs, upsampling is down by something called transposed convolutions (or deconvolutions). If a convolution goes from $5 \times 5$ to $2 \times 2$, then the corresponding transposed convolutions goes from $2 \times 2$ to $5 \times 5$. To allow this to happen padding is added. The amount of padding of transposed convolution depends on the dimensions needed. For instance, suppose the kernel of the original from a $5 \times 5$ to $3 \times 3$, was a $3 \times 3$ with stride 1. Then, side padding of size 2 needs to be added around the output.
 
 ![](/content-images/SegmentationDiagram1.png)
+<!--Image source:
+https://www.semanticscholar.org/paper/Video-Salient-Object-Detection-via-Fully-Convoluti-Wang-Shen/022d74ae2f8680e780b18e0cbb041d5c5a57c7a5-->
 
 However, this upsampling method is not sufficient to compensate the loss of information during the downsampling of pooling layers. Moreover, the success of such a network relies on a large amount of training data, up to this day not available in Medical Imaging. Thus, two types of architectures have been explored since the introduction of FCNs in 2014 to address these issues.
 
@@ -47,8 +49,9 @@ This figure shows that FCNs based on dilated convolution could obtain smoother a
 
 
 ## Sources
-- [V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation](https://arxiv.org/pdf/1606.04797.pdf) - Fausto Milletari, Nassir Navab, Seyed-Ahmad Ahmadi
-- [3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650.pdf)
-- [Fully Convolutional Networks for Semantic Segmentation](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf)
-- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf)
-- [Comparison of the Deep-Learning-Based Automated Segmentation Methods for the Head Sectioned Images of the Virtual Korean Human Project](https://arxiv.org/pdf/1703.04967.pdf)   
+- [V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation](https://arxiv.org/pdf/1606.04797.pdf) by Fausto Milletari, Nassir Navab, Seyed-Ahmad Ahmadi - June 2016
+- [3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650.pdf) by Ozgun Cicek, Ahmed Abdulkadir - June 2016
+- [Fully Convolutional Networks for Semantic Segmentation](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) by Jonathan Long, Evan Shelhamer, Trevor Darrell - May 2016
+- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf) by Olaf Ronneberger, Philipp Fischer, Thomas Brox - May 2015
+- [Comparison of the Deep-Learning-Based Automated Segmentation Methods for the Head Sectioned Images of the Virtual Korean Human Project](https://arxiv.org/pdf/1703.04967.pdf) by Mohammad Eshghi, Holger R. Roth - March 2017
+- [Machine Learning Methods for Medical and Biological Image Computing](https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1015&context=computerscience_etds) by Rongjian Li - July 2016
