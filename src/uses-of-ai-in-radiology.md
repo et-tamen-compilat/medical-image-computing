@@ -22,8 +22,12 @@ On the other hand, other recent papers have chosen to train their CNNs, by takin
 
 ![](/content-images/3Dcnn.png)
 
+
 * Object or lesion classification:
 
+Whereas exam classification focuses on the entire image, object classification focuses on classifying a small, previously identified part of a medical image into multiple classes. An example of such an object would be lung nodules in chest CT scans – see the “Detection of Lung Cancer” (ADD hyperlink) for more details. Combining local information, on the appearance of the lesion, with global context, regarding its location, is required for accurate classification. This makes it even more complex than exam classification, as it introduces the need to incorporate contextual and 3-dimensional information. As a result, conventional deep learning architectures aren’t efficient in this area, and variations or combinations with other architectures are being considered. 
+
+For instance, a multi-stream CNN was used in 2016 to integrate 3D in the classification of pulmonary nodules. This architecture aimed to classify points of interest in chest CT scans as nodules or not. For each candidate nodule fed into the network, a set of 2D patches with different orientation planes is considered. Multiple streams of 2D convolution networks then process these sets, and their outputs are merged using a dedicated fusion method that will give the final classification. The network performed with high detection sensitivity above 85%, and was particularly effective in reducing false positives, ie. results wrongly indicating the presence of a nodule. This paper was part of the entries to the LUNA Challenge, covered in the “Detection of Lung Cancer” <!--ADD hyperlink-->.
 
 ##Detection
 
@@ -53,6 +57,7 @@ A lesion is a part of a tissue or organ that is injured, and a wound is a lesion
 - [A Survey on Deep Learning in Medical Image Analysis](https://arxiv.org/pdf/1702.05747.pdf) by Geert Litjens, Thijs Kooi - 2017
 - [Dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6) by Andre Esteva1, Brett Kuprel1 - 2017
 - [Alzheimer's disease diagnostics by adaptation of 3D convolution network](https://arxiv.org/pdf/1607.00455.pdf) by Ehsan Hosseini-Asl1, Robert Keynton2, Ayman El-Baz2
+- [Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks](http://ieeexplore.ieee.org/abstract/document/7422783/) by Setio et. al - 2016
 - [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
 - [Three-Dimensional CT Image Segmentation by Combining 2D Fully Convolutional Network with 3D Majority Voting](https://pdfs.semanticscholar.org/b434/c05142542255a112c387c48e6f60bb9e8c1c.pdf?_ga=2.65766829.2007236436.1520623311-1322847124.1520623311)
 - [A Unified Framework for Automatic Wound Segmentation and Analysis with Deep Convolutional Neural Networks](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7318881&tag=1)
