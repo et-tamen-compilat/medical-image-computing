@@ -76,7 +76,7 @@ $$
 \text{output} = g(W_{l - 1}\;g(W_{l - 2}\;\mathellipsis\;x))
 $$
 
-![](/content-images/multiLayeredPerceptron.png)
+![](/content-images/multiLayered.png)
 
 This is not the nicest way of looking at it. I prefer thinking of it as a pipeline:
 
