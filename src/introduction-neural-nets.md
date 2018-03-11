@@ -96,22 +96,22 @@ This process consists in feeding "training data", data annotated with the correc
 
 ![](https://media.giphy.com/media/f9QQ6MxYkdIlvocXyd/giphy.gif)
 
-The aim is therefore to minimise the error of each output neuron. By modelling cost as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight $w_0$ and a cost function $J$. The algorithm aims to find the local minimum of $J$ by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially $w_0$. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
+The aim is therefore to minimise the error of each output neuron. By modelling cost as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight $w_0$ and a cost function $J$. The algorithm aims to find the local minimum of $J$ by iteratively taking steps proportional to the negative of the gradient of the function at the current point, where the initial point $w'$. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
 
 ![](/content-images/gradientDescent.png)
 
 However, how can we adjust the error value of an output weight? In other words, which parameters do we need to vary in order to see such a change? 
-Recall that each weight $w$ is calculated in the following way:
+Recall that each output of a neuron $f$ is calculated in the following way:
 
 $$
-w= g(\sum_{i = 1}^{n-1}w_ia_i + b)
+f = g(\sum_{i = 1}^{n-1}w_ia_i + w_0)
 $$
 
 Where:
 
 - $x$ represents the activation of the previous layer
 - $w_i$ are the weights of the previous layer connected to $w$
-- $b$ is the bias applied
+- $w_0$ is the bias applied
 - $g$ represents the activation of the current layer 
 
 For each output, adjusting the first three components listed, by increasing or decreasing these accordingly, will thus change its "voting" weight. However, these components rely on the previous layer, itself consisting of weights computed from the penultimate layer. The use of the word "backpropagation" thus becomes apparent: it relies on recursively applying this process to each previous layer, moving backwards through the network in doing so. 
