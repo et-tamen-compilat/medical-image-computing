@@ -92,8 +92,7 @@ This process consists in feeding "training data", data annotated with the correc
 
 By modelling cost as a function, we can thus find its minimum by gradient descent, an optimisation algorithm illustrated below. Take an initial weight $w_0$ and a cost function $J$. The algorithm aims to find the local minimum of $J$ by iteratively taking steps proportional to the negative of the gradient of the function at the current point, initially $w_0$. Below, each of these steps is represented as an arrow. As we can see, this sequence will eventually converge to the desired local minimum.
 
-![](/content-images/gradientdescent.jpg)
-<!--(Change image annotations)-->
+![](/content-images/gradientDescent.png)
 
 However, how can we adjust the error value of an output weight? In other words, which parameters do we need to vary in order to see such a change? 
 Recall that each weight $w$ is calculated in the following way:
