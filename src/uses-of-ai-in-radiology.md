@@ -3,11 +3,27 @@ cover: "thumbsUpBlue.png"
 title: "Uses of AI in Radiology"
 ---
 
+![](/content-images/uses.png) 
+Breakdown of the tasked addressed by research papers in this field up until 2017
+
+As can be seen in the diagram above, various uses of artificial intelligence, and in particular convolutional neural networks, are being researched into up. From organ segmentation to registration, some areas have already benefited from significant AI contributions, whilst others have only recently been explored. These could offer various benefits, namely limiting diagnostic errors caused by the eye-strain of radiologists, and complementing their work by providing data analysis too large for a human to process. At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
+
 ##Classification
 
-* Image / exam classification:
+* Exam classification:
+
+This is one of the first areas in which machine learning was introduced. From an “exam”, i.e one or several images as input(s), this method outputs a single diagnostic variable, generally indicating if a disease is present or not. The main constraint in introducing CNNs to perform this task is the lack of clinical data, and the extensive time from medical experts that is required for data annotations. Whilst a dataset typically contains millions of samples, medical imaging datasets typically only have hundreds of thousands of exams to use as samples. Several approaches exist to overcome this challenge.
+
+On the one hand, transfer learning or inductive learning, by using a pre-trained network, is one possible strategy. This method consists in applying the knowledge gained while solving one problem to another related problem. In particular, fine-tuning a pre-trained network to work on medical data has been successful. For example, it has applied to the classification of skin cancer. As explained in the corresponding 2017 paper, GoogleNet Inception v3’s CNN architecture, from the 2014 ImageNet facial recognition competition, was used. After being pre-trained on more than 1.2 million images, it was trained on around 130 000 dermatologist-labelled clinical images. The network was tasked to output whether a given exam presented a case of the most common skin cancers, or the deadliest type. It was tested against 21 board-certified dermatologists, and matched their performance. The long-term aim behind this paper would be to equip mobile devices with deep neural networks, and provide cheaper universal access to diagnostic care.
+
+![](/content-images/skinCancer.png)
+
+On the other hand, other recent papers have chosen to train their CNNs, by taking advantage of unique attributes of medical data to compensate the size of the datasets. For example, using 3D convolutions instead of the 2D convolutions presented in “Convolutional Neural Networks” <!--(ADD hyperlink)--> has been explored to classify patients as having Alzheimer’s. The network corresponds to an encoder-decoder architecture (see “Semantic Segmentation” <!--ADD hyperlink-->) extended to 3D images. It is pre-trained to capture brain shape variations on MRI scans before fine-tuning its upper fully convolutional layers for Alzheimer’s Disease classification as shown below. Testing the network on two different Alzeimer’s disease dataset showed that it had a higher accuracy than conventional classification networks.
+
+![](/content-images/3Dcnn.png)
 
 * Object or lesion classification:
+
 
 ##Detection
 
@@ -31,6 +47,10 @@ A lesion is a part of a tissue or organ that is injured, and a wound is a lesion
 ##Combining image data with reports
 
 ## Sources
+
+- [A Survey on Deep Learning in Medical Image Analysis](https://arxiv.org/pdf/1702.05747.pdf) by Geert Litjens, Thijs Kooi - 2017
+- [Dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6) by Andre Esteva1, Brett Kuprel1 - 2017
+- [Alzheimer's disease diagnostics by adaptation of 3D convolution network](https://arxiv.org/pdf/1607.00455.pdf) by Ehsan Hosseini-Asl1, Robert Keynton2, Ayman El-Baz2
 - [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
 - [Three-Dimensional CT Image Segmentation by Combining 2D Fully Convolutional Network with 3D Majority Voting](https://pdfs.semanticscholar.org/b434/c05142542255a112c387c48e6f60bb9e8c1c.pdf?_ga=2.65766829.2007236436.1520623311-1322847124.1520623311)
 - [A Unified Framework for Automatic Wound Segmentation and Analysis with Deep Convolutional Neural Networks](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7318881&tag=1)
