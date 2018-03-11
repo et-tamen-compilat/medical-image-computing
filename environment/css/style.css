@@ -89,6 +89,17 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     padding-top:10px;
 }
 
+.sidenav ul {
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+article {
+    margin-left:20px;
+}
+
 .mainBody{
     display: flex;
     flex-direction:column;
