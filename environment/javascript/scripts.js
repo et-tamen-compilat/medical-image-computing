@@ -25,6 +25,3 @@ var isMobile = function() {
    return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
  };
  
- if (isMobile()) {
-   document.location='mindex.html';
- }
