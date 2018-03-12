@@ -1,4 +1,7 @@
-# History of Medical Imaging
+---
+cover: "stethoscope.png"
+title: "History of Medical Imaging"
+---
 
 ## Introduction to Medical Imaging
 
