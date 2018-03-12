@@ -33,5 +33,4 @@ var isMobile = function() {
  
  if (isMobile() && isIndex()) {
    document.location='mindex.html';
-  window.stop();
  }
