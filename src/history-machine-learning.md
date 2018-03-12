@@ -1,5 +1,7 @@
-# History of Machine Learning
-
+---
+cover: "history-machine-learning-bg.png"
+title: "History Machine Learning"
+---
 ## Early History of Machine Learning
 
 The first case of neural networks was in 1943, when neurophysiologist Warren McCulloch and mathematician Walter Pitts wrote a paper about neurons, and how they work. They decided to create a model of this using an electrical circuit, and therefore the neural network was born.
