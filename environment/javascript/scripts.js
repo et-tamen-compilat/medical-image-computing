@@ -26,5 +26,6 @@ var isMobile = function() {
  };
  
  if (isMobile()) {
-   window.location='mindex.html';
+   document.location='mindex.html';
+  
  }
