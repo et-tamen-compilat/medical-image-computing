@@ -3,14 +3,14 @@ cover: "thumbsUpBlue.png"
 title: "Uses of AI in Radiology"
 ---
 
+Various uses of artificial intelligence, and in particular convolutional neural networks, are being researched into up. From organ segmentation to registration, some areas have already benefited from significant AI contributions, whilst others have only recently been explored. These could offer various benefits, namely limiting diagnostic errors caused by the eye-strain of radiologists, and complementing their work by providing data analysis too large for a human to process. At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
+
 ![](/content-images/uses.png) 
 *Breakdown of the tasked addressed by research papers in this field up until 2017*
 
-As can be seen in the diagram above, various uses of artificial intelligence, and in particular convolutional neural networks, are being researched into up. From organ segmentation to registration, some areas have already benefited from significant AI contributions, whilst others have only recently been explored. These could offer various benefits, namely limiting diagnostic errors caused by the eye-strain of radiologists, and complementing their work by providing data analysis too large for a human to process. At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
-
 ##Classification
 
-* Exam classification:
+### Exam classification:
 
 This is one of the first areas in which machine learning was introduced. From an “exam”, i.e one or several images as input(s), this method outputs a single diagnostic variable, generally indicating if a disease is present or not. The main constraint in introducing CNNs to perform this task is the lack of clinical data, and the extensive time from medical experts that is required for data annotations. Whilst a dataset typically contains millions of samples, medical imaging datasets typically only have hundreds of thousands of exams to use as samples. Several approaches exist to overcome this challenge.
 
@@ -23,7 +23,7 @@ On the other hand, other recent papers have chosen to train their CNNs, by takin
 ![](/content-images/3Dcnn.png)
 
 
-* Object or lesion classification:
+### Object or lesion classification:
 
 Whereas exam classification focuses on the entire image, object classification focuses on classifying a small, previously identified part of a medical image into multiple classes. An example of such an object would be lung nodules in chest CT scans – see the “Detection of Lung Cancer” (ADD hyperlink) for more details. Combining local information, on the appearance of the lesion, with global context, regarding its location, is required for accurate classification. This makes it even more complex than exam classification, as it introduces the need to incorporate contextual and 3-dimensional information. As a result, conventional deep learning architectures aren’t efficient in this area, and variations or combinations with other architectures are being considered. 
 
@@ -31,9 +31,9 @@ For instance, a multi-stream CNN was used in 2016 to integrate 3D in the classif
 
 ##Detection
 
-* Organ & region detection:
+### Organ & region detection:
 
-* Object or lesion detection:
+### Object or lesion detection:
 
 The first object detection system using neural networks, was actually created in 1995 to detect nodules from X-ray images. It used a 4 layer CNN. Since then, machine learning has been explored in a number of ways to perform object detection. One example is detection of lymph nodes. This is as the size of swollen lymph nodes are signs of infection by a virus or a bacterium. Swollen lymph nodes can also be caused by cancer and is therefore important in cancer staging. This is the process of determining how far cancer has spread, which can be used to determine which treatment to give, and prognosis, a medical term for the chance of survival. Moreover, the number of swollen lymph nodes can be used to determine the progress of cancer treatments. Lymph nodes are part of the lymphatic system, an important part of the body's immune system. Automated lymph node detection by a computer system can be hard due to the variety of sizes and shapes lymph nodes can appear in. However, CNNs has shown to be extremely successful, compared to previous techniques. One paper to detect lymph nodes from CT scans first performed performed segmentation to generate lymph node candidates, called volumes of interest (VOI). Then, a patch-wise classification by taking 100 "random views" around each VOI and fed each random view into a 5-layer CNN. Each random view gave a probability of being a lymph nodes, and these probabilities were then averaged. Each random view consisted of 3 orthogonal patches.
 
