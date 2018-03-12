@@ -89,6 +89,13 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     padding-top:10px;
 }
 
+.sidenav ul li.mobileheading {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top:10px;
+}
 .sidenav ul {
     background-color: #f3f3f3;
     padding: 20px;
