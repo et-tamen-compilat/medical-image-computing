@@ -1,5 +1,5 @@
 ---
-cover: "lungbg.png"
+cover: "lung-bg.png"
 title: "Detection of Lung Cancer"
 ---
 
