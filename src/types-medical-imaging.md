@@ -1,5 +1,7 @@
-# Types of Medical Imaging
-
+---
+cover: "medImaging.png"
+title: "Types of Medical Imaging"
+---
 There are many different types of medical imaging techniques, which use different technologies to produce images for different purposes. This page will give an introduction to the most common imaging techniques, and the page on uses of AI in radiology will show how some of these techniques, combined with AI, will pave the way for more accurate imaging.
 
 ## CT Scanners
