@@ -25,13 +25,6 @@ var isMobile = function() {
    return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
  };
  
- var p = window.location.pathname;
-
- var isIndex = function() {
-     return (p.length === 0 || p === "/" || p.match(/^\/?index/))
- }
- 
- if (isMobile() && isIndex()) {
+ if (isMobile()) {
    document.location='mindex.html';
-  window.stop();
  }
