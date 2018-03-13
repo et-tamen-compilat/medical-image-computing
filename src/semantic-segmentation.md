@@ -1,5 +1,7 @@
 # Semantic Segmentation
 
+## What is Semantic Segmentation?
+
 Semantic segmentation consists of separating an image into different regions. It is particularly relevant to Medical Imaging, in which localization is key to the analysis of scans. In effect, segmentation classifies each pixel to the part of the image it belongs to. While the CNNs we've seen so far only need to produce an output for what an image could be, semantic segmentation requires the networks to produce an output for each pixel. This task can be solved through variations of CNNs, some of which specialise in radiology purposes, as we will see. 
 
 ## FCNs
