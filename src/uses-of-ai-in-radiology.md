@@ -66,7 +66,7 @@ Content-based image retrieval (CBIR) provides data analysis & comparison in mass
 
 The combination of text reports with medical image data can follow one of two approaches. On the one hand, generating text reports from medical imaging is being looked into. On the other, using reports to improve image classification accuracy, for instance by adding semantic descriptions from reports as labels, is another mean of interaction between the two. A short demonstration of the latter, from the 2016 Radiological Society of North America (RSNA) annual meeting, can be found below. Eyes of Watson is a joint initiative between IBM and the RSNA to show how AI, exemplified by Watson, could assist radiologists. In this video, the study of a breast cancer case is presented. Initially, Watson infers relevant clinical concepts from the short report provided. Using deep learning to analyse the image, its inference is then updated accordingly. The most probable diagnosis is finally outputted as its answer and can be compared with a clinician's answers. 
 
-![*Eyes of Watson demonstration - Breast Cancer*](https://www.youtube.com/watch?v=XLb0xUe80uo&t=87s) 
+[![*Eyes of Watson demonstration - Breast Cancer*](https://img.youtube.com/vi/XLb0xUe80uo&t=87s/0.jpg)](http://www.youtube.com/watch?v=XLb0xUe80uo&t=87s) 
 
 
 ## Sources
