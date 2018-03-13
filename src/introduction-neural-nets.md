@@ -59,7 +59,7 @@ $$
 
 It looks like this:
 
-![A graph of the logistic sigmoid function](/content-images/sebastianraschka.png)
+![A graph of the logistic sigmoid function](/content-images/sigmoid.png)
 
 As the input to the logistic sigmoid gets tends towards positive infinity, its output gets closer and closer to 1, whereas as it gets tends towards negative infinity, its output gets closer and closer to 0. Perceptrons with the logistic sigmoid as the activation function, it a good way of modelling classification problems. This is because the output is between 0 and 1. So, the output of the perceptron represents the probability of it being one class, and 1 minus the output represents the probability of it being another class. To represent a multiclass classification problem, then multiple preceptrons are used, one for each class, each with the same inputs. The output of each perceptron represents the probability of being one class. Then the final output can be the class with the highest probability. In other words, the outputs of each perceptron represents the confidence the network has of it being that class. This works well especially if some classes are more specific versions of other classes e.g. there may be a car class and a vintage car class.
 
