@@ -547,3 +547,15 @@ main nav ul {
     margin-right:auto;
     padding:0;
 }
+
+
+blockquote {
+    border-left: 5px solid #ececec;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+blockquote small {
+    display: block;
+    font-size: 14px;
+}
