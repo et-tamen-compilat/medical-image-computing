@@ -66,7 +66,17 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     color:#76ddff;
     list-style-type: none;
     transition: all 0.3s ease;
+    display:block;
 }
+
+@media (max-width: 600px) {
+    .sidenav{
+        display:none;
+    }
+    
+    
+}
+
 
 .sidenav a:hover {
     color:#0EBFE9;
@@ -89,6 +99,13 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     padding-top:10px;
 }
 
+.sidenav ul li.mobileheading {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top:10px;
+}
 .sidenav ul {
     background-color: #f3f3f3;
     padding: 20px;
@@ -96,8 +113,10 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     margin-right: 20px;
 }
 
+
 article {
     margin-left:20px;
+    margin-right:30px;
 }
 
 .mainBody{
@@ -469,7 +488,7 @@ main article {
 }
 
 .semitone {
-    background-color: rgba(71, 197, 240, 0.678);
+    background-color: rgba(255, 255, 255, 0.678);
 
     width: 100%;
     /* height: 100px; */
@@ -485,4 +504,40 @@ main article {
 
 main nav ul {
     padding-left:0;
+}
+
+
+/*hamburger icon*/
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#mobileMenu{
+    width:100%;
+    font-size:20px;
+    position:absolute;
+    z-index:10000;
+    margin-left:0;
+    margin-right:auto;
+    padding:0;
 }

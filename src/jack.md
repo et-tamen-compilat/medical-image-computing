@@ -9,8 +9,8 @@
   <li><a href="https://github.com/jackmorrison12">GitHub</a></li>
   <li><a href="mailto:jack.morrison17@imperial.ac.uk">Email</a></li>
   <li><a href="https://www.linkedin.com/in/jackmorrisongb/">LinkedIn</a></li>
-  <li><a href="/cvs/[insert].pdf">CV</a></li>
+  <li><a href="/cvs/jack-cv.pdf">CV</a></li>
 </ul>
 </div>
 
-Hello. My name is Jack. I am a first year computing undergraduate at Imperial College London. My favourite area of computing is prodedural programming. Before studying at Imperial, I studied at The Billericay School and Westcliff High School for Boys Sixth Form.
+Hey, my name is Jack 👋. I am a first year computing 🖥 undergraduate at Imperial College London. My favourite area of computing are databases. Before studying at Imperial 🎓, I studied at The Billericay School 🏫 and Westcliff High School for Boys Sixth Form 🏫. I enjoy playing the piano 🎹, especially jazz 🎺 and classical 🎶 music.

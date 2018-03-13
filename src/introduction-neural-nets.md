@@ -1,6 +1,10 @@
-# Introduction to Neural Networks
+---
+cover: "neural-network.jpg"
+title: "Introduction to Neural Networks"
+---
 
 ## Basics
+
 A mathematical function is a mapping that assigns values in a set of inputs to a set of outputs. For instance, a mathematical function might have a set of inputs $\{1, 2, 3\}$, and a set of outputs, $\{4, 5, 6\}$, and the mapping might be $(1 \to 4), (2 \to 5), (3 \to 6)$. In the case of this function, there is a fairly straightforward rule to obtain the outputs from the inputs: add 3. 
 
 Now, imagine a set of retinal scan images as input, encoded as a grid of pixels, and an output determining the presence or not of an eye tumour. As you can see, this mapping won’t be merely as straightforward as our previous mathematical function. However, if one could encode this function as a set of rules, i.e. a computer program, it would allow patients to be diagnosed much more easily and cheaply. Of course, there are likely to be edge cases, that make it very difficult for such a computer program to be right 100% of the time, but it may be possible to obtain a computer program that approximates this function within a reasonable bound of accuracy. Welcome to Artificial Intelligence!

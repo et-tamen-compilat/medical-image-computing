@@ -3,6 +3,8 @@ cover: "lung-bg.png"
 title: "Detection of Lung Cancer"
 ---
 
+## How does AI relate to Lung Cancer?
+
 Lung cancer is an area in which artificial intelligence is starting to become more prominent. It is the third most common type of cancer in the UK, and accounts for 13% of all diagnoses. 130 people a day are diagnosed with lung cancer. The survival rates for over 10 years are only 5%, however 89% of cases are preventable. This is why people are suggesting that machine learning could be used to diagnose these cases more effectively, give treatment earlier, and increase survival rates.
 
 Earlier detection is important because it allows lots of treatment options which would not be available if the cancer is found at a later stage. CT scans, which are the most common method of detection currently, can give false-positive readings and this is why doctors and computer scientists think that machine learning can be used to increase the accuracy and reliability of scan reading.
