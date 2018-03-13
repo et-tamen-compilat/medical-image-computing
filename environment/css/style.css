@@ -25,7 +25,7 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     border-radius:360px;
 }
 
-.brand a{
+.brand a {
     /*font-family: trench;*/
     text-decoration: none;
     /*font-size: large;*/
@@ -82,13 +82,19 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     color:#0EBFE9;
 }
 
-.sidenav > ul > li{
+.sidenav ul li{
     list-style-type: none;
     padding-bottom: 5px;    
 }
 
 .sidenav ul li {
     padding-bottom:5px;   
+}
+
+.sidenav ul li a {
+    font-weight:400 !important;
+    text-transform:none;
+    font-size:16px;
 }
 
 .sidenav ul li.heading {
@@ -106,13 +112,15 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     font-weight: bold;
     padding-top:10px;
 }
-.sidenav ul {
+.sidenav > ul {
     background-color: #f3f3f3;
     padding: 20px;
-    margin-top: 40px;
     margin-right: 20px;
 }
 
+.sidenav > ul:first-child {
+    margin-top: 40px;
+}
 
 article {
     margin-left:20px;

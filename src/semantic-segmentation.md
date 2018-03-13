@@ -1,4 +1,6 @@
-# Semantic Segmentation
+---
+title: "Semantic Segmentation"
+---
 
 ## What is Semantic Segmentation?
 

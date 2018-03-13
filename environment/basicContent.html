@@ -80,8 +80,17 @@
                                         <li><a href="/julie.html">Julie Emile</a></li>
                                         <li><a href="/jack.html">Jack Morrison</a></li>
                                     </ul>
+                                    $if(toc)$
+                                        <ul>
+                                            <li class="heading">
+                                                This Page
+                                            </li>
+                                            <li>$toc$</li>
+                                        </ul>
+                                        $endif$
                             </nav>
-                            <article>                            
+                            <article>
+                                <br/>                           
                                 $body$
 
                                 <br/><br/><a href="#top">Back to the top.</a>
@@ -90,7 +99,7 @@
                 $else$
                         <div id="top" class="container" >  <main>
                                 <nav class="sidenav">
-                                        <ul>
+                                        <ul>       
                                             <li class="heading">History</li>
                                             <li><a href="history-medical-imaging.html"> History of Medical Imaging</a></li>
                                             <li><a href="types-medical-imaging.html"> Types of Medical Imaging</a></li>
@@ -109,8 +118,18 @@
                                             <li><a href="/julie.html">Julie Emile</a></li>
                                             <li><a href="/jack.html">Jack Morrison</a></li>
                                         </ul>
+                                        $if(toc)$
+                                        <ul>
+                                            <li class="heading">
+                                                This Page
+                                            </li>
+                                            <li>$toc$</li>
+                                        </ul>
+                                        $endif$
                                     </nav>
-                            <article>                                                         
+                            <article>
+                                <h1>$title$</h1>
+                                                                                        
                                 $body$
 
                                 <br/><br/><a href="#top">Back to the top.</a>

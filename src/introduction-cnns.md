@@ -1,4 +1,6 @@
-# Introduction to CNNs
+---
+title: "Introduction to CNNs"
+---
 
 ## What are CNNs?
 

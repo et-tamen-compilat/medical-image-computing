@@ -15,5 +15,5 @@ mkdir -p output
 for file in src/*.md; do
     fbname=$(basename "$file" .md)
     echo "Compiling $fbname.md to $fbname.html"
-    pandoc -f markdown -t html --template environment/basicContent.html --mathjax -o "output/$fbname.html" "$file"
+    pandoc -f markdown -t html --toc --toc-depth 2 --template environment/basicContent.html --mathjax -o "output/$fbname.html" "$file"
 done
