@@ -104,7 +104,7 @@
             var elem = document.getElementById('mHamburger');
             elem.parentNode.removeChild(elem); // hide
              
-        } else {
+        } else if(isMobile()){
            var elem = document.getElementById('mobilesidenav');
             elem.parentNode.removeChild(elem);
         }
