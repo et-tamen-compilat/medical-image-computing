@@ -9,7 +9,7 @@
   <li><a href="https://github.com/jackmorrison12">GitHub</a></li>
   <li><a href="mailto:jack.morrison17@imperial.ac.uk">Email</a></li>
   <li><a href="https://www.linkedin.com/in/jackmorrisongb/">LinkedIn</a></li>
-  <li><a href="/cvs/[insert].pdf">CV</a></li>
+  <li><a href="/cvs/jack-cv.pdf">CV</a></li>
 </ul>
 </div>
 
