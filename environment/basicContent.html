@@ -58,7 +58,7 @@
                             </article></main>
                         </div>
                 $else$
-                        <div class="container">  <main>
+                        <div class="container" id="mobilesidenav">  <main>
                                 <nav class="sidenav">
                                         <ul>
                                             <li class="heading">History</li>
@@ -103,6 +103,9 @@
         if (!isMobile()) {
             var elem = document.getElementById('mHamburger');
             elem.style.display = 'none'; // hide
+        } else {
+            var elem = document.getElementById('mobilesidenav');
+            elem.style.display='none';
         }
      </script>
         
