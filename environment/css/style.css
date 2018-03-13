@@ -66,6 +66,17 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     color:#76ddff;
     list-style-type: none;
     transition: all 0.3s ease;
+    display:block;
+}
+
+@media (max-width: 600px) {
+    .sidenav{
+        display:none;
+    }
+    
+    .hamburger{
+        display:inline-block;
+    }
 }
 
 .sidenav a:hover {
@@ -498,7 +509,7 @@ main nav ul {
 
 /*hamburger icon*/
 .hamburger {
-    display: inline-block;
+    display: none;
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
