@@ -2,6 +2,11 @@
 cover: "medImaging.png"
 title: "Types of Medical Imaging"
 ---
+
+## What is Medical Imaging?
+
+Medical Imaging is the use of imaging modalities and processes to get pictures of the human body, which can assist diagnosis and treatment of patients. It can also be used to track any ongoing issues, and can therefore help with treatment plans. 
+
 There are many different types of medical imaging techniques, which use different technologies to produce images for different purposes. This page will give an introduction to the most common imaging techniques, and the page on uses of AI in radiology will show how some of these techniques, combined with AI, will pave the way for more accurate imaging.
 
 ## CT Scanners
@@ -176,3 +181,4 @@ X-rays, which are a type of electromagnetic radiation invisible to humans, pass 
 - [*__Cleveland Clinic - PET Scans__*](https://my.clevelandclinic.org/health/diagnostics/10123-positron-emission-tomography-pet-scan)
 - [*__NHS - Ultrasound__*](https://www.nhs.uk/conditions/ultrasound-scan/)
 - [*__NHS - X-ray__*](https://www.nhs.uk/conditions/x-ray/)
+- [*__World Health Organisation__*](http://www.who.int/diagnostic_imaging/en/)
