@@ -523,7 +523,7 @@ main nav ul {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-#mobileMenu{
+#mobileMenu {
     width:100%;
     font-size:20px;
     position:absolute;
@@ -533,20 +533,23 @@ main nav ul {
     padding:0;
 }
 
+/*
+ * Used for pretty quotations
+ */
+
 blockquote {
     border-left: 5px solid #ececec;
     padding-left: 10px;
     font-size: 24px;
 }
 
-h2 a, h3 a, h4 a {
-    pointer-events: none;
-    cursor: default;
-    color: black !important;
-}
- 
-
 blockquote small {
     display: block;
     font-size: 14px;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    pointer-events: none;
+    cursor: default;
+    color: black !important;
 }
