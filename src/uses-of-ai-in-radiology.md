@@ -55,12 +55,19 @@ A lesion is a part of a tissue or organ that is injured, and a wound is a lesion
 
 Image registration, or spatial alignement, consists in transforming different data sets into one coordinate system. In medical image analysis, this typically involves different types of scans. This task thus allows us to compare and integrate the data obtained from these varied measurements, in particular when it comes to 2D-3D registration for a more accurate diagnosis or image guidance. Whilst this topic isn't as popular as detection or segmentation for deep learning, its performance can benefit from the use of neural networks. Indeed, in existing methods, 2D-3D registration tends to be achieved via intensity-based registration: 2D X-ray images are derived from 3D X-rays by simulating the attenuation (or reduction of intensity) of virtual X-rays. This process, albeit highly accurate, suffers from long computation time and a small capture range. 
 
-Thus, the use of AI could provide a better alternative. Estimating a similarity measure for two images, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember of the architecture used is the incorporation of a "regression layer" at the end of the network, allowing it to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.   
+Thus, the use of AI could provide a better alternative. Estimating similarity measures for two images, notably mutual information, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember of the architecture used is the incorporation of a "regression layer" at the end of the network, allowing it to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.   
 
 
-##Content-based image retrieval
+##Others: Content-based image retrieval & combining image data with reports
 
-##Combining image data with reports
+In the "Others" section of the chart at the top of the page, the following two areas are included. Both relate to the analysis of  medical imaging data obtained with deep learning.
+
+Content-based image retrieval (CBIR) provides data analysis & comparison in massive databases. It offers the possibility to identify similar case histories, and in doing improves patient care as well as our understanding of rare diseases. The main challenge behind CBIR comes down to extracting pixel-level information and effectively associating it with meaningful concepts, that can be used to compare patient data. The current approaches all rely on the use of CNNs to extract "feature descriptors", acting as a numerical fingerprint in a way, to encode interesting information and differentiate one feature from another. Whilst there haven't been many succesful applications of deep learning yet, this an area of interest for several actors in the industry, notably IBM with Watson Health. This initiative aims to structure medical patient and research data using machine learning. In particular, IBM introduced a Watson Platform for Health on the IBM Cloud, thus introducing a data platform specifically designed for health.   
+
+The combination of text reports with medical image data can follow one of two approaches. On the one hand, generating text reports from medical imaging is being looked into. On the other, using reports to improve image classification accuracy, for instance by adding semantic descriptions from reports as labels, is another mean of interaction between the two. A short demonstration of the latter, from the 2016 Radiological Society of North America (RSNA) annual meeting, can be found below. Eyes of Watson is a joint initiative between IBM and the RSNA to show how AI, exemplified by Watson, could assist radiologists. In this video, the study of a breast cancer case is presented. Initially, Watson infers relevant clinical concepts from the short report provided. Using deep learning to analyse the image, its inference is then updated accordingly. The most probable diagnosis is finally outputted as its answer and can be compared with a clinician's answers. 
+
+![*Eyes of Watson demonstration - Breast Cancer*](https://www.youtube.com/watch?v=XLb0xUe80uo&t=87s) 
+
 
 ## Sources
 
@@ -80,3 +87,4 @@ Matter Hyperintensities](https://arxiv.org/pdf/1610.04834.pdf)
 - [Multiscale CNNs for Brain Tumor Segmentation and Diagnosis](https://www.hindawi.com/journals/cmmm/2016/8356294/)
 - [A New 2.5D Representation for Lymph Node Detection using Random Sets of Deep Convolutional Neural Network Observations](https://arxiv.org/pdf/1406.2639.pdf)
 - [A CNN Regression Approach for Real-Time 2D/3D Registration](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7393571&tag=1) by Miao et al. - 2016
+- [Watson Health on the Cloud](https://www.ibm.com/cloud/healthcare) by IBM
