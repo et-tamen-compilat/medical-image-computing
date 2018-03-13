@@ -531,3 +531,14 @@ main nav ul {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
+#mobileMenu{
+    width:100%;
+    font-size:20px;
+    display:none;
+    position:absolute;
+    z-index:10000;
+    margin-left:0;
+    margin-right:auto;
+    padding:0;
+}
