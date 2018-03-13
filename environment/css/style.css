@@ -1,5 +1,4 @@
 body {
-    /*font-family: "Helvetica Neue";*/
     font-family:"PT Sans";
     margin:0;
     height:100%;
@@ -59,10 +58,7 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 }
 
 .sidenav{
-    /*background-color: #eaeaea;*/
-    /*font-family: trench;*/
     text-decoration: none;
-    /*font-size: x-large;*/
     color:#76ddff;
     list-style-type: none;
     transition: all 0.3s ease;
@@ -70,13 +66,10 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 }
 
 @media (max-width: 600px) {
-    .sidenav{
+    .sidenav {
         display:none;
     }
-    
-    
 }
-
 
 .sidenav a:hover {
     color:#0EBFE9;
@@ -112,6 +105,7 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     font-weight: bold;
     padding-top:10px;
 }
+
 .sidenav > ul {
     background-color: #f3f3f3;
     padding: 20px;
@@ -132,6 +126,7 @@ article {
     flex-direction:column;
     flex:5;
 }
+
 .content{
     display:flex;
     flex-direction:row;
@@ -209,12 +204,9 @@ img {
     display:block;
 }
 
-
 article {
     text-align:justify;
 }
-
-
 
 .mainContentTitle{
     font-family: trench;
@@ -228,16 +220,11 @@ article {
     
 }
 
-
-
-
-
-
 body {
     margin:0;
 }
 
-.mainTitle{
+.mainTitle {
     top: 5px;
     position:relative;
     margin:0 auto;
@@ -262,17 +249,17 @@ body {
     margin: 0 auto;
 }
  
-#lines{
+#lines {
     position: absolute;
     opacity: 0;
-     margin: auto;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.circles{
+.circles {
     width:auto;
     height:auto;
     position: absolute;
@@ -292,47 +279,47 @@ body {
     transform: scale(115);
 }
 
-#circle1{
+#circle1 {
     top:22px;
     left: 108px;
 }
 
-#circle2{
+#circle2 {
     top:10px;
     left: 760px;
 }
 
-#circle3{
+#circle3 {
     top:110px;
     left:770px;
 }
 
-#circle4{
+#circle4 {
     top:232px;
     left:760px;
 }
 
-#circle5{
+#circle5 {
     top:308px;
     left:567px;
 }
 
-#circle6{
+#circle6 {
     top:279px;
     left:299px;
 }
 
-#circle7{
+#circle7 {
     top:182px;
     left:200px;
 }
 
-#circle8{
+#circle8 {
     top:103px;
     left:128px;
 }
 
-.landingLinks{
+.landingLinks {
     font-family: trench;
     text-decoration: none;
     position: absolute;
@@ -349,47 +336,47 @@ body {
     
 }
 
-.landingLinkHover{
+.landingLinkHover {
      transform: scale(1.05);
 
 }
 
-#CNNLink{
+#CNNLink {
     top:185px;
     left:30px;
 }
 
-#HMILink{
+#HMILink {
     top:0px;
     left:840px;
 }
 
-#HMLLink{
+#HMLLink {
     top:0px;
     left:15px;
 }
 
-#INNLink{
+#INNLink {
     top:88px;
     left: 10px;
 }
 
-#SSLink{
+#SSLink {
     top:280px;
     left:160px;
 }
 
-#TMILink{
+#TMILink {
     top:95px;
     left:850px;
 }
 
-#AIRLink{
+#AIRLink {
     top:300px;
     left: 647px;
 }
 
-#LCLink{
+#LCLink {
     top:210px;
     left:840px;
 }
@@ -397,7 +384,6 @@ body {
     list-style-type: none;
     display:inline-block;
     padding:0;
-    
     margin:0;
 }
    
@@ -411,29 +397,22 @@ body {
     justify-content: center;
     display: flex;
     margin-top:10px;
-   
 }
 
 .links ul a {
     text-decoration: none;
     font-size:20px;
-   
-
 }
 
 .center h1 {
     text-align: center;
 }
 
-a{
+a {
   text-decoration: none;
-  /*color: #232323;*/
   color:#278bf7;
   transition: color 0.3s ease;
 }
-
-
-
    
    /*adds the custom font trench*/
 @font-face {
@@ -494,32 +473,30 @@ main article {
  * This is a trick.
  * Don't change it.
  */
-.full-image ~ .container main {
-    position: absolute;
-    top: 100%;
+.full-image ~ .interspecies .container main {
     width: inherit;
     max-width: inherit;
 }
 
+.full-image ~ .interspecies {
+    position: absolute;
+    top: 100%;
+    width:100%;
+}
+
 .semitone {
     background-color: rgba(255, 255, 255, 0.678);
-
     width: 100%;
-    /* height: 100px; */
     padding-top: 20px;
     padding-bottom: 20px;
-    /* z-index: 5; */
     color: black;
     text-align: center;
-    /* margin-top: auto; */
-    /* margin-bottom: auto; */
     font-size: 20px;
 }
 
 main nav ul {
     padding-left:0;
 }
-
 
 /*hamburger icon*/
 .hamburger {
@@ -555,7 +532,6 @@ main nav ul {
     margin-right:auto;
     padding:0;
 }
-
 
 blockquote {
     border-left: 5px solid #ececec;
