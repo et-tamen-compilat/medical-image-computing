@@ -16,7 +16,13 @@
         <div class="Site-content">
             <nav class="content-nav">
                 <div class="container">
-                    <div class="brand"><a href="/">Deep Learning in Medical Image Analysis</a></div>
+                    <div class="brand"style="float:left"><a href="/">Deep Learning in Medical Image Analysis</a></div>
+                    <!--mobile only hamburger-->
+                    <div class="hamburger" id="mHamburger" style="float:right"onclick="myFunction(this)">
+                       <div class="bar1"></div>
+                       <div class="bar2"></div>
+                       <div class="bar3"></div>
+                    </div>
                 </div>
             </nav>
             $if(cover)$
@@ -41,7 +47,6 @@
                                         <li><a href="uses-of-ai-in-radiology.html">Uses of AI in Radiology</a></li>
                                         <li><a href="lung-cancer.html">Detection of Lung Cancer</a></li>
                                         <li class="heading">About Us</li>
-                                        <li><a href="/team.html">The Team</a></li>
                                         <li><a href="/hugo.html">Hugo Mayo</a></li>
                                         <li><a href="/hashan.html">Hashan Punchihewa</a></li>
                                         <li><a href="/julie.html">Julie Emile</a></li>
@@ -53,8 +58,8 @@
                             </article></main>
                         </div>
                 $else$
-                        <div class="container">  <main>
-                                <nav class="sidenav">
+                        <div class="container" >  <main>
+                                <nav class="sidenav"id="mobilesidenav">
                                         <ul>
                                             <li class="heading">History</li>
                                             <li><a href="history-medical-imaging.html"> History of Medical Imaging</a></li>
@@ -69,7 +74,6 @@
                                             <li><a href="uses-of-ai-in-radiology.html">Uses of AI in Radiology</a></li>
                                             <li><a href="lung-cancer.html">Detection of Lung Cancer</a></li>
                                             <li class="heading">About Us</li>
-                                            <li><a href="/team.html">The Team</a></li>
                                             <li><a href="/hugo.html">Hugo Mayo</a></li>
                                             <li><a href="/hashan.html">Hashan Punchihewa</a></li>
                                             <li><a href="/julie.html">Julie Emile</a></li>
@@ -85,6 +89,18 @@
                 <div class="container"><p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p></div>
             </footer>
         </div>
+        
+    <script>
+        
+        function myFunction(x) {
+             x.classList.toggle("change");
+        }
+        var isMobile = function() {
+        console.log("Navigator: " + navigator.userAgent);
+        return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+        };
+        
+     </script>
         
        
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
