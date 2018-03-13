@@ -508,7 +508,7 @@ main nav ul {
 
 /*hamburger icon*/
 .hamburger {
-    display: none;
+    display: inline-block;
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
