@@ -100,6 +100,7 @@
         console.log("Navigator: " + navigator.userAgent);
         return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
         };
+        console.log(isMobile())
         if (!isMobile()) {
             var elem = document.getElementById('mHamburger');
             elem.parentNode.removeChild(elem); // hide
