@@ -6,7 +6,7 @@ title: "Uses of AI in Radiology"
 
 Various uses of artificial intelligence, and in particular convolutional neural networks, are being researched into. From organ segmentation to registration, some areas have already benefited from significant AI contributions, whilst others have only recently been explored. These could offer various benefits, namely limiting diagnostic errors caused by the eye-strain of radiologists, and complementing their work by providing data analysis too large for a human to process. At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
 
-![*Breakdown of the tasked addressed by research papers in this field up until 2017*](/content-images/uses.png) 
+![*Breakdown of the tasks addressed by research papers in this field up until 2017*](/content-images/uses.png) 
 
 
 ##Classification
