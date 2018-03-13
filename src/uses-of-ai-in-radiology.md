@@ -53,6 +53,11 @@ A lesion is a part of a tissue or organ that is injured, and a wound is a lesion
 
 ##Registration
 
+Image registration, or spatial alignement, consists in transforming different data sets into one coordinate system. In medical image analysis, this typically involves different types of scans. This task thus allows us to compare and integrate the data obtained from these varied measurements, in particular when it comes to 2D-3D registration for a more accurate diagnosis or image guidance. Whilst this topic isn't as popular as detection or segmentation for deep learning, its performance can benefit from the use of neural networks. Indeed, in existing methods, 2D-3D registration tends to be achieved via intensity-based registration: 2D X-ray images are derived from 3D X-rays by simulating the attenuation (or reduction of intensity) of virtual X-rays. This process, albeit highly accurate, suffers from long computation time and a small capture range. 
+
+Thus, the use of AI could provide a better alternative. Estimating a similarity measure for two images, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember of the architecture used is the incorporation of a "regression layer" at the end of the network, allowing it to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.   
+
+
 ##Content-based image retrieval
 
 ##Combining image data with reports
@@ -63,7 +68,8 @@ A lesion is a part of a tissue or organ that is injured, and a wound is a lesion
 - [Dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6) by Andre Esteva1, Brett Kuprel1 - 2017
 - [Alzheimer's disease diagnostics by adaptation of 3D convolution network](https://arxiv.org/pdf/1607.00455.pdf) by Ehsan Hosseini-Asl1, Robert Keynton2, Ayman El-Baz2
 - [Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks](http://ieeexplore.ieee.org/abstract/document/7422783/) by Setio et. al - 2016
-- [Marginal Space Deep Learning: Efficient Architecture for Detection in Volumetric Image Data](http://comaniciu.net/Papers/MarginalSpaceDeepLearning_MICCAI15.pdf) by Guesu et. al - 2016- [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
+- [Marginal Space Deep Learning: Efficient Architecture for Detection in Volumetric Image Data](http://comaniciu.net/Papers/MarginalSpaceDeepLearning_MICCAI15.pdf) by Guesu et. al - 2016
+- [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
 - [Three-Dimensional CT Image Segmentation by Combining 2D Fully Convolutional Network with 3D Majority Voting](https://pdfs.semanticscholar.org/b434/c05142542255a112c387c48e6f60bb9e8c1c.pdf?_ga=2.65766829.2007236436.1520623311-1322847124.1520623311)
 - [A Unified Framework for Automatic Wound Segmentation and Analysis with Deep Convolutional Neural Networks](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7318881&tag=1)
 - [VoxResNet: Deep Voxelwise Residual Networks for
@@ -73,3 +79,4 @@ Matter Hyperintensities](https://arxiv.org/pdf/1610.04834.pdf)
 - [Deep MRI brain extraction: A 3D convolutional neural network for skull stripping](https://www.sciencedirect.com/science/article/pii/S1053811916000306)
 - [Multiscale CNNs for Brain Tumor Segmentation and Diagnosis](https://www.hindawi.com/journals/cmmm/2016/8356294/)
 - [A New 2.5D Representation for Lymph Node Detection using Random Sets of Deep Convolutional Neural Network Observations](https://arxiv.org/pdf/1406.2639.pdf)
+- [A CNN Regression Approach for Real-Time 2D/3D Registration](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7393571&tag=1) by Miao et al. - 2016
