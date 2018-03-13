@@ -83,7 +83,7 @@ A recent trend is the renting of GPUs from big companies such as Google and Amaz
 - [*__NVIDIA__*](https://devblogs.nvidia.com/inside-volta/)
 - [*__Google TensorFlow__*](https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [*__Intel Nervana Neural Network__*](https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/)
-- [*_Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
+- [*__Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
 - [*__Handwritten Digit Recognition with a Back-Propagation Network__*](http://yann.lecun.com/exdb/publis/pdf/lecun-90c.pdf)
 - [*__Google Cloud Platform__*](https://cloud.google.com/gpu/)
 - [*__Google Cloud Machine Learning Engine__*](https://cloud.google.com/ml-engine/)
