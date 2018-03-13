@@ -539,6 +539,13 @@ blockquote {
     font-size: 24px;
 }
 
+h2 a, h3 a, h4 a {
+    pointer-events: none;
+    cursor: default;
+    color: black !important;
+}
+ 
+
 blockquote small {
     display: block;
     font-size: 14px;
