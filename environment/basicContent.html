@@ -60,7 +60,7 @@
                     </div>
                     
                         <div class="container">
-                           <main> <nav class="sidenav">
+                           <main id="top"> <nav class="sidenav">
                                 <ul>
                                         <li class="heading">History</li>
                                         <li><a href="history-medical-imaging.html"> History of Medical Imaging</a></li>
@@ -83,10 +83,12 @@
                             </nav>
                             <article>                            
                                 $body$
+
+                                <br/><br/><a href="#top">Back to the top.</a>
                             </article></main>
                         </div>
                 $else$
-                        <div class="container" >  <main>
+                        <div id="top" class="container" >  <main>
                                 <nav class="sidenav">
                                         <ul>
                                             <li class="heading">History</li>
@@ -110,6 +112,8 @@
                                     </nav>
                             <article>                                                         
                                 $body$
+
+                                <br/><br/><a href="#top">Back to the top.</a>
                             </article></main>
                         </div>
                 $endif$   
