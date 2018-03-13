@@ -2,13 +2,12 @@
 cover: "thumbsUpBlue.png"
 title: "Uses of AI in Radiology"
 ---
+## How is AI used in Radiology
 
-## How is AI used in Radiology?
+Various uses of artificial intelligence, and in particular convolutional neural networks, are being researched into. From organ segmentation to registration, some areas have already benefited from significant AI contributions, whilst others have only recently been explored. These could offer various benefits, namely limiting diagnostic errors caused by the eye-strain of radiologists, and complementing their work by providing data analysis too large for a human to process. At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
 
-Various uses of artificial intelligence, and in particular convolutional neural networks, are being researched into up. From organ segmentation to registration, some areas have already benefited from significant AI contributions, whilst others have only recently been explored. These could offer various benefits, namely limiting diagnostic errors caused by the eye-strain of radiologists, and complementing their work by providing data analysis too large for a human to process. At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
+![*Breakdown of the tasked addressed by research papers in this field up until 2017*](/content-images/uses.png) 
 
-![](/content-images/uses.png) 
-*Breakdown of the tasked addressed by research papers in this field up until 2017*
 
 ##Classification
 
@@ -35,11 +34,9 @@ For instance, a multi-stream CNN was used in 2016 to integrate 3D in the classif
 
 ### Organ & region detection:
 
-Localising organs or anatomical landmarks – such as vessels – in space or time is part of the pre-processing required for multiple imaging tasks. In particular, it is required for segmentation, covered further down, as well as clinical intervention and therapy planning.
+Localising organs or anatomical landmarks – ie. biologically-meaningful points in an organism  – in space or time is part of the pre-processing required for multiple imaging tasks. In particular, it is required for segmentation, covered further down, as well as clinical intervention and therapy planning. This task often involves parsing 3D volumes. Treating the 3D space as a composition of 2D planes, as was introduced in object classification above, is one approach commonly used in organ detection. In doing so, the localisation task is translated as a 2D image classification task that can be processed by generic deep learning networks.
 
-This task often involves parsing of 3D volumes. Treating the 3D space as a composition of 2D planes, as was introduced in object classification above, is one approach also used in organ detection. In doing so, the localisation task is translated as a 2D image classification task that can be processed by generic deep learning networks. → Ex *? de Vos et al. (2016b) went one step further and localized regions of interest (ROIs) around anatomical regions (heart, aortic arch, and descending aorta) by identifying a rectangular 3D bounding box after 2D parsing the 3D CT volume*  
-
-Another approach relies on putting more emphasis on localisation accuracy during a network’s learning process. In other words, it aims to improve a neural network’s location predictions by modifying its training. The majority of methods following this approach only address 2D localisation, due to the complexity associated with the 3D image space. → Ex
+More recent strategies rely on putting more emphasis on localisation accuracy during a network’s learning process. In other words, they aim to improve a neural network’s location predictions by modifying its training. The complexity associated with the 3D image space makes this approach particularly hard to apply, and thus to be explored further in the upcoming years. One of the few methods to have addressed this issue focused on deep learning in the identification of landmarks. The main strategy behing this method involved equipping the deep neural net with marginal space learning. In simple terms, this mechanism splits the estimation of an object’s position into three gradually increasing steps: its position only to start with, followed by a position-orientation estimation, and finally a position-orientation-scale estimation. In particular, this method was evaluated on the detection of the aortic valve in 3D ultrasounds. This learning strategy allowed the network to have a run-time performance improvement of 36% when compared to state-of-the-art methods. 
 
 ### Object or lesion detection:
 
@@ -66,7 +63,7 @@ A lesion is a part of a tissue or organ that is injured, and a wound is a lesion
 - [Dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6) by Andre Esteva1, Brett Kuprel1 - 2017
 - [Alzheimer's disease diagnostics by adaptation of 3D convolution network](https://arxiv.org/pdf/1607.00455.pdf) by Ehsan Hosseini-Asl1, Robert Keynton2, Ayman El-Baz2
 - [Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks](http://ieeexplore.ieee.org/abstract/document/7422783/) by Setio et. al - 2016
-- [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
+- [Marginal Space Deep Learning: Efficient Architecture for Detection in Volumetric Image Data](http://comaniciu.net/Papers/MarginalSpaceDeepLearning_MICCAI15.pdf) by Guesu et. al - 2016- [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
 - [Three-Dimensional CT Image Segmentation by Combining 2D Fully Convolutional Network with 3D Majority Voting](https://pdfs.semanticscholar.org/b434/c05142542255a112c387c48e6f60bb9e8c1c.pdf?_ga=2.65766829.2007236436.1520623311-1322847124.1520623311)
 - [A Unified Framework for Automatic Wound Segmentation and Analysis with Deep Convolutional Neural Networks](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7318881&tag=1)
 - [VoxResNet: Deep Voxelwise Residual Networks for
