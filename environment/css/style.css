@@ -289,9 +289,13 @@ url("fonts/trench100free.ttf") format("truetype");
     padding-right:5px;
 }
 
-.caption {
+figcaption, .caption {
     text-align: center;
     font-style: italic;
+}
+
+figcaption {
+    margin-top:15px;
 }
 
 .full-image {
