@@ -1,5 +1,5 @@
 ---
-title: "Introduction to CNNs"
+title: "Convolutional Neural Networks"
 cover: "neural-network.jpg"
 description: "In this section, you'll learn about a specific branch of machine learning which is applied to image analysis: Convolutional Neural Networks."
 ---
