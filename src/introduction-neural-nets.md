@@ -15,7 +15,7 @@ The set of rules is structured as a neural network. To do this, the program star
 
 There are two basic types of machine learning. Approximating functions that map to a small set of outputs, e.g. tumour present or no tumour present. This is called classification. Or approximating functions that can take a large range of values e.g. a number representing the size of something. This is called regression. Mathematically, the output of a classification problem is discrete, and the output of a regression problem is continuous. A special type of the classification problem is the binary classificatation problem, where there are only two possible outputs. In medical imaging, we are most interested in classification, but similar principles apply to regression. A regression problem can be thought of as finding the line of best fit, whereas a classification problem is trying to separate two different classes, with a decision boundary.
 
-![](/content-images/SearchEngineLand.png)
+![](/content-images/class&reg.png)
 
 $$
 \def\mathellipsis{…}
@@ -59,7 +59,7 @@ $$
 
 It looks like this:
 
-![A graph of the logistic sigmoid function](/content-images/sebastianraschka.png)
+![A graph of the logistic sigmoid function](/content-images/sigmoid.png)
 
 As the input to the logistic sigmoid gets tends towards positive infinity, its output gets closer and closer to 1, whereas as it gets tends towards negative infinity, its output gets closer and closer to 0. Perceptrons with the logistic sigmoid as the activation function, it a good way of modelling classification problems. This is because the output is between 0 and 1. So, the output of the perceptron represents the probability of it being one class, and 1 minus the output represents the probability of it being another class. To represent a multiclass classification problem, then multiple preceptrons are used, one for each class, each with the same inputs. The output of each perceptron represents the probability of being one class. Then the final output can be the class with the highest probability. In other words, the outputs of each perceptron represents the confidence the network has of it being that class. This works well especially if some classes are more specific versions of other classes e.g. there may be a car class and a vintage car class.
 
@@ -75,6 +75,8 @@ $$
 f(x) = g(\mathbf{w}\mathbf{x}) 
 $$
 
+![A diagram demonstrating a perceptron](/content-images/perceptron2.png)
+
 ## Multilayer Perceptrons
 Multilayer perceptrons are like what is above, but you have hidden layers of perceptrons. So the inputs are from the input layer, and are called input nodes. Then outputs form the output layer. If there is one hidden layer, then rather than the input layer feeding into the output layer, the input layer feeds into the hidden layer, which feeds into the output layer. 
 
@@ -88,7 +90,7 @@ $$
 f(x) = g(W_{l - 1}\;g(W_{l - 2}\;\mathellipsis\;x))
 $$
 
-![A diagram of a standard neural network](/content-images/multiLayered.png)
+![A diagram of a standard neural network](/content-images/multiLayeredP.png)
 
 
 <!--  Mention that neural network with more than  1 hidden layer → deep neural network?
