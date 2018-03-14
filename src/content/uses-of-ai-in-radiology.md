@@ -43,7 +43,7 @@ More recent strategies rely on putting more emphasis on localisation accuracy du
 
 The first object detection system using neural networks, was actually created in 1995 to detect nodules from X-ray images. It used a 4 layer CNN. Since then, machine learning has been explored in a number of ways to perform object detection. One example is detection of lymph nodes. This is as the size of swollen lymph nodes are signs of infection by a virus or a bacterium. Swollen lymph nodes can also be caused by cancer and is therefore important in cancer staging. This is the process of determining how far cancer has spread, which can be used to determine which treatment to give, and prognosis, a medical term for the chance of survival. Moreover, the number of swollen lymph nodes can be used to determine the progress of cancer treatments. Lymph nodes are part of the lymphatic system, an important part of the body's immune system. Automated lymph node detection by a computer system can be hard due to the variety of sizes and shapes lymph nodes can appear in. However, CNNs have shown to be extremely successful, compared to previous techniques. One paper to detect lymph nodes from CT scans first performed segmentation to generate lymph node candidates, called volumes of interest (VOI). Then, a patch-wise classification was done by taking 100 "random views" around each VOI and feeding each one into a 5-layer CNN. Each random view gave a probability of being a lymph nodes, and these probabilities were then averaged. 
 
-![*3D visualisation of lymph nodes in the body, coloured in red*](/content-images/lymphNodes.jpg) 
+![3D visualisation of lymph nodes in the body, coloured in red](/content-images/lymphNodes.jpg) 
 
 ## Organ Segmentation
 
