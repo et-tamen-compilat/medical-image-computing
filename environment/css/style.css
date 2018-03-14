@@ -69,8 +69,10 @@ main h1 {
 .content-nav {
     width: 100%;
     height: 40px;
+    /*background-color: #009cdabf;*/
     background-color: #009cda;
     border-bottom: 1px solid #0093ce;
+    position:absolute;
 }
 
 .brand {
@@ -258,14 +260,18 @@ url("fonts/trench100free.woff") format("woff"),
 url("fonts/trench100free.ttf") format("truetype");
 }
 
-.caption {
+figcaption, .caption {
     text-align: center;
     font-style: italic;
 }
 
+figcaption {
+    margin-top:15px;
+}
+
 .full-image {
     width: 100%;
-    min-height: calc(100% - 40px);
+    min-height: 100%;/*calc(100% - 40px);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -537,4 +543,18 @@ main nav ul {
     height: 349px;
     opacity: 0;
     margin: auto;
+}
+
+.summary {
+    background-color: #7de2ac
+}
+
+.summary, .advanced {
+    padding: 1px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.advanced {
+    background-color: #81dbff
 }
