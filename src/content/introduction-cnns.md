@@ -2,6 +2,15 @@
 title: "Introduction to CNNs"
 cover: "neural-network.jpg"
 description: "In this section, you'll learn about a specific branch of machine learning which is applied to image analysis: Convolutional Neural Networks."
+sources:
+- name: "ImageNet Classification with Deep Convolutional Neural Networks"
+  url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+- name: "Going Deeper with Convolutions"
+  url: "https://arxiv.org/pdf/1409.4842.pdf"
+- name: "Deep Residual Learning for Image Recognition"
+  url: "https://arxiv.org/pdf/1512.03385.pdf"
+- name: "Stanford CS231n"
+  url: "http://cs231n.stanford.edu/"
 ---
 
 ## What are CNNs? {#top}
@@ -63,9 +72,3 @@ The problem is called the degradation problem. The solution is to add shortcut c
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel rutrum felis. Ut pellentesque vel lorem vitae euismod. Cras consectetur, leo ut dapibus tincidunt, justo ante accumsan neque, sit amet hendrerit ante urna eu ex. Phasellus augue lorem, venenatis sit amet lorem viverra, dapibus venenatis dolor. Sed vel vehicula lacus. Curabitur eget risus id enim convallis tempus. Ut vulputate turpis sem, a elementum lorem ultrices nec. Aliquam eros metus, bibendum eget accumsan id, consectetur vitae orci. Nunc justo ipsum, sagittis in dignissim sed, egestas ut lacus. Nullam mollis eu libero at ultrices.
 :::
-
-## Sources
-- [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton
-- [Going Deeper with Convolutions](https://arxiv.org/pdf/1409.4842.pdf) by Google
-- [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf) by Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-- [Stanford CS231n](http://cs231n.stanford.edu/)

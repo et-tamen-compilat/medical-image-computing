@@ -2,6 +2,25 @@
 cover: "lungcancer.jpg"
 title: "Detection of Lung Cancer"
 description: "In this section, you'll learn about how in the recent past, doctors and computer scientists have come together to develop better diagnosis technology, using AI, in order to fight lung cancer."
+sources:
+- name:"Medical Futurist"
+  url:"http://medicalfuturist.com/the-future-of-radiology-and-ai/"
+- name:"Data Science Bowl"
+  url:"https://datasciencebowl.com/competitions/turning-machine-intelligence-against-lung-cancer/"
+- name:"*Cancer Research UK"
+  url:"http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer"
+- name:"ZD Net"
+  url:"http://www.zdnet.com/article/google-takes-health-care-to-the-cloud-with-new-api-partnerships/"
+- name:"Google Blog"
+  url:"https://blog.google/topics/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/"
+- name:"Medium"
+  url:"https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda"
+- name:"Project LUNA"
+  url:"https://luna16.grand-challenge.org/results/"
+- name:"Project AiAi"
+  url:"https://aiai.care/"
+- name:"Genetic Deep Learning for Lung Cancer Screening"
+  url:"https://www.dropbox.com/s/0xw2r5t5ge0sjam/Genetic%20Deep%20Learning%20for%20Lung%20Cancer%20Screening.pdf?dl=0"
 ---
 
 ## How does AI relate to Lung Cancer? {#top}
@@ -53,15 +72,3 @@ Optimisations like this to convolutional neural networks allow them to be specia
 Lots of doctors are wary of how to store lots of data for machine learning programs to work properly, due to patient confidentiality laws. However, the FDA did approve a cloud-based deep learning algorithm for cardiac imaging in 2017, which shows that in the future, it will be more common placed in patient diagnosis.
 
 In March 2018, Google introduced a new Cloud Healthcare API, which aims to create a secure service which can be used to implement Artificial Intelligence and Machine Learning on lots of healthcare data. Working with the Stanford School of Medicine and other partners, their aim is to "help transform the healthcare industry through the use of cloud technologies and machine learning".
-
-## Sources
-
-- [*__Medical Futurist__*](http://medicalfuturist.com/the-future-of-radiology-and-ai/)
-- [*__Data Science Bowl__*](https://datasciencebowl.com/competitions/turning-machine-intelligence-against-lung-cancer/)
-- [*__Cancer Research UK__*](http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer)
-- [*__ZD Net__*](http://www.zdnet.com/article/google-takes-health-care-to-the-cloud-with-new-api-partnerships/)
-- [*__Google Blog__*](https://blog.google/topics/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/)
-- [*__Medium__*](https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda)
-- [*__Project LUNA__*](https://luna16.grand-challenge.org/results/)
-- [*__Project AiAi__*](https://aiai.care/)
-- [*__Genetic Deep Learning for Lung Cancer Screening__*](https://www.dropbox.com/s/0xw2r5t5ge0sjam/Genetic%20Deep%20Learning%20for%20Lung%20Cancer%20Screening.pdf?dl=0)

@@ -2,6 +2,25 @@
 cover: "medImaging.png"
 title: "Types of Medical Imaging"
 description: "In this section, you'll learn about the most common types of medical imaging, what they are, how they work, what they can take images of, and how risky they are to use."
+sources:
+- name:"NPS"
+  url:"https://www.nps.org.au/medical-info/consumer-info/imaging-explained?c=what-are-my-imaging-choices-c5c04346"
+- name:"NHS - CT Scans"
+  url:"https://www.nhs.uk/conditions/ct-scan/"
+- name:"E Medicine Health - CT Scans"
+  url:"https://www.emedicinehealth.com/ct_scan/article_em.htm"
+- name:"NHS - MRI Scans"
+  url:"https://www.nhs.uk/conditions/mri-scan/"
+- name:"NHS - PET Scans"
+  url:"https://www.nhs.uk/conditions/pet-scan/"
+- name:"Cleveland Clinic - PET Scans"
+  url:"https://my.clevelandclinic.org/health/diagnostics/10123-positron-emission-tomography-pet-scan"
+- name:"NHS - Ultrasound"
+  url:"https://www.nhs.uk/conditions/ultrasound-scan/"
+- name:"NHS - X-ray"
+  url:"https://www.nhs.uk/conditions/x-ray/"
+- name:"World Health Organisation"
+  url:"http://www.who.int/diagnostic_imaging/en/"
 ---
 
 ## What is Medical Imaging? {#top}
@@ -171,15 +190,3 @@ X-rays, which are a type of electromagnetic radiation invisible to humans, pass 
 
 - Some contrast agents may cause unwanted side effects.
 - X-rays expose the patient to unwanted radiation, which could potentially cause cancer, however the amount of radiation given off is minimal.
-
-## Sources
-
-- [*__NPS__*](https://www.nps.org.au/medical-info/consumer-info/imaging-explained?c=what-are-my-imaging-choices-c5c04346)
-- [*__NHS - CT Scans__*](https://www.nhs.uk/conditions/ct-scan/)
-- [*__E Medicine Health - CT Scans__*](https://www.emedicinehealth.com/ct_scan/article_em.htm)
-- [*__NHS - MRI Scans__*](https://www.nhs.uk/conditions/mri-scan/)
-- [*__NHS - PET Scans__*](https://www.nhs.uk/conditions/pet-scan/)
-- [*__Cleveland Clinic - PET Scans__*](https://my.clevelandclinic.org/health/diagnostics/10123-positron-emission-tomography-pet-scan)
-- [*__NHS - Ultrasound__*](https://www.nhs.uk/conditions/ultrasound-scan/)
-- [*__NHS - X-ray__*](https://www.nhs.uk/conditions/x-ray/)
-- [*__World Health Organisation__*](http://www.who.int/diagnostic_imaging/en/)
