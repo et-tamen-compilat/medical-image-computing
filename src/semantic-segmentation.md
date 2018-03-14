@@ -1,5 +1,6 @@
 ---
 title: "Semantic Segmentation"
+cover: "SemSeg.jpg"
 ---
 
 ## What is Semantic Segmentation?

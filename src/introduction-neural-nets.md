@@ -1,6 +1,6 @@
 ---
-cover: "neural-network.jpg"
 title: "Introduction to Neural Networks"
+cover: "titan.jpg"
 ---
 
 ## Basics
@@ -23,7 +23,7 @@ $$
 
 ## Perceptrons
 
-![A diagram demonstrating a perceptron](/content-images/perceptron.png)
+![A diagram demonstrating a perceptron](/content-images/perceptron3.png)
 
 A perceptron is essentially a function $f$, defined by $n$ weights $w_0, w_1, \mathellipsis, w_n$. It takes inputs $x_1, \mathellipsis, x_n$. The output $f$ is as follows:
 
@@ -38,6 +38,8 @@ It is convenient to think of there being an $x_0$ that is always equal to $1$. T
 $$
 f(x) = g(\sum_{i = 0}^n x_iw_i) 
 $$
+
+![A diagram demonstrating a perceptron, where the bias is just another weight](/content-images/perceptron.png)
 
 Note that this is just the dot product of two column vectors $x$ and $w$:
 
@@ -75,7 +77,7 @@ $$
 f(x) = g(\mathbf{w}\mathbf{x}) 
 $$
 
-![A diagram demonstrating a perceptron](/content-images/perceptron2.png)
+![A diagram demonstrating a neural network created by combining perceptrons with the same inputs](/content-images/perceptron2.png)
 
 ## Multilayer Perceptrons
 Multilayer perceptrons are like what is above, but you have hidden layers of perceptrons. So the inputs are from the input layer, and are called input nodes. Then outputs form the output layer. If there is one hidden layer, then rather than the input layer feeding into the output layer, the input layer feeds into the hidden layer, which feeds into the output layer. 

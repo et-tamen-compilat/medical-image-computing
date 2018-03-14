@@ -1,5 +1,6 @@
 ---
 title: "Introduction to CNNs"
+cover: "neural-network.jpg"
 ---
 
 ## What are CNNs?
