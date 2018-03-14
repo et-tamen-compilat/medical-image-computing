@@ -265,7 +265,7 @@ url("fonts/trench100free.ttf") format("truetype");
 
 .full-image {
     width: 100%;
-    height: calc(100% - 40px);
+    min-height: calc(100% - 40px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
