@@ -8,6 +8,9 @@ description: "In this section, you'll learn about a specific branch of machine l
 
 As in any other neural network, the input of a CNN, in this case an image, is passed through a series of filters in order to obtain a labelled output that can then be classified. The specificity of a CNN lies in its filtering layers, which include at least one convolution layer. These allow it to process more complex pictures than a regular neural network. Whereas the latter is well adapted for simple, well-centred images such as hand-written digits, the use of CNNs in image analysis ranges from Facebook’s automatic tagging algorithms, to object classification and detection, in particular in the field of radiology.
 
+![](/content-images/CNNdiagram2.png)
+<!-- image source: https://uk.mathworks.com/discovery/convolutional-neural-network.html -->
+
 ## Convolution layers
 Since pictures can be very big, it is inefficient to have every pixel as an input. In fact, you wouldn't just need every pixel, but each of the individual RGB values of each pixel to be an input. Pre-processing is therefore required, through a series of layers which appear at the beginning of the neural network to reduce it into a smaller input, before applying a traditional neural network to an image.
 
@@ -44,9 +47,6 @@ A widespread method to do so consists in max pooling, in other words using the m
 ## Deep stacking towards a fully connected layer
 
 The different types of layers described are combined through a repeated stacking process illustrated below, known as deep stacking. Convolutional layers followed by activation functions, as well as interspersed down-sampling layers, essentially replace width and height with depth until the image is relatively small. 
-
-![](/content-images/CNNdiagram2.png)
-<!-- image source: https://uk.mathworks.com/discovery/convolutional-neural-network.html -->
 
 Once this happens, it can be passed through the last step of the design: a fully connected layer, i.e. the traditional kinds of neural network layers we have seen before. 
 
