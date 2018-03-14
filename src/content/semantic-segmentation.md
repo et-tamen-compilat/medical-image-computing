@@ -1,12 +1,12 @@
 ---
 title: "Semantic Segmentation"
 cover: "SemSegmentation.jpg"
-description: "In this section, you'll learn about the separation of an image into different regions through a process called semantic segmentation."
+description: "In this section, you'll learn about the separation of an image into different regions through a process called semantic segmentation, in particular how it integrates with medical image scans."
 ---
 
 ## What is Semantic Segmentation?
 
-Semantic segmentation consists of separating an image into different regions. It is particularly relevant to Medical Imaging, in which localization is key to the analysis of scans. In effect, segmentation classifies each pixel to the part of the image it belongs to. While the CNNs we've seen so far only need to produce an output for what an image could be, semantic segmentation requires the networks to produce an output for each pixel. This task can be solved through variations of CNNs, some of which specialise in radiology purposes, as we will see. 
+Semantic segmentation consists of separating an image into different regions. It is particularly relevant to Medical Imaging, in which localization is key to the analysis of scans. In effect, segmentation classifies each pixel to the part of the image it belongs to. While the CNNs we've seen so far only need to produce an output for what an image could be, semantic segmentation requires the networks to produce an output for each pixel. This task can be solved through variations of CNNs, some of which specialise in radiology purposes, as we will see.
 
 ## Fully Convolutional Networks
 Fully Convolutional Networks  (FCNs) represent the underlying model of recent attempts to solve semantic segmentation using CNNs. These architectures omit the use of fully connected layers. As well as being faster, this approach generates segmentation maps from images of any size, (as opposed to the fixed-size constraint of fully connected layers). Essentially, the last fully connected layer is replaced by a convolution layer, of dimensions 1x1 in order to capture the global context of the image. Then, the last step consists in “upsampling” from low-resolution to high-resolution. This is done by upsampling layers. In FCNs, upsampling is down by something called transposed convolutions (or deconvolutions). If a convolution goes from $5 \times 5$ to $2 \times 2$, then the corresponding transposed convolutions goes from $2 \times 2$ to $5 \times 5$. To allow this to happen padding is added. The amount of padding of transposed convolution depends on the dimensions needed. For instance, suppose the kernel of the original from a $5 \times 5$ to $3 \times 3$, was a $3 \times 3$ with stride 1. Then, side padding of size 2 needs to be added around the output.
