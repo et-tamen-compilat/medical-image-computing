@@ -2,6 +2,19 @@
 title: "Semantic Segmentation"
 cover: "SemSegmentation.jpg"
 description: "In this section, you'll learn about the separation of an image into different regions through a process called semantic segmentation, in particular how it integrates with medical image scans."
+sources:
+- name:"V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation"
+  url:"https://arxiv.org/pdf/1606.04797.pdf"
+- name:"3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation"
+  url:"https://arxiv.org/pdf/1606.06650.pdf"
+- name:"Fully Convolutional Networks for Semantic Segmentation"
+  url:"https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf"
+- name:"U-Net: Convolutional Networks for Biomedical Image Segmentation"
+  url:"https://arxiv.org/pdf/1505.04597.pdf"
+- name:"Comparison of the Deep-Learning-Based Automated Segmentation Methods for the Head Sectioned Images of the Virtual Korean Human Project"
+  url:"https://arxiv.org/pdf/1703.04967.pdf"
+- name:"Machine Learning Methods for Medical and Biological Image Computing"
+  url:"https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1015&context=computerscience_etds"
 ---
 
 ## What is Semantic Segmentation? {#top}
@@ -53,11 +66,3 @@ The global view thus expands exponentially, whilst the number of parameters grow
 
 This figure shows that FCNs based on dilated convolution could obtain smoother and more accurate segmentation results than the standard FCNs. This is confirmed by the quantitative testing that was taken out: when training the 2 networks on 80% of the VHK and testing it on the other 20%, the performance of the dilated convolution network increased on average by a significant 19.6%. Thus, this study suggests the potential of this method in semantic segmentation, and we can expect more studies to be conducted on medical imaging scans in the upcoming years. 
 
-
-## Sources
-- [V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation](https://arxiv.org/pdf/1606.04797.pdf) by Fausto Milletari, Nassir Navab, Seyed-Ahmad Ahmadi - June 2016
-- [3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation](https://arxiv.org/pdf/1606.06650.pdf) by Ozgun Cicek, Ahmed Abdulkadir - June 2016
-- [Fully Convolutional Networks for Semantic Segmentation](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) by Jonathan Long, Evan Shelhamer, Trevor Darrell - May 2016
-- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/pdf/1505.04597.pdf) by Olaf Ronneberger, Philipp Fischer, Thomas Brox - May 2015
-- [Comparison of the Deep-Learning-Based Automated Segmentation Methods for the Head Sectioned Images of the Virtual Korean Human Project](https://arxiv.org/pdf/1703.04967.pdf) by Mohammad Eshghi, Holger R. Roth - March 2017
-- [Machine Learning Methods for Medical and Biological Image Computing](https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1015&context=computerscience_etds) by Rongjian Li - July 2016

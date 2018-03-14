@@ -1,15 +1,28 @@
 ---
-title: "Introduction to CNNs"
+title: "Convolutional Neural Networks"
 cover: "neural-network.jpg"
 description: "In this section, you'll learn about a specific branch of machine learning which is applied to image analysis: Convolutional Neural Networks."
+sources:
+- name: "ImageNet Classification with Deep Convolutional Neural Networks"
+  url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+- name: "Going Deeper with Convolutions"
+  url: "https://arxiv.org/pdf/1409.4842.pdf"
+- name: "Deep Residual Learning for Image Recognition"
+  url: "https://arxiv.org/pdf/1512.03385.pdf"
+- name: "Stanford CS231n"
+  url: "http://cs231n.stanford.edu/"
 ---
 
 ## What are CNNs? {#top}
 
 As in any other neural network, the input of a CNN, in this case an image, is passed through a series of filters in order to obtain a labelled output that can then be classified. The specificity of a CNN lies in its filtering layers, which include at least one convolution layer. These allow it to process more complex pictures than a regular neural network. Whereas the latter is well adapted for simple, well-centred images such as hand-written digits, the use of CNNs in image analysis ranges from Facebook’s automatic tagging algorithms, to object classification and detection, in particular in the field of radiology.
 
+<br>
+
 ![](/content-images/CNNdiagram2.png)
 <!-- image source: https://uk.mathworks.com/discovery/convolutional-neural-network.html -->
+
+<br>
 
 ## Convolution layers
 Since pictures can be very big, it is inefficient to have every pixel as an input. In fact, you wouldn't just need every pixel, but each of the individual RGB values of each pixel to be an input. Pre-processing is therefore required, through a series of layers which appear at the beginning of the neural network to reduce it into a smaller input, before applying a traditional neural network to an image.
@@ -42,7 +55,9 @@ In addition, there is another kind of layer called a max pooling or down-samplin
 
 A widespread method to do so consists in max pooling, in other words using the maximum value from a cluster of neurons at a previous layer. Indeed, max-pooling layers have a size and a width. Unlike convolution layers they are applied to the 2-dimensional depth slices of the image, so the resulting image is of the same depth, just of a smaller width and height. The max-pooling layer shown below has size 2x2, so it takes a 2-dimensional input region of size 2x2, and outputs the input with the largest value it received. It also has stride 2, i.e. it advances by 2 each time.
 
+<br>
 ![](/content-images/StanfordImage2.png){ width=50% }
+<br>
 
 ## Deep stacking towards a fully connected layer
 
@@ -73,11 +88,8 @@ Observe, that in the worst case, when there is no benefit of the extra layers, s
 ::: {.summary}
 ## Summary
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel rutrum felis. Ut pellentesque vel lorem vitae euismod. Cras consectetur, leo ut dapibus tincidunt, justo ante accumsan neque, sit amet hendrerit ante urna eu ex. Phasellus augue lorem, venenatis sit amet lorem viverra, dapibus venenatis dolor. Sed vel vehicula lacus. Curabitur eget risus id enim convallis tempus. Ut vulputate turpis sem, a elementum lorem ultrices nec. Aliquam eros metus, bibendum eget accumsan id, consectetur vitae orci. Nunc justo ipsum, sagittis in dignissim sed, egestas ut lacus. Nullam mollis eu libero at ultrices.
+<<<<<<< HEAD
+:::
+=======
 :::
 -->
-
-## Sources
-- [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton
-- [Going Deeper with Convolutions](https://arxiv.org/pdf/1409.4842.pdf) by Google
-- [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf) by Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-- [Stanford CS231n](http://cs231n.stanford.edu/)

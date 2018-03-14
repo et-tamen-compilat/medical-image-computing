@@ -2,6 +2,37 @@
 cover: "thumbsUpBlue.png"
 title: "Uses of AI in Radiology"
 description: "In this section, you'll learn about the most common applications of artificial intelligence currently being researched in the field of medical imaging."
+sources:
+- name:"A Survey on Deep Learning in Medical Image Analysis"
+  url:"https://arxiv.org/pdf/1702.05747.pdf"
+- name:"Dermatologist-level classification of skin cancer with deep neural networks"
+  url:"https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6"
+- name:"Alzheimer's disease diagnostics by adaptation of 3D convolution network"
+  url:"https://arxiv.org/pdf/1607.00455.pdf"
+- name:"Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks"
+  url:"http://ieeexplore.ieee.org/abstract/document/7422783/"
+- name:"Marginal Space Deep Learning: Efficient Architecture for Detection in Volumetric Image Data"
+  url:"http://comaniciu.net/Papers/MarginalSpaceDeepLearning_MICCAI15.pdf"
+- name:"Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities"
+  url:"https://arxiv.org/abs/1704.03379"
+- name:"Three-Dimensional CT Image Segmentation by Combining 2D Fully Convolutional Network with 3D Majority Voting"
+  url:"https://pdfs.semanticscholar.org/b434/c05142542255a112c387c48e6f60bb9e8c1c.pdf?_ga=2.65766829.2007236436.1520623311-1322847124.1520623311"
+- name:"A Unified Framework for Automatic Wound Segmentation and Analysis with Deep Convolutional Neural Networks"
+  url:"http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7318881&tag=1"
+- name:"VoxResNet: Deep Voxelwise Residual Networks for Volumetric Brain Segmentation"
+  url:"https://arxiv.org/pdf/1608.05895.pdf"
+- name:"Location Sensitive Deep Convolutional Neural Networks for Segmentation of White Matter Hyperintensities"
+  url:"https://arxiv.org/pdf/1610.04834.pdf"
+- name:"Deep MRI brain extraction: A 3D convolutional neural network for skull stripping"
+  url:"https://www.sciencedirect.com/science/article/pii/S1053811916000306"
+- name:"Multiscale CNNs for Brain Tumor Segmentation and Diagnosis"
+  url:"https://www.hindawi.com/journals/cmmm/2016/8356294/"
+- name:"A New 2.5D Representation for Lymph Node Detection using Random Sets of Deep Convolutional Neural Network Observations"
+  url:"https://arxiv.org/pdf/1406.2639.pdf"
+- name:"A CNN Regression Approach for Real-Time 2D/3D Registration"
+  url:"http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7393571&tag=1"
+- name:"Watson Health on the Cloud"
+  url:"https://www.ibm.com/cloud/healthcare"
 ---
 ## How is AI used in Radiology? {#top}
 
@@ -79,23 +110,3 @@ alt="*Eyes of Watson demonstration - Breast Cancer*" width="400" height="300" bo
 </div>
 <br>
 <br>
-
-## Sources
-
-- [A Survey on Deep Learning in Medical Image Analysis](https://arxiv.org/pdf/1702.05747.pdf) by Geert Litjens, Thijs Kooi - 2017
-- [Dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6) by Andre Esteva1, Brett Kuprel1 - 2017
-- [Alzheimer's disease diagnostics by adaptation of 3D convolution network](https://arxiv.org/pdf/1607.00455.pdf) by Ehsan Hosseini-Asl1, Robert Keynton2, Ayman El-Baz2
-- [Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks](http://ieeexplore.ieee.org/abstract/document/7422783/) by Setio et. al - 2016
-- [Marginal Space Deep Learning: Efficient Architecture for Detection in Volumetric Image Data](http://comaniciu.net/Papers/MarginalSpaceDeepLearning_MICCAI15.pdf) by Guesu et. al - 2016
-- [Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities](https://arxiv.org/abs/1704.03379)
-- [Three-Dimensional CT Image Segmentation by Combining 2D Fully Convolutional Network with 3D Majority Voting](https://pdfs.semanticscholar.org/b434/c05142542255a112c387c48e6f60bb9e8c1c.pdf?_ga=2.65766829.2007236436.1520623311-1322847124.1520623311)
-- [A Unified Framework for Automatic Wound Segmentation and Analysis with Deep Convolutional Neural Networks](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7318881&tag=1)
-- [VoxResNet: Deep Voxelwise Residual Networks for
-Volumetric Brain Segmentation](https://arxiv.org/pdf/1608.05895.pdf)
-- [Location Sensitive Deep Convolutional Neural Networks for Segmentation of White
-Matter Hyperintensities](https://arxiv.org/pdf/1610.04834.pdf)
-- [Deep MRI brain extraction: A 3D convolutional neural network for skull stripping](https://www.sciencedirect.com/science/article/pii/S1053811916000306)
-- [Multiscale CNNs for Brain Tumor Segmentation and Diagnosis](https://www.hindawi.com/journals/cmmm/2016/8356294/)
-- [A New 2.5D Representation for Lymph Node Detection using Random Sets of Deep Convolutional Neural Network Observations](https://arxiv.org/pdf/1406.2639.pdf)
-- [A CNN Regression Approach for Real-Time 2D/3D Registration](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7393571&tag=1) by Miao et al. - 2016
-- [Watson Health on the Cloud](https://www.ibm.com/cloud/healthcare) by IBM
