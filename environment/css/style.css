@@ -318,7 +318,7 @@ main article {
 }
 
 .semitone {
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: rgba(255, 255, 255, 0.88);
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -578,4 +578,18 @@ main nav ul {
     height: 349px;
     opacity: 0;
     margin: auto;
+}
+
+.summary {
+    background-color: #7de2ac
+}
+
+.summary, .advanced {
+    padding: 1px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.advanced {
+    background-color: #81dbff
 }
