@@ -7,6 +7,8 @@ picture: "hPic1.png"
 other: 
 - name: "Website"
   url: "https://hashanp.xyz"
+- name: "CV"
+  url: "/cvs/hashan.pdf"
 ---
 
 Hello. My name is Hashan. I am a first-year undergraduate at Imperial College London, studying Computing. I am the most awesome person ever (proof is trivial, left as an exercise for the reader). Before Imperial, I studied at Westcliff High School for Boys for 7 years.
