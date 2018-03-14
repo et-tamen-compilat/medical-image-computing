@@ -1,7 +1,7 @@
 ---
 cover: "stethoscope.png"
 title: "History of Medical Imaging"
-description: "In this section, you'll learn about the history of medical imaging. You will see why physicians decided to use medical imaging, and why they want to be able to analyse the images."
+description: "In this section, you'll learn about the evolution of medical imaging and it's analysis, and understand why such techniques are needed."
 sources:
 - name: "Guide to Medical Image Analysis"
   isbn: "978-1-4471-2751-2"

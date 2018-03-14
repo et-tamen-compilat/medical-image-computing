@@ -1,6 +1,7 @@
 ---
 cover: "thumbsUpBlue.png"
 title: "Uses of AI in Radiology"
+description: "In this section, you'll learn about the most common applications of artificial intelligence currently being researched in the field of medical imaging."
 ---
 ## How is AI used in Radiology?
 

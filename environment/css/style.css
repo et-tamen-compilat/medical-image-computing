@@ -250,6 +250,7 @@ article {
    
 .links ul li {
     display:inline-block;
+    padding:0px 5px;
 }
 
 .links ul li a {
