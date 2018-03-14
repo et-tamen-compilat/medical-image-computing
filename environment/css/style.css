@@ -14,9 +14,36 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "PT Serif";
 }
 
+a {
+    text-decoration: none;
+    color:#278bf7;
+    transition: color 0.3s ease;
+}
+
 main h1 {
     font-size:40px;
     margin-bottom:0px;
+}
+
+/*
+ * Used for pretty quotations
+ */
+
+ blockquote {
+    border-left: 5px solid #ececec;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+blockquote small {
+    display: block;
+    font-size: 14px;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    pointer-events: none;
+    cursor: default;
+    color: black !important;
 }
 
 /*
@@ -127,13 +154,6 @@ article {
     margin-right:30px;
 }
 
-.content {
-    display:flex;
-    flex-direction:row;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
 /* x > y means the css only applies to y's which are direct descendants of x*/
 /*vh is hundredth of viewport height*/
 
@@ -207,18 +227,6 @@ article {
     margin: 0 auto;
 }
  
-#lines {
-    position: absolute;
-    opacity: 0;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-
-
 
 
 /*
@@ -247,14 +255,6 @@ article {
 .links ul li a {
     text-decoration: none;
     font-size:20px;
-}
-
-
-
-a {
-  text-decoration: none;
-  color:#278bf7;
-  transition: color 0.3s ease;
 }
    
 /*adds the custom font trench*/
@@ -376,26 +376,7 @@ main nav ul {
     padding:0;
 }
 
-/*
- * Used for pretty quotations
- */
 
-blockquote {
-    border-left: 5px solid #ececec;
-    padding-left: 10px;
-    font-size: 24px;
-}
-
-blockquote small {
-    display: block;
-    font-size: 14px;
-}
-
-h1 a, h2 a, h3 a, h4 a {
-    pointer-events: none;
-    cursor: default;
-    color: black !important;
-}
 
 /*
  * * * * * * 
@@ -427,6 +408,20 @@ h1 a, h2 a, h3 a, h4 a {
     1px -1px 0 #00b6ff,
     -1px 1px 0 #00b6ff,
     1px 1px 0 #00b6ff;  
+}
+
+/*
+ * Code for lines
+ */
+
+#lines {
+    position: absolute;
+    opacity: 0;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 /*
