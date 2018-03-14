@@ -12,8 +12,14 @@ cp -r environment/** output/
 cp -r images/** output/content-images/
 mkdir -p output
 
-for file in src/*.md; do
+for file in src/content/*.md; do
     fbname=$(basename "$file" .md)
     echo "Compiling $fbname.md to $fbname.html"
     pandoc -f markdown -t html --toc --toc-depth 2 --template templates/content.html --mathjax -o "output/$fbname.html" "$file"
+done
+
+for file in src/personal/*.md; do
+    fbname=$(basename "$file" .md)
+    echo "Compiling $fbname.md to $fbname.html"
+    pandoc -f markdown -t html --template templates/personal.html --mathjax -o "output/$fbname.html" "$file"
 done

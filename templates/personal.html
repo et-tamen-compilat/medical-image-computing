@@ -9,7 +9,7 @@
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
         </script>
     </head>
-    <body bgcolor="white">
+    <body class="Site" bgcolor="white">
         <script>document.body.className += ' fade-out';</script>
         <div class="Site-content">
             <nav class="content-nav">
@@ -75,18 +75,11 @@
                     </nav>
                 </main>
             </div>
-            <!---->
 
-            <div class="full-image" style="background-image:url('/content-images/$cover$');">
-                <div class="semitone">
-                    <h1>$title$</h1>
-                </div>
-            </div>
-            <div class="interspecies">
-                <div class="container">
-                    <main id="top">
-                        <nav class="sidenav">
-                            <ul>
+            <div class="container">
+                <main id="top">
+                    <nav class="sidenav">
+                         <ul>
                                 <li class="heading">History</li>
                                 <li>
                                     <a href="history-medical-imaging.html"> History of Medical Imaging</a>
@@ -136,21 +129,44 @@
                             $endif$
                         </nav>
                         <article>
-                            <br/> $body$
+                            <br/>
+                            $if(picture)$
+                            <img class="face" src="images/$picture$" width="200" height="200">
+                            $else$
+                            <img class="face" src="https://via.placeholder.com/200x200" width="200" height="200">
+                            $endif$
 
-                            <br/>
-                            <br/>
-                            <a href="#top">Back to the top.</a>
+                            <div class="center">
+                                <h1>$name$</h1>
+                            </div>
+
+                            <div class="links">
+                                <ul>
+                                    $if(github)$
+                                        <li><a href="https://github.com/$github$">GitHub</a></li>
+                                    $endif$
+                                    $if(email)$
+                                        <li><a href="mailto:$email$">Email</a></li>
+                                    $endif$
+                                    $if(linkedin)$
+                                        <li><a href="https://www.linkedin.com/in/$linkedin$/">LinkedIn</a></li>
+                                    $endif$
+                                    $for(other)$
+                                        <li><a href="$other.url$">$other.name$</a></li>
+                                    $endfor$
+                                </ul>
+                            </div>
+
+                            $body$
                         </article>
                     </main>
-                </div>
-                <footer>
-                    <div class="container">
-                        <p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p>
-                    </div>
-                </footer>
-            </div>
+                </div>    
         </div>
+        <footer>
+            <div class="container">
+                <p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p>
+             </div>
+        </footer>
         <script>
 
             function myFunction(x) {
