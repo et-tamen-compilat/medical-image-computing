@@ -1,12 +1,15 @@
 /*
  * * * * * * 
- * 1) Basic Setup Code
+ * 1) Scaffolding Code
  * * * * * *
  */
 body {
     font-family:"PT Sans";
-    margin:0;
-    height:100%;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -283,7 +286,7 @@ url("fonts/trench100free.ttf") format("truetype");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: absolute; 
+    /*position: absolute;*/ 
     display: flex;
 	align-items: center;
 }
@@ -314,12 +317,6 @@ main article {
 .full-image ~ .interspecies .container main {
     width: inherit;
     max-width: inherit;
-}
-
-.full-image ~ .interspecies {
-    position: absolute;
-    top: 100%;
-    width:100%;
 }
 
 .semitone {
