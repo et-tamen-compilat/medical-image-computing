@@ -1,6 +1,7 @@
 ---
 cover: "lung-bg.png"
 title: "Detection of Lung Cancer"
+description: "In this section, you'll learn about how in the recent past, doctors and computer scientists have come together to develop better diagnosis technology, using AI, in order to fight lung cancer."
 ---
 
 ## How does AI relate to Lung Cancer?

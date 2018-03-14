@@ -1,6 +1,7 @@
 ---
 cover: "history-machine-learning-bg.png"
 title: "History Machine Learning"
+description: "In this section, you'll learn about how machine learning has developed over the years, and about many important discoveries and inventions that have brought us to where we are today."
 sources:
 - name: "Stanford"
   url: "https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html"
