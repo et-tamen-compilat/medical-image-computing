@@ -3,6 +3,7 @@ name: "Hashan Punchihewa"
 github: "hashanp"
 email: "hashan.punchihewa@gmail.com"
 linkedin: "hashanp"
+picture: "hPic1.png"
 other: 
 - name: "Website"
   url: "https://hashanp.xyz"
