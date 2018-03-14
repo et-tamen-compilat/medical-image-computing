@@ -223,15 +223,11 @@ article {
     text-align:justify;
 }
 
-
-
 #container{
     position: relative;
     width: 960px;
     margin: 0 auto;
 }
- 
-
 
 /*
  * .links is used for the horizontal list of links
@@ -287,7 +283,6 @@ url("fonts/trench100free.ttf") format("truetype");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /*position: absolute;*/ 
     display: flex;
 	align-items: center;
 }
@@ -315,11 +310,6 @@ main article {
     flex: 1;
 }
 
-.full-image ~ .interspecies .container main {
-    width: inherit;
-    max-width: inherit;
-}
-
 .semitone {
     background-color: rgba(255, 255, 255, 0.678);
     width: 100%;
@@ -338,7 +328,6 @@ main nav ul {
     padding-left:0;
 }
 
-/*hamburger icon*/
 .hamburger {
 	position:absolute;
 	top:0;
