@@ -72,7 +72,7 @@ main h1 {
     /*background-color: #009cdabf;*/
     background-color: #009cda;
     border-bottom: 1px solid #0093ce;
-    position:absolute;
+    /*position:absolute;*/
 }
 
 .brand {
@@ -271,7 +271,7 @@ figcaption {
 
 .full-image {
     width: 100%;
-    min-height: 100%;/*calc(100% - 40px);*/
+    min-height: calc(100% - 40px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
