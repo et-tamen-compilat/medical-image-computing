@@ -42,7 +42,9 @@ In addition, there is another kind of layer called a max pooling or down-samplin
 
 A widespread method to do so consists in max pooling, in other words using the maximum value from a cluster of neurons at a previous layer. Indeed, max-pooling layers have a size and a width. Unlike convolution layers they are applied to the 2-dimensional depth slices of the image, so the resulting image is of the same depth, just of a smaller width and height. The max-pooling layer shown below has size 2x2, so it takes a 2-dimensional input region of size 2x2, and outputs the input with the largest value it received. It also has stride 2, i.e. it advances by 2 each time.
 
+<br>
 ![](/content-images/StanfordImage2.png){ width=50% }
+<br>
 
 ## Deep stacking towards a fully connected layer
 
