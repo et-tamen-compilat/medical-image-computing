@@ -3,10 +3,10 @@ title: "Introduction to Neural Networks"
 cover: "titan.jpg"
 description: "In this section, you'll learn about neural networks. Neural networks are the basis of the major advancements in AI that have been happening over the last decade. They let a computer learn to solve a problem for itself."
 sources:
-- name:"The Backpropagation Algorithm"
-  url:"https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
-- name:"What is backpropagation really doing?"
-  url:"https://www.youtube.com/watch?v=Ilg3gGewQ5U"
+- name: "The Backpropagation Algorithm"
+  url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+- name: "What is backpropagation really doing?"
+  url: "https://www.youtube.com/watch?v=Ilg3gGewQ5U"
 ---
 
 ## Basics {#top}
