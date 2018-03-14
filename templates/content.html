@@ -17,7 +17,7 @@
                     <a href="/">AI in Radiology</a>
                 </div>
                 <!--mobile only hamburger-->
-                <div class="hamburger" id="mHamburger" onclick="myFunction(this)">
+                <div class="hamburger" id="mHamburger" onclick="toggleMenu(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -168,7 +168,7 @@
                 </footer>
         <script>
 
-            function myFunction(x) {
+            function toggleMenu(x) {
                 x.classList.toggle("change");
                 var x = document.getElementById("mobileMenu");
                 if (x.style.display === "none") {
