@@ -59,7 +59,7 @@ $$
 f(x) = g(\mathbf{x}^T\mathbf{w}) 
 $$
 
-Now let us go back to the activation function. Suppose, that it didn't exist, then you would get a linear function. Linear functions are nice, since they are easily to work with. A linear function can be defined just using a set of weights, $w_0, \mathellipsis, w_n$. But they are problematic, in that they cannot represent non-linear functions, and in machine learning you want to be able to learn non-linear functions. Throwing in a non-linear activation function allows us to do this. There are many types of activation functions to choose from. One common one is called logistic sigmoid, and is:
+Now let us go back to the activation function. Suppose, that it didn't exist, then you would get a linear function. Linear functions are nice, since they are easy to work with. A linear function can be defined just using a set of weights, $w_0, \mathellipsis, w_n$. But they are problematic, in that they cannot represent non-linear functions, and in machine learning you want to be able to learn non-linear functions. Throwing in a non-linear activation function allows us to do this. There are many types of activation functions to choose from. One common one is called logistic sigmoid, and is:
 
 $$
 \sigma(z) = \frac{1}{1 + e^{-z}} 
@@ -108,7 +108,7 @@ $$
 
 As layers are added to perceptrons, finding the correct combination of weights to compute our function becomes much more complex. Therefore, in the same way that an essay generally involves writing several drafts and progressively correcting these, a neural network goes through a training process to optimise its output.
 
-This process consists of feeding "training data", which is data annotated with the correct output to expect, into the neural network. The actual output is compared to the expected output for each piece of data, by passing it to the cost function. The accuracy of the neural network is quantified by the cost function. There are different functions that can be used for the cost function of a neural network. Typically, the overall cost of the network is obtained by the mean squared error method, demonstrated below. The difference between each output neuron's actual and expected value is calculated and squared, before adding all of these up. Typically, halving this result is convenient for backpropagation, as it simplifies the derivative of the cost, used in later calculations.
+This process consists of feeding "training data", which is data annotated with the correct output to expect, into the neural network. The actual output is compared to the expected output for each piece of data, by passing it to the cost function. The function thus quantifies this comparison. The aim is to minimise the cost, in order to improve the accuracy of the network. There are different functions that can be used for the cost function of a neural network. Typically, the overall cost of the network is obtained by the mean squared error method, demonstrated below. The difference between each output neuron's actual and expected value is calculated and squared, before adding all of these up. Typically, halving this result is convenient for backpropagation, as it simplifies the derivative of the cost, used in later calculations.
 
 ![](https://media.giphy.com/media/f9QQ6MxYkdIlvocXyd/giphy.gif)
 

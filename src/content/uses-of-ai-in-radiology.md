@@ -105,7 +105,8 @@ The combination of text reports with medical image data can follow one of two ap
 <!--<a href="http://www.youtube.com/watch?feature=player_embedded&v=XLb0xUe80uo&t=0s
 " target="_blank"><img src="/content-images/breastCancer.jpg" 
 alt="*Eyes of Watson demonstration - Breast Cancer*" width="400" height="300" border="5" /></a> -->
- <object data="http://www.youtube.com/watch?feature=player_embedded&v=XLb0xUe80uo&t=0s"
-   width="400" height="305"></object>
+<div class="container-video">
+ <iframe src="https://www.youtube.com/embed/XLb0xUe80uo"></iframe>
+</div>
 <br>
 <br>
