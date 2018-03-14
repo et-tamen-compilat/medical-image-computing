@@ -4,7 +4,7 @@ title: "Types of Medical Imaging"
 description: "In this section, you'll learn about the most common types of medical imaging, what they are, how they work, what they can take images of, and how risky they are to use."
 ---
 
-## What is Medical Imaging?
+## What is Medical Imaging? {#top}
 
 Medical Imaging is the use of imaging modalities and processes to get pictures of the human body, which can assist diagnosis and treatment of patients. It can also be used to track any ongoing issues, and can therefore help with treatment plans. 
 

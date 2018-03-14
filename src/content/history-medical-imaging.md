@@ -10,7 +10,7 @@ sources:
   url: "http://www.imaginis.com/faq/history-of-medical-diagnosis-and-diagnostic-imaging"
 ---
 
-## Introduction to Medical Imaging
+## Introduction to Medical Imaging {#top}
 
 The origin of medical images is around the start of the 20th century, after the discovery of the x-ray. This started a growing interest in radiology, but it took off during the Second World War.
 

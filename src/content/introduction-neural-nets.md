@@ -4,7 +4,7 @@ cover: "titan.jpg"
 description: "In this section, you'll learn about neural networks. Neural networks are the basis of the major advancements in AI that have been happening over the last decade. They let a computer learn to solve a problem for itself."
 ---
 
-## Basics
+## Basics {#top}
 
 A mathematical function is a mapping that assigns values in a set of inputs to a set of outputs. For instance, a mathematical function might have a set of inputs $\{1, 2, 3\}$, and a set of outputs, $\{4, 5, 6\}$, and the mapping might be $(1 \to 4), (2 \to 5), (3 \to 6)$. In the case of this function, there is a fairly straightforward rule to obtain the outputs from the inputs: add 3. 
 

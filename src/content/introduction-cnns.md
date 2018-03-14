@@ -4,7 +4,7 @@ cover: "neural-network.jpg"
 description: "In this section, you'll learn about a specific branch of machine learning which is applied to image analysis: Convolutional Neural Networks."
 ---
 
-## What are CNNs?
+## What are CNNs? {#top}
 
 As in any other neural network, the input of a CNN, in this case an image, is passed through a series of filters in order to obtain a labelled output that can then be classified. The specificity of a CNN lies in its filtering layers, which include at least one convolution layer. These allow it to process more complex pictures than a regular neural network. Whereas the latter is well adapted for simple, well-centred images such as hand-written digits, the use of CNNs in image analysis ranges from Facebook’s automatic tagging algorithms, to object classification and detection, in particular in the field of radiology.
 
