@@ -39,7 +39,7 @@ $$
 f(x) = g(\sum_{i = 0}^n x_iw_i) 
 $$
 
-![A diagram demonstrating a perceptron, where the bias is just another weight](/content-images/perceptron.png)
+![A diagram demonstrating a perceptron, where the bias is just another weight](/content-images/perceptronv2.png)
 
 Note that this is just the dot product of two column vectors $x$ and $w$:
 
