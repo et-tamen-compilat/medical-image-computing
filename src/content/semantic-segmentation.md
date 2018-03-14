@@ -54,11 +54,11 @@ Layer 3: output F3
 
 As illustrated in the diagram above, dilated convolution increases the global (or receptive) field, in other words the implicit area captured by each of the initial input, without losing resolution or coverage. Indeed, the red dots correspond to the inputs, and the blue area to the receptive field of each of these. 
 
-Let F0 be the input image, here with dimensions 3x3. 
+Let $F_0$ be the input image, here with dimensions $3 \times 3$. 
 
-- The 1st layer applies a dilation rate k=1, corresponding to a normal convolution, to F0. Each element, or dot, in F1 therefore has a receptive field of 3x3.
-- The 2nd layer applies a dilation rate k=2 to F1, ie. “skips” 1 pixel per input. Each element in F2 has a receptive field of 7x7.
-- The 3rd layer applies a dilation rate k=4 to F2, skipping 3 pixels per input and resulting in a receptive field of 15x15 pixels for each unit.
+- The 1st layer applies a dilation rate $k=1$, corresponding to a normal convolution, to $F_0$. Each element, or dot, in $F_1$ therefore has a receptive field of $3 \times 3$.
+- The 2nd layer applies a dilation rate $k=2$ to $F_1$, ie. “skips” 1 pixel per input. Each element in $F_2$ has a receptive field of $7 \times 7$.
+- The 3rd layer applies a dilation rate $k=4$ to $F_2$, skipping 3 pixels per input and resulting in a receptive field of $15 \times 15$ pixels for each unit.
 
 The global view thus expands exponentially, whilst the number of parameters grows linearly. In doing so, dilated convolution manages to achieve a large receptive field without up-sampling, and with a limited amount of weights & convolutional layers. This method therefore proves to be effective for semantic segmentation. In particular, it has been compared to FCNs in segmentation for medical image analysis in a paper published in March 2017. Below, we can see the segmentation results obtained.
 
