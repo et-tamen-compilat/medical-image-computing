@@ -78,6 +78,7 @@ h1 a, h2 a, h3 a, h4 a {
 
 .brand {
     padding-top: 11px;
+    padding-bottom:11px;
     color: #76ddff;
 }
 
@@ -559,3 +560,19 @@ main nav ul {
     opacity: 0;
     margin: auto;
 }
+
+.golden {
+    color: black !important;
+    background-color: #ffd0d0 !important;
+}
+
+.golden a {
+    color: #ff0000a6 !important;
+}
+
+.golden a:hover {
+    color: #ff000094 !important;
+}
+
+.golden .heading {
+    color: #bf4848 !important;}

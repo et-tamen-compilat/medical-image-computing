@@ -1,6 +1,36 @@
 ---
 cover: "history-machine-learning-bg.png"
 title: "History Machine Learning"
+sources:
+- name: "Stanford"
+  url: "https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html"
+- name: "Synergic Partners"
+  url: "http://www.synergicpartners.com/en/espanol-una-breve-historia-del-machine-learning"
+- name: "An Introduction to Neural Networks for Differential Equations"
+  url: "http://www.springer.com/gb/book/9789401798150"
+  isbn: "978-94-017-9815-0"
+- name: "Amazon"
+  url: "https://aws.amazon.com/machine-learning/"
+- name: "OpenAI"
+  url: "https://openai.com/"
+- name: "Forbes"
+  url: "https://www.forbes.com/sites/forbestechcouncil/2017/12/01/for-machine-learning-its-all-about-gpus/#2317fc747699"
+- name: "A Survey on Deep Learning in Medical Image Analysis"
+  url: "https://arxiv.org/pdf/1702.05747.pdf"
+- name: "Nvidia"
+  url: "https://devblogs.nvidia.com/inside-volta/"
+- name: "Google TensorFlow"
+  url: "https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu"
+- name: "Intel Nervana Neural Network"
+  url: "https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/"
+- name: "Von Neumann Architecture"
+  url: "https://www.computerscience.gcse.guru/theory/von-neumann-architecture"
+- name: "Handwritten Digit Recognition with a Back-Propagation Network"
+  url: "http://yann.lecun.com/exdb/publis/pdf/lecun-90c.pdf"
+- name: "Google Cloud Platform"
+  url: "https://cloud.google.com/gpu/"
+- name: "Google Cloud Machine Learning Engine"
+  url: "https://cloud.google.com/ml-engine/"
 ---
 ## Early History of Machine Learning
 
@@ -70,20 +100,3 @@ After GPUs allowed machine learning to rise to prominence, Intel, the world's bi
 ### GPUs in Cloud Computing
 
 A recent trend is the renting of GPUs from big companies such as Google and Amazon, rather than buying them, as this can be a much cheaper alternative to purchasing lots of GPUs. It also allows many more GPUs to be used, as a high quantity can be rented, and therefore work can be done more efficiently. Google also introduced a specific Cloud Machine Learning Engine in 2017 using their TPUs mentioned above, and allows anyone to easily create a neural network without all of the required equipment. This will hopefully encourage more innovation in the field in the near future.
-
-## Sources
-
-- [*__Stanford__*](https://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html)
-- [*__Synergic Partners__*](http://www.synergicpartners.com/en/espanol-una-breve-historia-del-machine-learning/)
-- [*__An Introduction to Neural Networks for Differential Equations__, ISBN: 978-94-017-9815-0*](http://www.springer.com/gb/book/9789401798150)
-- [*__Amazon__*](https://aws.amazon.com/machine-learning/)
-- [*__OpenAI__*](https://openai.com/)
-- [*__Forbes__*](https://www.forbes.com/sites/forbestechcouncil/2017/12/01/for-machine-learning-its-all-about-gpus/#2317fc747699)
-- [*__A Survey on Deep Learning in Medical Image Analysis__*](https://arxiv.org/pdf/1702.05747.pdf)
-- [*__Nvidia__*](https://devblogs.nvidia.com/inside-volta/)
-- [*__Google TensorFlow__*](https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
-- [*__Intel Nervana Neural Network__*](https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/)
-- [*__Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
-- [*__Handwritten Digit Recognition with a Back-Propagation Network__*](http://yann.lecun.com/exdb/publis/pdf/lecun-90c.pdf)
-- [*__Google Cloud Platform__*](https://cloud.google.com/gpu/)
-- [*__Google Cloud Machine Learning Engine__*](https://cloud.google.com/ml-engine/)

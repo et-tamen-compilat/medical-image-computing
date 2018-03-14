@@ -137,8 +137,22 @@
                         <article>
                             <br/> $body$
 
+                            $if(sources)$
+                                <h2>Sources</h2>
+                                <ul>
+                                    $for(sources)$
+                                        <li>
+                                            <a href="$sources.url$">$sources.name$</a>
+                                            $if(sources.isbn)$ 
+                                            (ISBN: $sources.isbn$)
+                                            $endif$
+                                        </li>
+                                    $endfor$
+                                </ul>
+                            $endif$
+
                             <br/>
-                            <br/>
+                            <hr>
                             <a href="#top">Back to the top.</a>
                         </article>
                     </main>

@@ -1,6 +1,12 @@
 ---
 cover: "stethoscope.png"
 title: "History of Medical Imaging"
+sources:
+- name: "Guide to Medical Image Analysis"
+  isbn: "978-1-4471-2751-2"
+  url: "http://www.springer.com/gp/book/9781447160960"
+- name: "Imaginis"
+  url: "http://www.imaginis.com/faq/history-of-medical-diagnosis-and-diagnostic-imaging"
 ---
 
 ## Introduction to Medical Imaging
@@ -31,8 +37,3 @@ There are many reasons that medical image analysis is needed:
 - Diagnosis support - this combines computer-aided detection and diagnosis. Artificial intelligence can be used to detect patterns in images, and doctors can review the results of this when diagnosing patients. They can then input their final diagnosis into the system, and the AI can learn how accurate its diagnosis was.
 - Treatment planning - this is used before treatment is given to a patient. Applications of this are in surgery and radiology, allowing doctors to be given information on the best course of treatment for a patient, based on previous patient outcomes.
 - Computer-assisted surgery - this newly-emerging field allows computers to diagnose and treat the patient. It allows images to be taken, analysed, and the appropriate response taken in much less time than it would take a human doctor.
-
-## Sources
-
-- [*__Guide to Medical Image Analysis__, ISBN: 978-1-4471-2751-2*](http://www.springer.com/gp/book/9781447160960)
-- [*__Imaginis__*](http://www.imaginis.com/faq/history-of-medical-diagnosis-and-diagnostic-imaging)
