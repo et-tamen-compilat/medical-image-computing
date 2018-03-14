@@ -9,7 +9,7 @@ Various uses of artificial intelligence, and in particular convolutional neural 
 ![*Breakdown of the tasks addressed by research papers in this field up until 2017*](/content-images/uses.png) 
 
 
-##Classification
+## Classification
 
 ### Exam classification:
 
