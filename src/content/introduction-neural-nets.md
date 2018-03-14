@@ -120,14 +120,14 @@ However, how can we adjust the error value of an output weight? In other words, 
 Recall that each output of a neuron $f$ is calculated in the following way:
 
 $$
-f = g(\sum_{i = 1}^{n-1}w_ia_i + w_0)
+f(a) = g(\sum_{i = 0}^{n}w_ia_i)
 $$
 
 Where:
 
-- $x$ represents the activation of the previous layer
+- $a$ represents the activation of the previous layer
+- $a_i$ refers to the $i$th node of the previous layer
 - $w_i$ are the weights of the previous layer connected to $w$
-- $w_0$ is the bias applied
 - $g$ represents the activation of the current layer 
 
 For each output, adjusting the first three components listed, by increasing or decreasing these accordingly, will thus change its "voting" weight. However, these components rely on the previous layer, itself consisting of weights computed from the penultimate layer. The use of the word "backpropagation" thus becomes apparent: it relies on recursively applying this process to each previous layer, moving backwards through the network in doing so.
