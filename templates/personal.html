@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <title>$title$</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700" rel="stylesheet">
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    </head>
+    <body class="Site" bgcolor="white">
+        <script>document.body.className += ' fade-out';</script>
+        <nav class="content-nav">
+            <div class="container">
+                <div class="brand">
+                    <a href="/">AI in Radiology</a>
+                </div>
+                <!--mobile only hamburger-->
+                <div class="hamburger" id="mHamburger" style="float:right" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="Site-content">      
+            <!-- for mobile only-->
+            <div id="mobileMenu" style="display:none">
+                <main style="margin-bottom:0">
+                    <nav class="sidenav" style="width:100%;display:inline-block">
+                        <ul id="mobilenav" style="margin-right:0; margin-top:0; margin-bottom:0">
+                            <li class="mobileheading">History</li>
+                            <li>
+                                <a href="history-medical-imaging.html"> History of Medical Imaging</a>
+                            </li>
+                            <li>
+                                <a href="types-medical-imaging.html"> Types of Medical Imaging</a>
+                            </li>
+                            <li>
+                                <a href="history-machine-learning.html">History of Machine Learning</a>
+                            </li>
+                            <li class="mobileheading">Theory</li>
+                            <li>
+                                <a href="introduction-neural-nets.html">Introduction to Neural Networks</a>
+                            </li>
+                            <li>
+                                <a href="introduction-cnns.html">Convolutional Neural Networks</a>
+                            </li>
+                            <li>
+                                <a href="semantic-segmentation.html">Semantic Segmentation</a>
+                            </li>
+                            </li>
+                            <li class="mobileheading">Practice</li>
+                            <li>
+                                <a href="uses-of-ai-in-radiology.html">Uses of AI in Radiology</a>
+                            </li>
+                            <li>
+                                <a href="lung-cancer.html">Detection of Lung Cancer</a>
+                            </li>
+                            <li class="mobileheading">About Us</li>
+                            <li>
+                                <a href="/hugo.html">Hugo Mayo</a>
+                            </li>
+                            <li>
+                                <a href="/hashan.html">Hashan Punchihewa</a>
+                            </li>
+                            <li>
+                                <a href="/julie.html">Julie Emile</a>
+                            </li>
+                            <li>
+                                <a href="/jack.html">Jack Morrison</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </main>
+            </div>
+
+            <div class="container">
+                <main id="top">
+                    <nav class="sidenav">
+                         <ul>
+                                <li class="heading">History</li>
+                                <li>
+                                    <a href="history-medical-imaging.html"> History of Medical Imaging</a>
+                                </li>
+                                <li>
+                                    <a href="types-medical-imaging.html"> Types of Medical Imaging</a>
+                                </li>
+                                <li>
+                                    <a href="history-machine-learning.html">History of Machine Learning</a>
+                                </li>
+                                <li class="heading">Theory</li>
+                                <li>
+                                    <a href="introduction-neural-nets.html">Introduction to Neural Networks</a>
+                                </li>
+                                <li>
+                                    <a href="introduction-cnns.html">Convolutional Neural Networks</a>
+                                </li>
+                                <li>
+                                    <a href="semantic-segmentation.html">Semantic Segmentation</a>
+                                </li>
+                                <li class="heading">Practice</li>
+                                <li>
+                                    <a href="uses-of-ai-in-radiology.html">Uses of AI in Radiology</a>
+                                </li>
+                                <li>
+                                    <a href="lung-cancer.html">Detection of Lung Cancer</a>
+                                </li>
+                                <li class="heading">About Us</li>
+                                <li>
+                                    <a href="/hugo.html">Hugo Mayo</a>
+                                </li>
+                                <li>
+                                    <a href="/hashan.html">Hashan Punchihewa</a>
+                                </li>
+                                <li>
+                                    <a href="/julie.html">Julie Emile</a>
+                                </li>
+                                <li>
+                                    <a href="/jack.html">Jack Morrison</a>
+                                </li>
+                            </ul>
+                            $if(toc)$
+                                <ul>
+                                    <li class="heading">This Page</li>
+                                    <li>$toc$</li>
+                                </ul>
+                            $endif$
+                        </nav>
+                        <article>
+                            <br/>
+                            $if(picture)$
+                            <img class="face" src="images/$picture$" width="200" height="200">
+                            $else$
+                            <img class="face" src="https://via.placeholder.com/200x200" width="200" height="200">
+                            $endif$
+
+                            <div class="center">
+                                <h1>$name$</h1>
+                            </div>
+
+                            <div class="links">
+                                <ul>
+                                    $if(github)$
+                                        <li><a href="https://github.com/$github$">GitHub</a></li>
+                                    $endif$
+                                    $if(email)$
+                                        <li><a href="mailto:$email$">Email</a></li>
+                                    $endif$
+                                    $if(linkedin)$
+                                        <li><a href="https://www.linkedin.com/in/$linkedin$/">LinkedIn</a></li>
+                                    $endif$
+                                    $for(other)$
+                                        <li><a href="$other.url$">$other.name$</a></li>
+                                    $endfor$
+                                </ul>
+                            </div>
+
+                            $body$
+                        </article>
+                    </main>
+                </div>    
+        </div>
+        <footer>
+            <div class="container">
+                <p>© 2018 Hugo Mayo, Hashan Punchihewa, Julie Emile, Jack Morrison</p>
+             </div>
+        </footer>
+        <script>
+
+            function myFunction(x) {
+                x.classList.toggle("change");
+                var x = document.getElementById("mobileMenu");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            var isMobile = function () {
+                console.log("Navigator: " + navigator.userAgent);
+                return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+            };
+            if (!isMobile()) {
+                var elem = document.getElementById('mHamburger');
+                elem.parentNode.removeChild(elem); // hide
+                var elem2 = document.getElementById('mobileMenu');
+                elem2.parentNode.removeChild(elem2);
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="javascript/jquery.cookie.js"></script>
+        <script src="javascript/anime.min.js"></script>
+        <script src="javascript/scripts.js"></script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+    </body>
+</html>

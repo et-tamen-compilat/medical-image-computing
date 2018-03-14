@@ -1,34 +1,88 @@
+/*
+ * * * * * * 
+ * 1) Basic code
+ * * * * * *
+ */
 body {
-    /*font-family: "Helvetica Neue";*/
     font-family:"PT Sans";
-    margin:0;
-    height:100%;
+    margin: 0;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-align: left;
     font-family: "PT Serif";
 }
-.mainTitle h1{
-    font-family: trench;
-    font-size: 100px;
-    color:white;
-    text-shadow:
-    -1px -1px 0 #00b6ff,
-    1px -1px 0 #00b6ff,
-    -1px 1px 0 #00b6ff,
-    1px 1px 0 #00b6ff;
-    
+
+a {
+    text-decoration: none;
+    color:#278bf7;
+    transition: color 0.3s ease;
 }
+
+/*
+ * Used for pretty quotations
+ */
+
+blockquote {
+    border-left: 5px solid #ececec;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+blockquote small {
+    display: block;
+    font-size: 14px;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    pointer-events: none;
+    cursor: default;
+    color: black !important;
+}
+
+/*
+ * * * * * * 
+ * 2) Code for personal pages
+ * * * * * *
+ */
 
 .face {
     border-radius:360px;
 }
 
-.brand a{
-    /*font-family: trench;*/
+main h1 {
+    font-size:40px;
+    margin-bottom:0px;
+    text-align: center;
+}
+
+/*
+ * * * * * * 
+ * 3) Code for the topbar
+ * * * * * *
+ */
+
+.content-nav {
+    width: 100%;
+    height: 40px;
+    /*background-color: #009cdabf;*/
+    background-color: #009cda;
+    border-bottom: 1px solid #0093ce;
+    /*position:absolute;*/
+}
+
+.brand {
+    padding-top: 11px;
+    padding-bottom:11px;
+    color: #76ddff;
+}
+
+.brand a {
     text-decoration: none;
-    /*font-size: large;*/
     color:#76ddff;
     transition: all 0.3s ease;
 }
@@ -37,32 +91,14 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     color: #c3f0ff;
 }
 
+/*
+ * * * * * * 
+ * 4) Code for the sidebar
+ * * * * * *
+ */
 
-.brand {
-    padding-top: 11px;
-    color: #76ddff;
-}
-
-/* flex for page structure*/
-#basicContentBody{
-    opacity: 1;
-    transition: 1s opacity;
-    display: flex;
-    min-height: 100vh;
-    flex-direction:row;
-    margin:0;
-}
-
-#basicContentBody.fade-out {
-    opacity: 0;
-    transition: none;
-}
-
-.sidenav{
-    /*background-color: #eaeaea;*/
-    /*font-family: trench;*/
+.sidenav {
     text-decoration: none;
-    /*font-size: x-large;*/
     color:#76ddff;
     list-style-type: none;
     transition: all 0.3s ease;
@@ -70,25 +106,24 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 }
 
 @media (max-width: 600px) {
-    .sidenav{
+    .sidenav {
         display:none;
     }
-    
-    
 }
 
-
-.sidenav a:hover {
-    color:#0EBFE9;
-}
-
-.sidenav > ul > li{
+.sidenav ul li {
     list-style-type: none;
     padding-bottom: 5px;    
 }
 
-.sidenav ul li {
-    padding-bottom:5px;   
+.sidenav ul li a {
+    font-weight:400 !important;
+    text-transform:none;
+    font-size:16px;
+}
+
+.sidenav ul li a:hover {
+    color:#0EBFE9;
 }
 
 .sidenav ul li.heading {
@@ -106,49 +141,24 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
     font-weight: bold;
     padding-top:10px;
 }
-.sidenav ul {
+
+.sidenav > ul {
     background-color: #f3f3f3;
     padding: 20px;
-    margin-top: 40px;
     margin-right: 20px;
 }
 
-
-article {
-    margin-left:20px;
-    margin-right:30px;
+.sidenav > ul:first-child {
+    margin-top: 40px;
 }
 
-.mainBody{
-    display: flex;
-    flex-direction:column;
-    flex:5;
-}
-.content{
-    display:flex;
-    flex-direction:row;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
-/* x > y means the css only applies to y's which are direct descendants of x*/
 /*vh is hundredth of viewport height*/
-.content > article {
-    flex:4;
-    min-height: 60vh
-}
 
-main h1 {
-    font-size:40px;
-    margin-bottom:0px;
-}
-
-.content-nav {
-    width: 100%;
-    height: 40px;
-    background-color: #009cda;
-    border-bottom: 1px solid #0093ce;
-}
+/*
+ * * * * * * 
+ * 5) Code for the footer
+ * * * * * *
+ */
 
 footer {
     width: 100%;
@@ -201,195 +211,34 @@ img {
     display:block;
 }
 
-
 article {
     text-align:justify;
+    margin-left:20px;
+    margin-right:30px;
 }
 
-
-
-.mainContentTitle{
-    font-family: trench;
-    font-size: 80px;
-    color:white;
-    text-shadow:
-    -1px -1px 0 #00b6ff,
-    1px -1px 0 #00b6ff,
-    -1px 1px 0 #00b6ff,
-    1px 1px 0 #00b6ff;
-    
-}
-
-
-
-
-
-
-body {
-    margin:0;
-}
-
-.mainTitle{
-    top: 5px;
-    position:relative;
-    margin:0 auto;
-    clear:left;
-    height:auto;
-    z-index: 0;
-    text-align:center;
-    opacity:0;
-}
-
-#brain_pic{
-    top:100px;
-    width: 620px;
-    height: 349px;
-    opacity: 0;
-    margin: auto;
-}
-
-#container{
+#container {
     position: relative;
     width: 960px;
     margin: 0 auto;
 }
- 
-#lines{
-    position: absolute;
-    opacity: 0;
-     margin: auto;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
+
+/*
+ * .links is used for the horizontal list of links
+ * on people's personal pages
+ */
+
+.links {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top:10px;
 }
 
-.circles{
-    width:auto;
-    height:auto;
-    position: absolute;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.circleHover {
-    transform: scale(1.3);
-}
-
-
-.circleClicked {
-    z-index: 10000;
-    transition-timing-function: ease-out;
-    transition: 1.8s;
-    transform: scale(115);
-}
-
-#circle1{
-    top:22px;
-    left: 108px;
-}
-
-#circle2{
-    top:10px;
-    left: 760px;
-}
-
-#circle3{
-    top:110px;
-    left:770px;
-}
-
-#circle4{
-    top:232px;
-    left:760px;
-}
-
-#circle5{
-    top:308px;
-    left:567px;
-}
-
-#circle6{
-    top:279px;
-    left:299px;
-}
-
-#circle7{
-    top:182px;
-    left:200px;
-}
-
-#circle8{
-    top:103px;
-    left:128px;
-}
-
-.landingLinks{
-    font-family: trench;
-    text-decoration: none;
-    position: absolute;
-    font-size: x-large;
-    float:left;
-    opacity: 0;
-    color:white;
-    text-shadow:
-    -1px -1px 0 #00b6ff,
-    1px -1px 0 #00b6ff,
-    -1px 1px 0 #00b6ff,
-    1px 1px 0 #00b6ff;
-    transition: all 0.3s ease;
-    
-}
-
-.landingLinkHover{
-     transform: scale(1.05);
-
-}
-
-#CNNLink{
-    top:185px;
-    left:30px;
-}
-
-#HMILink{
-    top:0px;
-    left:840px;
-}
-
-#HMLLink{
-    top:0px;
-    left:15px;
-}
-
-#INNLink{
-    top:88px;
-    left: 10px;
-}
-
-#SSLink{
-    top:280px;
-    left:160px;
-}
-
-#TMILink{
-    top:95px;
-    left:850px;
-}
-
-#AIRLink{
-    top:300px;
-    left: 647px;
-}
-
-#LCLink{
-    top:210px;
-    left:840px;
-}
 .links ul {
     list-style-type: none;
     display:inline-block;
     padding:0;
-    
     margin:0;
 }
    
@@ -397,65 +246,42 @@ body {
     display:inline-block;
 }
 
-
-.links {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top:10px;
-   
-}
-
-.links ul a {
+.links ul li a {
     text-decoration: none;
     font-size:20px;
+}
    
-
-}
-
-.center h1 {
-    text-align: center;
-}
-
-a{
-  text-decoration: none;
-  /*color: #232323;*/
-  color:#278bf7;
-  transition: color 0.3s ease;
-}
-
-
-
-   
-   /*adds the custom font trench*/
+/*adds the custom font trench*/
 @font-face {
 font-family: "trench";
 src: 
 url("fonts/trench100free.otf") format("opentype"),
 url("fonts/trench100free.woff") format("woff"),
 url("fonts/trench100free.ttf") format("truetype");
-    
 }
 
-.caption {
+figcaption, .caption {
     text-align: center;
     font-style: italic;
 }
 
+figcaption {
+    margin-top:15px;
+}
+
 .full-image {
     width: 100%;
-    height: calc(100% - 40px);
+    min-height: calc(100% - 40px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: absolute; 
     display: flex;
 	align-items: center;
 }
 
 .Site {
     display: flex;	
-    min-height: 100vh;	
+    min-height: 100vh;
     flex-direction: column;	
 }
 
@@ -476,42 +302,32 @@ main article {
     flex: 1;
 }
 
-/*
- * This is a trick.
- * Don't change it.
- */
-.full-image ~ .container main {
-    position: absolute;
-    top: 100%;
-    width: inherit;
-    max-width: inherit;
-}
-
 .semitone {
-    background-color: rgba(255, 255, 255, 0.678);
-
+    background-color: rgba(255, 255, 255, 0.88);
     width: 100%;
-    /* height: 100px; */
     padding-top: 20px;
     padding-bottom: 20px;
-    /* z-index: 5; */
     color: black;
-    text-align: center;
-    /* margin-top: auto; */
-    /* margin-bottom: auto; */
     font-size: 20px;
+}
+
+.semitone h1 {
+    text-align: center;
+    font-family: "PT Sans";
 }
 
 main nav ul {
     padding-left:0;
 }
 
-
-/*hamburger icon*/
 .hamburger {
+	position:absolute;
+	top:0;
+	right:10px;
     display: inline-block;
     cursor: pointer;
 }
+
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -525,14 +341,16 @@ main nav ul {
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-#mobileMenu{
+#mobileMenu {
     width:100%;
     font-size:20px;
     position:absolute;
@@ -540,4 +358,203 @@ main nav ul {
     margin-left:0;
     margin-right:auto;
     padding:0;
+}
+
+/*
+ * * * * * * 
+ * Code for the home page
+ * * * * * *
+ */
+
+/*
+ * Code for the title
+ */
+
+.mainTitle {
+    top: 5px;
+    position:relative;
+    margin:0 auto;
+    clear:left;
+    height:auto;
+    z-index: 0;
+    opacity:0;
+}
+
+.mainTitle h1 {
+    font-family: trench;
+    text-align: center;
+    font-size: 100px;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #00b6ff,
+    1px -1px 0 #00b6ff,
+    -1px 1px 0 #00b6ff,
+    1px 1px 0 #00b6ff;  
+}
+
+/*
+ * Code for lines
+ */
+
+#lines {
+    position: absolute;
+    opacity: 0;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*
+ * Code for the links
+ */
+
+.landingLinks {
+    font-family: trench;
+    text-decoration: none;
+    position: absolute;
+    font-size: x-large;
+    float:left;
+    opacity: 0;
+    color:white;
+    text-shadow:
+    -1px -1px 0 #00b6ff,
+    1px -1px 0 #00b6ff,
+    -1px 1px 0 #00b6ff,
+    1px 1px 0 #00b6ff;
+    transition: all 0.3s ease; 
+}
+
+.landingLinkHover {
+    transform: scale(1.05);
+}
+
+#CNNLink {
+    top:185px;
+    left:30px;
+}
+
+#HMILink {
+    top:0px;
+    left:840px;
+}
+
+#HMLLink {
+    top:0px;
+    left:15px;
+}
+
+#INNLink {
+    top:88px;
+    left: 10px;
+}
+
+#SSLink {
+    top:280px;
+    left:160px;
+}
+
+#TMILink {
+    top:95px;
+    left:850px;
+}
+
+#AIRLink {
+    top:300px;
+    left: 647px;
+}
+
+#LCLink {
+    top:210px;
+    left:840px;
+}
+
+/*
+ * Code for the circles
+ */
+
+#circle1 {
+    top:22px;
+    left: 108px;
+}
+
+#circle2 {
+    top:10px;
+    left: 760px;
+}
+
+#circle3 {
+    top:110px;
+    left:770px;
+}
+
+#circle4 {
+    top:232px;
+    left:760px;
+}
+
+#circle5 {
+    top:308px;
+    left:567px;
+}
+
+#circle6 {
+    top:279px;
+    left:299px;
+}
+
+#circle7 {
+    top:182px;
+    left:200px;
+}
+
+#circle8 {
+    top:103px;
+    left:128px;
+}
+
+.circles {
+    width:auto;
+    height:auto;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.circleHover {
+    transform: scale(1.3);
+}
+
+.circleClicked {
+    z-index: 10000;
+    transition-timing-function: ease-out;
+    transition: 1.8s;
+    transform: scale(115);
+}
+
+/*
+ * Code for the brain picture
+ */
+
+#brain_pic {
+    top:100px;
+    width: 620px;
+    height: 349px;
+    opacity: 0;
+    margin: auto;
+}
+
+.summary {
+    background-color: #7de2ac
+}
+
+.summary, .advanced {
+    padding: 1px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.advanced {
+    background-color: #81dbff
 }
