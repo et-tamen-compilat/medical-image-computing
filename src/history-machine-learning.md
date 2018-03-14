@@ -42,12 +42,14 @@ Some large projects include:
 - U-net (2015) - This is an CNN architecture specialised in biomedical image segmentation. It introduced equal amount of upsampling and downsampling layers, and also skip connections. More information on this can be found on the Semantic Segmentation page.
 
 ## The Importance of GPUs
+<!-- Removed Intel because they don't make 'real' GPUs. -->
+Nvidia is behind one of the largest conferences on AI, and this is for a good reason - GPUs are extremely important in the world of machine learning. GPUs have around 200 times more processors per chip than CPUs.  The flip side of this, however, is that whereas CPUs can perform any kind of computation, GPUs are tailored to only specific use cases, where operations (addition, multiplicaiton, etc.) have to be performed on vectors, which are essentially lists of numbers. A CPU would perform each operation on each number in the vector syncronously, i.e. one by one. This is slow. A GPU would perform operations on each number in the vector in parallel i.e. at the same time. 
 
-NVIDIA and Intel are behind two of the largest conferences on AI, and this is for a good reason - GPUs are extremely important in the world of machine learning. GPUs have around 200 times more processors per chip than CPUs, and even though CPUs are more powerful, a lot of this extra power is unused by machine learning applications. GPUs are more focused on data computations, which is what machine learning applications need, and because of this, they are smaller, and so that is why more can be fit on one chip.
+Vectors and matrices, which are grids of numbers (or lists of vectors) are essential to machine learning applicaions, and because of this, they are smaller, and so that is why more can be fit on one chip. Nvidia are credited with making the world's first GPU, the GeForce 256 in 1999. At that time, launching the product was a risk as it was an entirely new kind of product. However, due to the use of vector calculations in video games, GPUs proliferated, as video games benefitted from a huge leap in performance. It was years later, than mathematicians, scientists and engineers realised that GPUs could be used to improve the speed of computations used in their discipline, due to the use of vectors. This led to the realisation that GPUs would make neural networks, a very old idea, leaps and bounds more practical. This led to GPU companies particularly Nvidia benefitting hugely from the "machine learning revolution". Nvidia's stock price has increased roughly 18-fold since 2012, the year that the importance of GPUs in machine learning was demonstrated by AlexNet.
 
-### NVIDIA Tensor Cores - 2017
+### Nvidia Tensor Cores - 2017
 
-NVIDIA is used by Amazon to power their Amazon Web Service Machine Learning platform. This is because they are creating GPUs specifically for machine learning, for example the Tesla V100, announced in May 2017. This used Tensor Cores, which are used for matrix arithmetic in machine learning.
+Nvidia is used by Amazon to power their Amazon Web Service Machine Learning platform. This is because they are creating GPUs specifically for machine learning, for example the Tesla V100, announced in May 2017. This used Tensor Cores, which are used for matrix arithmetic in machine learning.
 
 A tensor core can compute 64 fixed point operations per clock cycle, as it provides a 4x4x4 matrix processing array, and performs the operation shown in the image below. __A, B, C__ and __D__ are 4x4 matrices.
 
@@ -59,13 +61,11 @@ This means lots of operations can be processed in a single clock cycle, which is
 
 This powers a lot of Google's main services, including Search, Street View, Photos and Translate. It allows the neural network behind these to run faster, and so they can be run at a more affordable cost.
 
-Similar to the Tensor cores, it optimises how the multiplications, additions and activation functions are applied to data in CNNs, making the process much faster.
+Similar to the Tensor cores, it optimises how the multiplications, additions and activation functions are applied to data in CNNs, making the process much faster. Unlike tensor cores, which are part of general-purpose GPUs, TPUs are chips designed solely for accelerating computations required for neural networks. This makes them even more faster than general-purpose GPUs when performing machine learning tasks, as GPUs have to handle other use cases, and so are less specialised.
 
-### Intel and Facebook - Nervana Neural Processor - 2017
+### Intel - Nervana Neural Processor - 2017
 
-This was created because Intel had just been optimising their Intel Xeon Scalable Processors, but they realised that they needed to create a new hardware required by AI computations.
-
-They realised that matrix multiplications and convolutions were the main computations done in machine learning, and so optimised their processor for these.
+After GPUs allowed machine learning to rise to prominence, Intel, the world's biggest manufacturer of CPUs, was left out in the cold. The closest thing to GPUs, Intel produced was integrated GPUs, i.e. GPUs which were built in the CPUs, they produced. However, these have nowhere near comparable performance, as they had to be very small, so they could be put in the CPU. Intel's share price hasn't increased anywhere near the rate that Nvidia's has, in the last few years, as a result. However, Intel has been working on a response, and they have realised the idea of a single CPU that can do all tasks needed in a computer, is unrealistic, especially due to the imminent collapse of Moore's law, that stated the number of transistors in a CPU would double every 18-24 months, i.e. a CPU would double in speed every 2 years. Part of their response is a custom chip dedicated to accelerating computations performed in neural networks, called the Nervana Neural Processor. This is very similar to Google's TPU. Matirx multiplications and convolutions are the two core operations performed by the processor.
 
 ### GPUs in Cloud Computing
 
@@ -80,7 +80,7 @@ A recent trend is the renting of GPUs from big companies such as Google and Amaz
 - [*__OpenAI__*](https://openai.com/)
 - [*__Forbes__*](https://www.forbes.com/sites/forbestechcouncil/2017/12/01/for-machine-learning-its-all-about-gpus/#2317fc747699)
 - [*__A Survey on Deep Learning in Medical Image Analysis__*](https://arxiv.org/pdf/1702.05747.pdf)
-- [*__NVIDIA__*](https://devblogs.nvidia.com/inside-volta/)
+- [*__Nvidia__*](https://devblogs.nvidia.com/inside-volta/)
 - [*__Google TensorFlow__*](https://cloud.google.com/blog/big-data/2017/05/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
 - [*__Intel Nervana Neural Network__*](https://ai.intel.com/intel-nervana-neural-network-processors-nnp-redefine-ai-silicon/)
 - [*__Von Neumann Architecture__*](https://www.computerscience.gcse.guru/theory/von-neumann-architecture)
