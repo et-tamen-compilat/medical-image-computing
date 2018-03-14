@@ -339,6 +339,9 @@ main nav ul {
 
 /*hamburger icon*/
 .hamburger {
+	position:absolute;
+	top:0;
+	left:95%;
     display: inline-block;
     cursor: pointer;
 }
