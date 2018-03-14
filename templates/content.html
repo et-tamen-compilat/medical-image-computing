@@ -78,7 +78,12 @@
 
             <div class="full-image" style="background-image:url('/content-images/$cover$');">
                 <div class="semitone">
-                    <h1>$title$</h1>
+                    <div class="container">
+                            <h1>$title$</h1>
+                            $if(description)$
+                                <p>$description$ <a href="#top">Let's go →</a></p>
+                            $endif$
+                    </div>
                 </div>
             </div>
                 <div class="container">
