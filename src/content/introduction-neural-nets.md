@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Neural Networks"
-cover: "AI.jpg"
+cover: "titan.jpg"
 description: "In this section, you'll learn about neural networks. Neural networks are the basis of the major advancements in AI that have been happening over the last decade. They let a computer learn to solve a problem for itself."
 ---
 
