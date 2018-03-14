@@ -340,6 +340,9 @@ main nav ul {
 
 /*hamburger icon*/
 .hamburger {
+	position:absolute;
+	top:0;
+	right:10px;
     display: inline-block;
     cursor: pointer;
 }
@@ -560,19 +563,3 @@ main nav ul {
     opacity: 0;
     margin: auto;
 }
-
-.golden {
-    color: black !important;
-    background-color: #ffd0d0 !important;
-}
-
-.golden a {
-    color: #ff0000a6 !important;
-}
-
-.golden a:hover {
-    color: #ff000094 !important;
-}
-
-.golden .heading {
-    color: #bf4848 !important;}
