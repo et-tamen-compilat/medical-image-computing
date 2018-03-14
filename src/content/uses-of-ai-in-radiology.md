@@ -31,7 +31,7 @@ Whereas exam classification focuses on the entire image, object classification f
 
 For instance, a multi-stream CNN was used in 2016 to integrate 3D in the classification of pulmonary nodules. This architecture aimed to classify points of interest in chest CT scans as nodules or not. For each candidate nodule fed into the network, a set of 2D patches with different orientation planes is considered. Multiple streams of 2D convolution networks then process these sets. A dedicated fusion method finally merges their outputs to give the final classification. The network performed with a high detection sensitivity above 85%, and was particularly effective in reducing "false positives", results wrongly indicating the presence of a nodule. This paper was part of the entries to the LUNA Challenge, covered in the “Detection of Lung Cancer” <!--ADD hyperlink-->.
 
-##Detection
+## Detection
 
 ### Organ & region detection:
 
@@ -52,14 +52,14 @@ However, these 3 parts of the body are far from being the only parts of the body
 ## Lesion Segmentation
 A lesion is a part of a tissue or organ that is injured, and a wound is a lesion of the skin, particularly if it has been cut open. Wounds are an area that is particularly open to improvements in machine learning, since the high number of cases means that thorough medical image analysis by humans is too time-consuming. But medical images of wounds are useful, as they allow for the detection of infection and for estimating the progress of healing. Another reason why it is ripe for improvement with deep learning is due to large datasets available, or at least large compared to what is usual for medical imaging. For instance, the NYU Wound database has 8000 images. In one paper, an encoder-decoder architecture was used to perform segmentation and the hidden layers of this network were passed to an SVM linear classifier, as another way of classifying data in machine learning, similar to a neural network. Meanwhile, the segmentation of the wound would allow surface area to be calculated. Two different images of wounds at two different points in time, would allow the change in surface area. This along with other data such as patient age and gender, would allow an estimate to be given of how long healing would take. 
 
-##Registration
+## Registration
 
 Image registration, or spatial alignement, consists in transforming different data sets into one coordinate system. In medical image analysis, this typically involves different types of scans. This task thus allows us to compare and integrate the data obtained from these varied measurements, in particular when it comes to 2D-3D registration for a more accurate diagnosis or image guidance. Whilst this topic isn't as popular as detection or segmentation for deep learning, its performance can benefit from the use of neural networks. Indeed, in existing methods, 2D-3D registration tends to be achieved via intensity-based registration: 2D X-ray images are derived from 3D X-rays by simulating the attenuation (or reduction of intensity) of virtual X-rays. This process, albeit highly accurate, suffers from long computation time and a small capture range. 
 
 Thus, the use of AI could provide a better alternative. Estimating similarity measures for two images, notably mutual information, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember is that the architecture incorporated a "regression layer" at the end, allowing the network to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.   
 
 
-##Others: Content-based image retrieval & combining image data with reports
+## Others: Content-based image retrieval & combining image data with reports
 
 In the "Others" section of the chart at the top of the page, the following two areas are included. Both relate to the analysis of  medical imaging data obtained with deep learning.
 
