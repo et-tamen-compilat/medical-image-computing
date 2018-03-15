@@ -37,6 +37,8 @@ imgs:
 - name: "Wikimedia"
   figure: 5
   url: "https://upload.wikimedia.org/wikipedia/commons/d/db/Projectional_radiography_components.jpg"
+- name: "Gazeta Telegraf"
+  url: "http://telegraf.al/bota-rajoni/inteligjenca-artificiale-zbulon-alzheimerin-10-vite-para"
 ---
 
 ## What is Medical Imaging? {#top}
