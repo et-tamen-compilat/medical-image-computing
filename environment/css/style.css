@@ -61,6 +61,8 @@ h1 a, h2 a, h3 a, h4 a {
 
 .face {
     border-radius:360px;
+    width:200px;
+    height:200px;
 }
 
 /*
@@ -79,6 +81,7 @@ h1 a, h2 a, h3 a, h4 a {
 .brand {
     padding-top: 11px;
     color: #76ddff;
+    padding-bottom: 11px;
 }
 
 .brand a {
@@ -473,12 +476,7 @@ main nav ul {
     font-size: x-large;
     float:left;
     opacity: 0;
-    color:white;
-    text-shadow:
-    -1px -1px 0 #00b6ff,
-    1px -1px 0 #00b6ff,
-    -1px 1px 0 #00b6ff,
-    1px 1px 0 #00b6ff;
+    color: #48b8ff;  
     transition: all 0.3s ease; 
 }
 
