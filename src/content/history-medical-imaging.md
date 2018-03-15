@@ -8,6 +8,9 @@ sources:
   url: "http://www.springer.com/gp/book/9781447160960"
 - name: "Imaginis"
   url: "http://www.imaginis.com/faq/history-of-medical-diagnosis-and-diagnostic-imaging"
+imgs:
+- name: "Stiegel Consulting"
+  url: "http://www.stiegelconsulting.com/"
 ---
 
 ## Introduction to Medical Imaging {#top}

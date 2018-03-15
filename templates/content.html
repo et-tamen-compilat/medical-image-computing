@@ -11,7 +11,7 @@
     </head>
     <body bgcolor="white">
         <script>document.body.className += ' fade-out';</script>
-        <nav class="content-nav">
+        <nav class="content-nav" id="fig:Cover">
            <div class="container">
                 <div class="brand">
                     <a href="/">AI in Radiology</a>
@@ -146,9 +146,6 @@
                                 <ul>
                                     $for(sources)$
                                         <li>
-                                            $if(sources.figure)$
-                                                <i><a href="#fig:$sources.figure$">Figure $sources.figure$</a></i>: 
-                                            $endif$
                                             <a href="$sources.url$">$sources.name$</a>
                                             $if(sources.isbn)$ 
                                             (ISBN: $sources.isbn$)
@@ -163,7 +160,11 @@
                                 <ul>
                                     $for(imgs)$
                                         <li>
+                                            $if(sources.figure)$
                                             <i><a href="#fig:$imgs.figure$">Figure $imgs.figure$</a></i>: 
+                                            $else$
+                                            <i><a href="#fig:Cover">Cover Image</a></i>: 
+                                            $endif$
                                             <a href="$imgs.url$">$imgs.name$</a>
                                         </li>
                                     $endfor$
