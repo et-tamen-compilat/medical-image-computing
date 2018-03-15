@@ -32,7 +32,7 @@ sources:
   url: "https://cloud.google.com/gpu/"
 - name: "Google Cloud Machine Learning Engine"
   url: "https://cloud.google.com/ml-engine/"
-  imgs:
+imgs:
 - name: "Nvidia"
   figure: 1
   url: "https://devblogs.nvidia.com/wp-content/uploads/2017/05/image4.png"
