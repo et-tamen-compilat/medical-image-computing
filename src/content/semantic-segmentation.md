@@ -46,7 +46,7 @@ Essentially, the last fully connected layer is replaced by a convolution layer, 
 
 To allow this to happen padding is added. The amount of padding of transposed convolution depends on the dimensions needed. For instance, suppose the kernel of the original from a $5 \times 5$ to $3 \times 3$, was a $3 \times 3$ with stride 1. Then, side padding of size 2 needs to be added around the output.
 
-![](/content-images/SegmentationDiagram1.png){#fig:1}
+![Diagram of a CNN](/content-images/SegmentationDiagram1.png){#fig:1}
 <!--Image source:
 https://www.semanticscholar.org/paper/Video-Salient-Object-Detection-via-Fully-Convoluti-Wang-Shen/022d74ae2f8680e780b18e0cbb041d5c5a57c7a5-->
 
@@ -56,7 +56,7 @@ However, this upsampling method is not sufficient to compensate the loss of info
 
 The first approach can be exemplified by U-Net, a CNN specialised in Biomedical Image Segmentation. This architecture begins the same as a typical CNN, with convolution-activation pairs and max-pooling layers to reduce the image size, while increasing depth. However, after having reduced the image to a small size, there are a series of up-convolutions, which are almost an inverse of the max-pooling layers, as well as convolution-activation pairs. These gradually increase the image size, till eventually a full-sized image, representing the segmentation map of the original image, is recovered. The series of layers reducing the image size is called the encoder, and the series of layers recovering the image size is called the decoder. U-Net is, therefore, called an encoder-decoder architecture.
 
-![](/content-images/UNetImage.png){#fig:2}
+![Diagram of the U-Net architecture](/content-images/UNetImage.png){#fig:2}
 
 So, what precisely is an up-convolution? The U-Net architecture used 2x2 up-convolutions which went through each pixel in the input image, and uses the entire depth of that pixel to produce 4 output pixels, of depth 1. So each input pixel was converted to 4 output pixels. 
 
@@ -75,7 +75,7 @@ One approach suggested by researchers in 2016, was to only 2D slices of these 3D
 ## Advanced: Dilated convolutions
 However, an encoder-decoder architecture is not the only solution to semantic segmentation. An encoder-decoder architecture reduces dimension to get a "global view" of the image, before increasing dimension to get back local context – thus increasing the amount of parameters (or weights) in the network. One wonders whether it is possible for each pixel in the image to get the global context of the image, without reducing the size of the image. This is what was proposed at ICLR (International Conference on Learning Representations) 2016, with dilated convolutions.
 
-![](content-images/DilatedImage.png){#fig:3}
+![Diagram of the evolution of receptive fields with dilated convolution](content-images/DilatedImage.png){#fig:3}
 <!--Add this image description:
 Layer 1: output F1
 Layer 2: output F2
