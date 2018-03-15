@@ -7,6 +7,9 @@ sources:
   url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
 - name: "What is backpropagation really doing?"
   url: "https://www.youtube.com/watch?v=Ilg3gGewQ5U"
+imgs:
+- name: "Refineri"
+  url: "https://cdn-images-1.medium.com/max/1600/1*8IwY8qlZ7kmTTzWyDJZHFA.jpeg"
 ---
 
 ## Basics {#top}
