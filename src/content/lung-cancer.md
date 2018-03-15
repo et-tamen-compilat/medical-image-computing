@@ -17,6 +17,8 @@ sources:
   url: "https://tinyurl.com/yabp56q4"
 - name: "Project LUNA"
   url: "https://luna16.grand-challenge.org/results/"
+- name: "Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks"
+  url: "http://ieeexplore.ieee.org/abstract/document/7422783/"
 - name: "Project AiAi"
   url: "https://aiai.care/"
 - name: "Genetic Deep Learning for Lung Cancer Screening"
@@ -46,6 +48,10 @@ This is why machine learning is now being considered; in order to improve specif
 The competition was had 2 main challenges: Nodule Detection (NDET) and False Positive Reduction (NPRED). These uses raw CT scans to detect locations of possible nodules, and give these locations probabilities of being a nodule. The task essentially says whether each location is or is not a nodule.
 
 The competitors were given a set of data containing 888 CT scans, which needed to be split into testing and training data. The algorithm they develop has to be done on the training data, and then results are calculated by running the algorithm on the testing data, and seeing the accuracy of the results. The testing data is split into 10 subsets, so that there can be cross-validation to make sure that the algorithm is consistent.
+
+Amongst the submissions was a multi-stream CNN was used to integrate 3D in the classification of pulmonary nodules. This architecture aimed to classify points of interest in chest CT scans as nodules or not. For each candidate nodule fed into the network, a set of 2D patches with different orientation planes is considered. Multiple streams of 2D convolution networks then process these sets. A dedicated fusion method finally merges their outputs to give the final classification. The network performed with a high detection sensitivity above 85%, and was particularly effective in reducing "false positives", results wrongly indicating the presence of a nodule. 
+
+![](content-images/lungNodule.jpg)
 
 ## Data Science Bowl 2017
 
