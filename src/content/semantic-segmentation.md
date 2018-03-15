@@ -1,6 +1,7 @@
 ---
 title: "Semantic Segmentation"
 cover: "segBrain.jpg"
+next: "uses-of-ai-in-radiology"
 description: "In this section, you'll learn about the separation of an image into different regions through a process called semantic segmentation, in particular how it integrates with medical image scans."
 sources:
 - name: "V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation"

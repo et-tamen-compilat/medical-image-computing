@@ -1,6 +1,7 @@
 ---
 cover: "thumbsUpBlue.png"
 title: "Uses of AI in Radiology"
+next: "lung-cancer"
 description: "In this section, you'll learn about the most common applications of artificial intelligence currently being researched in the field of medical imaging."
 sources:
 - name: "A Survey on Deep Learning in Medical Image Analysis"

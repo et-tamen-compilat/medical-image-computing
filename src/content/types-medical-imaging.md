@@ -1,6 +1,7 @@
 ---
 cover: "medImaging.png"
 title: "Types of Medical Imaging"
+next: "history-machine-learning"
 description: "In this section, you'll learn about the most common types of medical imaging, what they are, how they work, what they can take images of, and how risky they are to use."
 sources:
 - name: "NPS"
