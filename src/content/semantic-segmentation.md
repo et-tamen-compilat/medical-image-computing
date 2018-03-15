@@ -62,13 +62,13 @@ So, what precisely is an up-convolution? The U-Net architecture used 2x2 up-conv
 
 Multiple up-convolution can be stack to create an output image of higher depth. In U-Net they used half the depth of the previous layer as the number of up-convolutions. So, after each up-convolution the depth of the image was half, but the resolution was 4 times greater.
 
-This architecture thus differs from regular FCNs on several levels. Firstly, its many shortcut connections between layers in the encoder to layers in the decoder. These assist the decoder in recovering image details alongside upconvolutions. Furthermore, U-Net compensates the lack of available training data by data augmentation. This process increases the amount of training data using information contained in the existing training data (by applying elastic deformation). 
+This architecture thus differs from regular FCNs on several levels. Firstly, its many shortcut connections between layers in the encoder to layers in the decoder. These assist the decoder in recovering image details alongside upconvolutions. Furthermore, U-Net compensates the lack of available training data by data augmentation. This process increases the amount of training data using information contained in the existing training data. 
 
-The U-Net architecture was proposed by 3 computer scientists at the University of Freiburg, who used it to win the ISBI cell tracking challenge in 2015. Another success of the U-Net architecture was in 2016, when it was used to segment MRI scans of prostates. The architecture, called V-Net, was trained on data from the Promise20 dataset. The architecture was designed to work on 3-dimensional data, which is actually 4-dimensional if you consider the feature channels. These 3D scans are called volumetric images.
+The U-Net architecture was proposed by 3 computer scientists at the University of Freiburg, who used it to win the ISBI cell tracking challenge in 2015. Another success of the U-Net architecture was in 2016, when it was used to segment MRI scans of prostates. The architecture, called V-Net, was trained on data from the Promise20 dataset. It was designed to work on 3-dimensional data, which is actually 4-dimensional if you consider the feature channels. These 3D scans are called volumetric images.
 
 V-Net combined a U-Net architecture, but the layers were in blocks, that were designed to learn the residual functions, with ResNet-like shortcut connections between the input and output of these blocks. One problem with segmenting 3D images is that the training data to the neural network has to be segmented manually by a human, and it is typically much harder for a human to segment a 3D image, than a 2D image. 
 
-One approach suggested by researchers in 2016, was to only 2D slices of these 3D volumetric images. These were called sparse annotatons, and elastic deformations were applied to allow the network to be trained. This architecture, based on U-Nets, was trained on *Xenopus* kidneys.
+One approach suggested by researchers in 2016, was to only 2D slices of these 3D volumetric images. These were called sparse annotations, and elastic deformations were applied to allow the network to be trained. This architecture, based on U-Nets, was trained on *Xenopus* kidneys.
 
 ::: {.advanced}
 
@@ -83,7 +83,7 @@ Layer 2: output F2
 Layer 3: output F3
 -->
 
-As illustrated in the diagram above, dilated convolution increases the global (or receptive) field, in other words the implicit area captured by each of the initial input, without losing resolution or coverage. Indeed, the red dots correspond to the inputs, and the blue area to the receptive field of each of these. 
+As illustrated in the diagram above, dilated convolution increases the global (or receptive) field, in other words the implicit area captured by each of the initial input, without losing resolution or coverage. Here, the three windows of the diagram each represent a layer. The red dots correspond to the inputs, and the blue area to the receptive field of each of these. 
 
 Let $F_0$ be the input image, here with dimensions $3 \times 3$. 
 
@@ -95,6 +95,6 @@ The global view thus expands exponentially, whilst the number of parameters grow
 
 ![Comparison of segmentation results  on the head of the VHK (Visible Human Korean) dataset](content-images/brainSegmentation.png){#fig:4}
 
-This figure shows that FCNs based on dilated convolution could obtain smoother and more accurate segmentation results than the standard FCNs. This is confirmed by the quantitative testing that was taken out: when training the 2 networks on 80% of the VHK and testing it on the other 20%, the performance of the dilated convolution network increased on average by a significant 19.6%. Thus, this study suggests the potential of this method in semantic segmentation, and we can expect more studies to be conducted on medical imaging scans in the upcoming years. 
+This figure shows that FCNs based on dilated convolution could obtain smoother and more accurate segmentation results than the standard FCNs. This is confirmed by the quantitative testing that was taken out. When training the 2 networks on 80% of the VHK and testing it on the other 20%, the performance of the dilated convolution network increased on average by a significant 19.6%. Thus, this study suggests the potential of this method in semantic segmentation, and we can expect more studies to be conducted on medical imaging scans in the upcoming years. 
 
 :::
