@@ -84,7 +84,7 @@ The problem is called the degradation problem. The solution is to add shortcut c
 Observe, that in the worst case, when there is no benefit of the extra layers, similar performance can be gained by making $h(x) = 0$. This is the key insight, learning the zero function is easier than learning the identity function. ResNet was used on the ImageNet dataset in 2015 with 152 layers, much more than AlexNet used in 2012. The difference between the identity mapping and the actual mapping wanted is called the residual mapping, i.e. if $f(x) = h(x) + x$, then the residual mapping that is learnt is $f(x) - x$. This gives rise to the name ResNet.
 
 <!-- Note to Hashan, set white to transparent -->
-![A diagram demonstrating ResNet](/content-images/resnet.jpeg)
+![A diagram demonstrating ResNet](/content-images/resnet.png)
 </div>
 <!--
 ::: {.summary}
