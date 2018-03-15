@@ -25,16 +25,16 @@ imgs:
 - name: "Siemens"
   figure: 1
   url: "https://www.siemens.com/global/en/home.html"
-  - name: "Blogspot"
+- name: "Blogspot"
   figure: 2
   url: "https://4.bp.blogspot.com/-DJu6R81yTLc/V35ixNAMFXI/AAAAAAAACm4/uUWNhbXV7w8_b_DRIM5STp3Ol1BqncIswCLcB/s1600/CT_MRI.jpg"
-  - name: "Journal of Nuclear Medicine"
+- name: "Journal of Nuclear Medicine"
   figure: 3
   url: "http://jnm.snmjournals.org/content/47/7/1081/F2.large.jpg"
-  - name: "Sunset Radiology"
+- name: "Sunset Radiology"
   figure: 4
   url: "http://www.sunsetradiology.net/uploads/1/0/5/8/10588004/8294959_orig.jpg?261"
-  - name: "Wikimedia"
+- name: "Wikimedia"
   figure: 5
   url: "https://upload.wikimedia.org/wikipedia/commons/d/db/Projectional_radiography_components.jpg"
 ---
