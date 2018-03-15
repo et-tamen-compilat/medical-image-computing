@@ -51,9 +51,9 @@ Despite the success of MADELINE, there was not much progress until the late 1970
 
 1982 was the year that interest in neural networks started to pick up again, when John Hopfield suggested creating a network which had bidirectional lines, similar to how neurons actually work. Furthermore, in 1982, Japan announced it was focusing on more advanced neural networks, which incentivised American funding into the area, and thus created more research in the area.
 
-Neural networks use back propagation (explained in detail in the Introduction to Neural Networks page), and this important step came in 1986, when three researchers from the Stanford psychology department decided to extend an algorithm created by Widrow and Hoff in 1962. This therefore allowed multiple layers to be used in a neural network, creating what are known as 'slow learners', which will learn over a long period of time.
+Neural networks use back propagation (explained in detail in the [Introduction to Neural Networks](/introduction-neural-nets.html)), and this important step came in 1986, when three researchers from the Stanford psychology department decided to extend an algorithm created by Widrow and Hoff in 1962. This therefore allowed multiple layers to be used in a neural network, creating what are known as 'slow learners', which will learn over a long period of time.
 
-The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since then, there have been many more advances in the field, such as in 1998, when research at AT&T Bell Laboratories on digit recognition resulted in good accuracy in detecting handwritten postcodes from the US Postal Service. This used back-propagation, which, as stated above, is explained in detail on the Introduction to Neural Networks page.
+The late 1980s and 1990s did not bring much to the field. However in 1997, the IBM computer Deep Blue, which was a chess-playing computer, beat the world chess champion. Since then, there have been many more advances in the field, such as in 1998, when research at AT&T Bell Laboratories on digit recognition resulted in good accuracy in detecting handwritten postcodes from the US Postal Service. This used back-propagation, which, as stated above, is explained in detail on the [Introduction to Neural Networks](/introduction-neural-nets.html).
 
 ## 21st Century
 
@@ -67,8 +67,8 @@ Some large projects include:
 - DeepMind (2014) - This company was bought by Google, and can play basic video games to the same levels as humans. In 2016, it managed to beat a professional at the game Go, which is considered to be one the world's most difficult board games.
 - OpenAI (2015) - This is a non-profit organisation created by Elon Musk and others, to create safe artificial intelligence that can benefit humanity.
 - Amazon Machine Learning Platform (2015) - This is part of Amazon Web Services, and shows how most big companies want to get involved in machine learning. They say it drives many of their internal systems, from regularly used services such as search recommendations and Alexa, to more experimental ones like Prime Air and Amazon Go.
-- ResNet (2015) - This was a major advancement in CNNs, and more information can be found on the 'Introduction to CNNs' page.
-- U-net (2015) - This is an CNN architecture specialised in biomedical image segmentation. It introduced an equal amount of upsampling and downsampling layers, and also skip connections. More information on on what this means can be found on the Semantic Segmentation page.
+- ResNet (2015) - This was a major advancement in CNNs, and more information can be found on the [Introduction to CNNs](/introduction-cnns.html) page.
+- U-net (2015) - This is an CNN architecture specialised in biomedical image segmentation. It introduced an equal amount of upsampling and downsampling layers, and also skip connections. More information on on what this means can be found on the [Semantic Segmentation](/semantic-segmentation.html) page.
 
 ## The Importance of GPUs
 <!-- Removed Intel because they don't make 'real' GPUs. -->
