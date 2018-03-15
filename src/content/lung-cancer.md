@@ -14,7 +14,7 @@ sources:
 - name: "Google Blog"
   url: "https://blog.google/topics/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/"
 - name: "Medium"
-  url: "https://medium.com/\@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda"
+  url: "https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda"
 - name: "Project LUNA"
   url: "https://luna16.grand-challenge.org/results/"
 - name: "Project AiAi"
