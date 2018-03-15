@@ -40,7 +40,7 @@ Various uses of artificial intelligence, and in particular convolutional neural 
 
 At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
 
-![*Breakdown of the tasks addressed by research papers in this field up until 2017*](/content-images/uses.png) 
+![Breakdown of the tasks addressed by research papers in this field up until 2017](/content-images/uses.png) 
 
 
 ## Classification
@@ -127,6 +127,6 @@ The combination of text reports with medical image data can follow one of two ap
 
 Image registration, or spatial alignment, consists in transforming different data sets into one coordinate system. In medical image analysis, this typically involves different types of scans. This task thus allows us to compare and integrate the data obtained from these varied measurements, in particular when it comes to 2D-3D registration for a more accurate diagnosis or image guidance. Whilst this topic isn't as popular as detection or segmentation for deep learning, its performance can benefit from the use of neural networks. Indeed, in existing methods, 2D-3D registration tends to be achieved via intensity-based registration: 2D X-ray images are derived from 3D X-rays by simulating the attenuation (or reduction of intensity) of virtual X-rays. This process, albeit highly accurate, suffers from long computation time and a small capture range. 
 
-Thus, the use of AI could provide a better alternative. Estimating similarity measures for two images, notably mutual information, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember is that the architecture incorporated a "regression layer" at the end, allowing the network to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.   
+Thus, the use of AI could provide a better alternative. Estimating similarity measures for two images, notably mutual information, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember is that the architecture incorporated a "regression layer" at the end, allowing the network to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.
 
 :::
