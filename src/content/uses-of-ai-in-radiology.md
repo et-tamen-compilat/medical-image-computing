@@ -9,8 +9,6 @@ sources:
   url: "https://www.nature.com/articles/nature21056.epdf?author_access_token=8oxIcYWf5UNrNpHsUHd2StRgN0jAjWel9jnR3ZoTv0NXpMHRAJy8Qn10ys2O4tuPakXos4UhQAFZ750CsBNMMsISFHIKinKDMKjShCpHIlYPYUHhNzkn6pSnOCt0Ftf6"
 - name: "Alzheimer's disease diagnostics by adaptation of 3D convolution network"
   url: "https://arxiv.org/pdf/1607.00455.pdf"
-- name: "Pulmonary Nodule Detection in CT Images: False Positive Reduction Using Multi-View Convolutional Networks"
-  url: "http://ieeexplore.ieee.org/abstract/document/7422783/"
 - name: "Marginal Space Deep Learning: Efficient Architecture for Detection in Volumetric Image Data"
   url: "http://comaniciu.net/Papers/MarginalSpaceDeepLearning_MICCAI15.pdf"
 - name: "Deep Learning in Multi-Task Medical Image Segmentation in Multiple Modalities"
@@ -62,11 +60,7 @@ On the other hand, other recent papers have chosen to train their CNNs, by takin
 
 ### Object or lesion classification:
 
-Whereas exam classification focuses on the entire image, object classification focuses on classifying a small, previously identified part of a medical image into multiple classes. An example of such an object would be lung nodules in chest CT scans. Combining local information on the appearance of the lesion, with global context on its location, is required for accurate classification. This makes it even more complex than exam classification, as it introduces the need to incorporate contextual and 3-dimensional information. As a result, conventional deep learning architectures aren't efficient in this area, and variations or combinations with other architectures are being considered.
-
-For instance, a multi-stream CNN was used in 2016 to integrate 3D in the classification of pulmonary nodules. This architecture aimed to classify points of interest in chest CT scans as nodules or not. For each candidate nodule fed into the network, a set of 2D patches with different orientation planes is considered. Multiple streams of 2D convolution networks then process these sets. A dedicated fusion method finally merges their outputs to give the final classification. 
-
-The network performed with a high detection sensitivity above 85%, and was particularly effective in reducing "false positives", results wrongly indicating the presence of a nodule. This paper was part of the entries to the LUNA Challenge, covered in the “Detection of Lung Cancer” <!--ADD hyperlink-->.
+Whereas exam classification focuses on the entire image, object classification focuses on classifying a small, previously identified part of a medical image into multiple classes. An example of such an object would be lung nodules in chest CT scans. Combining local information on the appearance of the lesion, with global context on its location, is required for accurate classification. This makes it even more complex than exam classification, as it introduces the need to incorporate contextual and 3-dimensional information. As a result, conventional deep learning architectures aren't efficient in this area, and variations or combinations with other architectures are being considered. For instance, a multi-stream CNN was used in 2016 to integrate 3D in the classification of pulmonary nodules. For more details, see [Detection of Lung Cancer](/lung-cancer.html).
 
 ## Detection
 
