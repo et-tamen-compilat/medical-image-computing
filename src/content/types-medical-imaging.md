@@ -24,7 +24,7 @@ sources:
 imgs:
 - name: "Siemens"
   figure: 1
-  url: "https://www.siemens.com/global/en/home.html"
+  url: "http://www.siemens.com.ph/_resources/article_images/image/Edsa_Shang_Photo_B.jpg"
 - name: "Blogspot"
   figure: 2
   url: "https://4.bp.blogspot.com/-DJu6R81yTLc/V35ixNAMFXI/AAAAAAAACm4/uUWNhbXV7w8_b_DRIM5STp3Ol1BqncIswCLcB/s1600/CT_MRI.jpg"
