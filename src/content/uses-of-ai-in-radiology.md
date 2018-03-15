@@ -31,6 +31,21 @@ sources:
   url: "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7393571&tag=1"
 - name: "Watson Health on the Cloud"
   url: "https://www.ibm.com/cloud/healthcare"
+imgs:
+- name: "A Survey on Deep Learning in Medical Image Analysis"
+  url: "https://arxiv.org/abs/1702.05747"
+  figure: 1
+- name: "Nature"
+  url: "https://cs.stanford.edu/people/esteva/nature/"
+  figure: 2
+- name: "Alzheimer's disease diagnostics by adaptation of 3D convolution network"
+  url: "https://arxiv.org/pdf/1607.00455.pdf"
+  figure: 3
+- name: "Very Well Health"
+  url: "https://www.verywell.com/understanding-the-purpose-of-lymph-nodes-2249122"
+  figure: 4
+- name: "Midtown Imaging"
+  url: "https://www.midtownimagingnyc.com/medical-imaging-specialists/"
 advanced: "Registration"
 advanced_url: "registration"
 ---
@@ -40,8 +55,7 @@ Various uses of artificial intelligence, and in particular convolutional neural 
 
 At the same time, offering a cheaper and accessible diagnosis, notably in parts of the world lacking radiologists, is another outcome that researchers aim towards. Below, the main uses are presented alongside example of their applications.
 
-![Breakdown of the tasks addressed by research papers in this field up until 2017](/content-images/uses.png) 
-
+![Breakdown of the tasks addressed by research papers in this field up until 2017](/content-images/uses.png){ #fig:1 }
 
 ## Classification
 
@@ -53,11 +67,11 @@ On the one hand, transfer learning or inductive learning, by using a pre-trained
 
 The network was tasked to output whether a given exam presented a case of the most common skin cancers, or the deadliest type. It was tested against 21 board-certified dermatologists, and matched their performance. The long-term aim behind this paper would be to equip mobile devices with deep neural networks, and provide cheaper universal access to diagnostic care.
 
-![](/content-images/skinCancer.png){ width=40% }
+![](/content-images/skinCancer.png){ width=40% #fig:2 }
 
 On the other hand, other recent papers have chosen to train their CNNs, by taking advantage of unique attributes of medical data to compensate the size of the datasets. For example, using 3D convolutions instead of the 2D convolutions presented in [Convolutional Neural Networks](/introduction-cnns.html) has been explored to classify patients as having Alzheimer’s. The network corresponds to an encoder-decoder architecture (see [Semantic Segmentation](/semantic-segmentation.html)) extended to 3D images. It is pre-trained to capture brain shape variations on MRI scans, before fine-tuning its upper fully convolutional layers for Alzheimer’s Disease classification as shown below. Testing the network on two different Alzeimer’s disease datasets showed that it had a higher accuracy than conventional classification networks.
 
-![](/content-images/3Dcnn.png)
+![](/content-images/3Dcnn.png){ #fig:3 }
 
 
 ### Object or lesion classification:
@@ -82,7 +96,7 @@ One example is detection of lymph nodes. This is as the size of swollen lymph no
 
 Lymph nodes are part of the lymphatic system, an important part of the body's immune system. Automated lymph node detection by a computer system can be hard due to the variety of sizes and shapes lymph nodes can appear in. However, CNNs have shown to be extremely successful, compared to previous techniques. One paper to detect lymph nodes from CT scans first performed segmentation to generate lymph node candidates, called volumes of interest (VOI). Then, a patch-wise classification was done by taking 100 "random views" around each VOI and feeding each one into a 5-layer CNN. Each random view gave a probability of being a lymph nodes, and these probabilities were then averaged. 
 
-![3D visualisation of lymph nodes in the body, coloured in red](/content-images/lymphNodes.jpg) 
+![3D visualisation of lymph nodes in the body, coloured in red](/content-images/lymphNodes.jpg){ #fig:4 }
 
 ## Organ Segmentation
 
