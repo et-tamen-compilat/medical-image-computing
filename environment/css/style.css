@@ -49,6 +49,10 @@ h1 a, h2 a, h3 a, h4 a {
     color: black !important;
 }
 
+.sidenav ul li ul li:last-child {
+    padding-bottom: 0px;
+}
+
 /*
  * * * * * * 
  * 2) Code for personal pages

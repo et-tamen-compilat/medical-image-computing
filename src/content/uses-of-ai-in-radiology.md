@@ -31,6 +31,8 @@ sources:
   url: "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7393571&tag=1"
 - name: "Watson Health on the Cloud"
   url: "https://www.ibm.com/cloud/healthcare"
+advanced: "Registration"
+advanced_url: "registration"
 ---
 ## How is AI used in Radiology? {#top}
 

@@ -135,6 +135,15 @@
                                 <ul>
                                     <li class="heading">This Page</li>
                                     <li>$toc$</li>
+                                    $if(advanced)$
+                                    <li><a href="#$advanced_url$">$advanced$</a></li>
+                                    $endif$
+                                    $if(sources)$
+                                    <li><a href="#sources">Sources</a></li>
+                                    $endif$
+                                    $if(imgs)$
+                                    <li><a href="#image-sources">Image Sources</a></li>
+                                    $endif$
                                 </ul>
                             $endif$
                         </nav>
@@ -142,7 +151,7 @@
                             <br/> $body$
 
                             $if(sources)$
-                                <h2>Sources</h2>
+                                <h2 id="sources">Sources</h2>
                                 <ul>
                                     $for(sources)$
                                         <li>
@@ -156,7 +165,7 @@
                             $endif$
 
                             $if(imgs)$
-                                <h2>Image Sources</h2>
+                                <h2 id="image-sources">Image Sources</h2>
                                 <ul>
                                     $for(imgs)$
                                         <li>

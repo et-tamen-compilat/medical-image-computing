@@ -11,6 +11,8 @@ sources:
   url: "https://arxiv.org/pdf/1512.03385.pdf"
 - name: "Stanford CS231n"
   url: "http://cs231n.stanford.edu/"
+advanced: "ResNet"
+advanced_url: "advanced-resnet"
 ---
 
 ## What are CNNs? {#top}
@@ -73,7 +75,8 @@ One problem with convolutional layers is that they don't preserve image dimensio
 ## CNNs, since when?
 The first major success of convolutional neural networks was AlexNet, developed by Alex Krizhevsky, in 2012 at the University of Toronto. It aimed to solve the ImageNet challenge, an image classification problem with over 1.2 million images to classify into 1000 different categories. AlexNet won this competition, with an error rate of 15.3%, compared to 26.2% for the next best entry. This was done using a convolutional neural net architecture, using the same techniques described here. The network consisted of 5 convolutional layers, each followed by a ReLU activation layer, as well as 3 fully-connected layers. Three of the five convolution-activation pairs were followed by max-pooling layers. From this breakthrough, many new uses have arisen for CNNs, many of which go beyond image classification and rely on segmentation.    
 
-<div class="advanced">
+::: {.advanced}
+
 ## Advanced: ResNet
 Since AlexNet, the same basic ideas are used, but several key improvements have been made. This current state of the art came about from ResNet, a CNN architecture from Microsoft Research, that came out in 2015, and won the ImageNet 2015 competition. The problem motivating ResNet was that addinge extra layers to a CNN did not necessarily improve performance. In fact, there was actually a higher level of error on the training data, when adding extra layers in some cases. This seems conterintuitive. 
 
@@ -82,6 +85,8 @@ Suppose you have a networks with $n$ and $n + k$. You would think that the netwo
 The problem is called the degradation problem. The solution is to add shortcut connections. These shortcut connections take the output of one layer, skip over some successive layers, and then combine the unchanged output with the changed output, producing an image of a greater depth. This might seem strange, but what is really happening is that rather than putting the output through some function $h(x)$, you are putting the output through $h(x) + x$. Why? Well, the thinking is that later layers will probably only need to make relative small adjustments to the input layer. So, it is easier to train the network to learn these small adjustments and then add these adjustments on, then to learn a very slight variation on the identity mapping. 
 
 Observe, that in the worst case, when there is no benefit of the extra layers, similar performance can be gained by making $h(x) = 0$. This is the key insight, learning the zero function is easier than learning the identity function. ResNet was used on the ImageNet dataset in 2015 with 152 layers, much more than AlexNet used in 2012. The difference between the identity mapping and the actual mapping wanted is called the residual mapping, i.e. if $f(x) = h(x) + x$, then the residual mapping that is learnt is $f(x) - x$. This gives rise to the name ResNet.
+
+:::
 
 <!-- Note to Hashan, set white to transparent -->
 ![A diagram demonstrating ResNet](/content-images/resnet.png)
