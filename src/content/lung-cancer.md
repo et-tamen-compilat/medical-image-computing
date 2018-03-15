@@ -44,23 +44,23 @@ Earlier detection is important because it allows lots of treatment options which
 
 ## How would it work?
 
-Lung cancer can start off as a small nodule which occurs in an asymptomatic patient. Screening imaging is the process of looking for these, and diagnosing them before they get worse. When a patient starts getting symptoms, and we detect these small nodules which aren't the cause of the symptoms, these are called incidentally detected nodules. Nodules are classed as being between 1 and 3cm in diameter, and a mass is over 3cm in diameter. Anything below 1cm in diameter is a micronodule.
+Lung cancer can start off as a small nodule which occurs in an asymptomatic patient - a patient infected but not presenting any symptoms. Screening imaging is the process of looking for these, and diagnosing them before they get worse. When a patient starts getting symptoms, and we detect these small nodules which aren't the cause of the symptoms, these are called incidentally detected nodules. Nodules are classed as being between 1 and 3cm in diameter, and a mass is over 3cm in diameter. Anything below 1cm in diameter is a micronodule.
 
 CT scans are currently the best way to look for these, and PET-CT scans are the best way to look at the behaviour of them, which allows doctors to predict the risk of cancer they impose. Nodules can come in many different shapes, and lots of different features, such as size, location and growth, help radiologists predict if it is cancerous.
 
-Radiologists who are looking for nodules are prone to missing them, as they can be very well hidden, and so this is where machine learning can come into play - to help make the detection of nodules more accurate. The software currently used, called Computer Assisted Detection (CAD), is highly sensitive, but not very specific, so gives a lot of false positives, and so not accurate enough to be used in practice.
+Radiologists who are looking for nodules are prone to missing them, as they can be very well hidden, and so this is where machine learning can come into play - to help make the detection of nodules more accurate. The software currently used, called Computer Assisted Detection (CAD), is highly sensitive, but not very specific, so gives a lot of false positives, and so isn't accurate enough to be used in practice.
 
 This is why machine learning is now being considered; in order to improve specificity. The LUNA (LUng Nodule Analysis) Challenge from in 2016, which focused on reducing the number of false positives given by ordinary CAD software. The other big challenge was the Data Science Bowl. Both of these are described in detail below.
 
 ## Lung Nodule Analysis (LUNA) Challenge 2016
 
-The competition was had 2 main challenges: Nodule Detection (NDET) and False Positive Reduction (NPRED). These uses raw CT scans to detect locations of possible nodules, and give these locations probabilities of being a nodule. The task essentially says whether each location is or is not a nodule.
+This competition had 2 main challenges: Nodule Detection (NDET) and False Positive Reduction (NPRED). These use raw CT scans to detect locations of possible nodules, and give these locations probabilities of being a nodule. The task essentially says whether each location is or is not a nodule.
 
 The competitors were given a set of data containing 888 CT scans, which needed to be split into testing and training data. The algorithm they develop has to be done on the training data, and then results are calculated by running the algorithm on the testing data, and seeing the accuracy of the results. The testing data is split into 10 subsets, so that there can be cross-validation to make sure that the algorithm is consistent.
 
-Amongst the submissions was a multi-stream CNN was used to integrate 3D in the classification of pulmonary nodules. This architecture aimed to classify points of interest in chest CT scans as nodules or not. For each candidate nodule fed into the network, a set of 2D patches with different orientation planes is considered. Multiple streams of 2D convolution networks then process these sets. A dedicated fusion method finally merges their outputs to give the final classification. The network performed with a high detection sensitivity above 85%, and was particularly effective in reducing "false positives", results wrongly indicating the presence of a nodule. 
+Amongst the submissions was a multi-stream CNN used to integrate 3D in the classification of pulmonary nodules. This architecture aimed to classify points of interest in chest CT scans as nodules or not. For each candidate nodule fed into the network, a set of 2D patches with different orientation planes is considered. Multiple streams of 2D convolution networks then process these sets. A dedicated fusion method finally merges their outputs to give the final classification. The network performed with a high detection sensitivity above 85%, and was particularly effective in reducing "false positives", results wrongly indicating the presence of a nodule. 
 
-![Lung nodule scan](content-images/lungNodule.jpg){#fig:2}
+![Lung nodule CT scan](content-images/lungNodule.jpg){#fig:2}
 
 ## Data Science Bowl 2017
 
@@ -72,13 +72,13 @@ There were over 18,000 algorithms developed during the challenge, with the goal 
 
 ## Project AiAi
 
-This is an open source project for lung cancer screening using x-rays. While these may not be as accurate as CT scans, so make detection harder, x-ray machines are much more common-places in hospitals, especially in developing countries, and therefore this technology would be much more widely available than the equivalent with CT scanners.
+This is an open source project for lung cancer screening using x-rays. While these may not be as accurate as CT scans, thus making detection harder, x-ray machines are much more common in hospitals, especially in developing countries, and therefore this technology would be much more widely available than the equivalent with CT scanners.
 
 Their aim is to reduce screening time and cost by 90%, and increase survival probability by 5x. The project used machine learning on over 250,000 chest x-rays to build a CAD tool.
 
 ## Genetic Deep Learning
 
-A startup called Innovation DX is using genetic deep learning for lung cancer screening. Genetic deep learning is an evolution of convolutional neural networks, which are explained in detail on other pages. They *"injected convolution and pooling layers with pseudorandom hyperparameters into a minimal architecture and then optimized the weights through back propagation on the training set"*. A pseudorandom hyperparameter is a parameter whose value is set before the learning takes place, and satisfies at least one statistical test for randomness, even though it is produced by a definite mathematical procedure. They inserted these into a basic neural network, and then used back propagation, explained in detail on the [Introduction to Neural Networks](/introduction-neural-nets.html) page, to optimise the neural network with the training data.
+A startup called Innovation DX is using genetic deep learning for lung cancer screening. Genetic deep learning is an evolution of convolutional neural networks. They *"injected convolution and pooling layers with pseudorandom hyperparameters into a minimal architecture and then optimized the weights through back propagation on the training set"*. A pseudorandom hyperparameter is a parameter for which the value is set before the learning takes place, and satisfies at least one statistical test for randomness, even though it is produced by a definite mathematical procedure. They inserted these into a basic neural network, and then used back propagation, explained in detail on the [Introduction to Neural Networks](/introduction-neural-nets.html) page, to optimise the neural network with the training data.
 
 Optimisations like this to convolutional neural networks allow them to be specially adapted to medical problems, and make them more efficient in detection and diagnosis. This is why lots of competitions, such as the two above, are trying to entice computer scientists to develop these.
 

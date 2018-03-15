@@ -45,7 +45,7 @@ imgs:
 
 Medical Imaging is the use of imaging modalities and processes to get pictures of the human body, which can assist diagnosis and treatment of patients. It can also be used to track any ongoing issues, and can therefore help with treatment plans. 
 
-There are many different types of medical imaging techniques, which use different technologies to produce images for different purposes. This page will give an introduction to the most common imaging techniques, and the page on uses of AI in radiology will show how some of these techniques, combined with AI, will pave the way for more accurate imaging.
+There are many different types of medical imaging techniques, which use different technologies to produce images for different purposes. This page will give an introduction to the most common imaging techniques, and the page on [uses of AI in radiology](/uses-of-ai-in-radiology.html) will show how some of these techniques, combined with AI, will pave the way for more accurate imaging.
 
 ## CT Scanners
 
@@ -105,7 +105,7 @@ Unlike a CT scanner, an MRI surrounds the whole body. The patient is pushed into
 #### Advantages
 
 - MRI scans are painless and safe, as the magnetic fields and radio waves have no known negative impact on the patient.
-- They dont involve any x-ray radiation exposure, so can be used by pregnant women and babies if necessary.
+- They don't involve any x-ray radiation exposure, so can be used by pregnant women and babies if necessary.
 
 #### Disadvantages
 
@@ -126,7 +126,7 @@ They are used to detect the progress of cancer, and can be used to get high reso
 
 ### What are some common uses?
 
-They are commonly used in people who have already been diagnosed with __cancer__, as they can clearly show how far a cancer has spread or responded to treatments such as chemotherapy. They are also used in the __planning__ of surgery, such as brain or heart operations. __Dementia__ can also be diagnosed with a PET scan, as it can see if the brain's normal function is changed.
+They are commonly used in people who have already been diagnosed with __cancer__, as they can clearly show how far a cancer has spread or responded to treatments such as chemotherapy. They are also used in the __planning__ of surgery, such as brain or heart operations. __Dementia__ can also be diagnosed with a PET scan, as it can show if the brain's normal function is changed.
 
 ### How does it work?
 

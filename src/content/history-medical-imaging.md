@@ -20,7 +20,7 @@ The origin of medical images is around the start of the 20th century, after the 
 
 Medical imaging initially started with x-rays that would be passed through the body onto some film, which would generate an image. They could take up to 11 minutes, and would subject the patient to 50 times more radiation than an x-ray today, which takes just milliseconds.
 
-There were lots of improvements to this initial technique over the first half of the 20th century, but in the 1960s came ultrasound scanning. The development of sonar during World War II allowed this to become a reality, - it works by sending a stream of high frequency, low wavelength sound waves to penetrate through the body and hit the organs inside, bouncing back to the detector. This can be used to generate an image under the skin, and also does not subject the body to harmful x-rays, and so is used in pregnant women.
+There were lots of improvements to this initial technique over the first half of the 20th century, but in the 1960s came ultrasound scanning. The development of sonar during World War II allowed this to become a reality, - it works by sending a stream of high frequency, low wavelength sound waves to penetrate through the body and hit the organs inside, bouncing back to the detector. This can be used to generate an image under the skin, and also does not subject the body to harmful x-rays, and so is used for pregnant women.
 
 Another big step was in the 1970s, when digital imaging techniques, such as the computed tomography scanner, more commonly known as the CT scanner, became widely available. This change to digital techniques had many benefits, including:
 
@@ -29,7 +29,7 @@ Another big step was in the 1970s, when digital imaging techniques, such as the 
 - Ease of storing records
 - Ability to use computers to analyse images and detect issues.
 
-After these new imaging techniques became more common, doctors realised that they needed ways of analysing these images in order to get the maximum use from them. This led to people discovering new methods of medical image analysis.
+After these new imaging techniques became more common, doctors realised they needed ways of analysing these images in order to maximise the benefits of using them. This led to discoveries of new methods of medical image analysis.
 
 ## History of Medical Image Analysis
 
