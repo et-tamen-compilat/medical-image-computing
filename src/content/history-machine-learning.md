@@ -32,6 +32,12 @@ sources:
   url: "https://cloud.google.com/gpu/"
 - name: "Google Cloud Machine Learning Engine"
   url: "https://cloud.google.com/ml-engine/"
+  imgs:
+- name: "Nvidia"
+  figure: 1
+  url: "https://devblogs.nvidia.com/wp-content/uploads/2017/05/image4.png"
+- name: "Globb Security"
+  url: "http://globbsecurity.fr/wp-content/uploads/2018/01/IA.jpg"
 ---
 ## Early History of Machine Learning {#top}
 
@@ -84,7 +90,7 @@ A tensor core can compute 64 fixed point operations per clock cycle, as it provi
 
 This means lots of operations can be processed in a single clock cycle, which is much more efficient than a CPU, and even more than an unoptimised GPU.
 
-![](content-images/TensorMatrices.png)
+![How tensor cores multiply matrices](content-images/TensorMatrices.png){#fig:1}
 
 ### Google Tensor Processing Unit (TPU) - 2016
 
