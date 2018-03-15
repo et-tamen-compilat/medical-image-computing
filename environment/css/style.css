@@ -471,6 +471,12 @@ main nav ul {
     1px 1px 0 #00b6ff;  
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*
  * Code for lines
  */
