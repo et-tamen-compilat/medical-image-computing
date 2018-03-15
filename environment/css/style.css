@@ -489,33 +489,38 @@ main nav ul {
 }
 
 #CNNLink {
-    top:185px;
-    left:30px;
+    top:95px;
+    left:850px;
 }
 
 #HMILink {
-    top:0px;
-    left:840px;
+     top:0px;
+    left:15px;/*
+    */
+    
 }
 
 #HMLLink {
-    top:0px;
-    left:15px;
+    top:175px;
+    left:120px;
+   
 }
 
 #INNLink {
-    top:88px;
-    left: 10px;
+    top:0px;
+    left:840px;
+  
 }
 
 #SSLink {
-    top:280px;
-    left:160px;
+    top:220px;
+    left:840px;
 }
 
-#TMILink {
-    top:95px;
-    left:850px;
+#TMILink { 
+    top:88px;
+    left: 40px;
+    
 }
 
 #AIRLink {
@@ -524,8 +529,8 @@ main nav ul {
 }
 
 #LCLink {
-    top:210px;
-    left:840px;
+    top:260px;
+    left:220px;
 }
 
 /*
@@ -533,32 +538,32 @@ main nav ul {
  */
 
 #circle1 {
-    top:22px;
+    top:18px;
     left: 108px;
 }
 
 #circle2 {
-    top:10px;
-    left: 760px;
+    top:15px;
+    left: 755px;
 }
 
 #circle3 {
-    top:110px;
-    left:770px;
+    top:107px;
+    left:765px;
 }
 
 #circle4 {
-    top:232px;
-    left:760px;
+    top:225px;
+    left:750px;
 }
 
 #circle5 {
-    top:308px;
-    left:567px;
+    top:299px;
+    left:557px;
 }
 
 #circle6 {
-    top:279px;
+    top:273px;
     left:299px;
 }
 
@@ -568,7 +573,7 @@ main nav ul {
 }
 
 #circle8 {
-    top:103px;
+    top:97px;
     left:128px;
 }
 
@@ -597,10 +602,9 @@ main nav ul {
 
 #brain_pic {
     top:100px;
-    width: 620px;
     height: 349px;
+    width:300;
     opacity: 0;
-    margin: auto;
 }
 
 .summary {
