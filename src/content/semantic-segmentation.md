@@ -15,8 +15,6 @@ sources:
   url: "https://arxiv.org/pdf/1703.04967.pdf"
 - name: "Machine Learning Methods for Medical and Biological Image Computing"
   url: "https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1015&context=computerscience_etds"
-advanced: "Dilated convolutions"
-advanced_url: "advanced-dilated-convolutions"
 imgs:
 - name: "Semantic Scholar"
   figure: 1
@@ -33,6 +31,8 @@ imgs:
   url: "https://arxiv.org/pdf/1703.04967.pdf"
 - name: "Bioanalysis Zone"
   url: "https://www.bioanalysis-zone.com/2017/11/14/peptide-identified-potential-biomarker-early-stages-alzheimers-disease/"
+advanced: "Dilated convolutions"
+advanced_url: "advanced-dilated-convolutions"
 ---
 
 ## What is Semantic Segmentation? {#top}
