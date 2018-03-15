@@ -23,6 +23,15 @@ sources:
   url: "https://aiai.care/"
 - name: "Genetic Deep Learning for Lung Cancer Screening"
   url: "https://www.dropbox.com/s/0xw2r5t5ge0sjam/Genetic%20Deep%20Learning%20for%20Lung%20Cancer%20Screening.pdf?dl=0"
+imgs:
+- name: "Data Science Bowl"
+  figure: 1
+  url: "https://3zh2ja3name32zs0my28kd3c-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/lung-illustration-web-3.5.png"
+- name: "How to interpret CT scans of your lung"
+  figure: 2
+  url: "http://www.website-go.com/acc/"
+- name: "Everyday Health"
+  url: "https://www.everydayhealth.com/lung-cancer/easing-pain-of-lung-cancer.aspx"
 ---
 
 ## How does AI relate to Lung Cancer? {#top}
@@ -31,7 +40,7 @@ Lung cancer is an area in which artificial intelligence is starting to become mo
 
 Earlier detection is important because it allows lots of treatment options which would not be available if the cancer is found at a later stage. CT scans, which are the most common method of detection currently, can give false-positive readings and this is why doctors and computer scientists think that machine learning can be used to increase the accuracy and reliability of scan reading.
 
-![](content-images/lung1.png){ width=100% }
+![Some facts on lung cancer](content-images/lung1.png){ width=100% #fig:1}
 
 ## How would it work?
 
@@ -51,7 +60,7 @@ The competitors were given a set of data containing 888 CT scans, which needed t
 
 Amongst the submissions was a multi-stream CNN was used to integrate 3D in the classification of pulmonary nodules. This architecture aimed to classify points of interest in chest CT scans as nodules or not. For each candidate nodule fed into the network, a set of 2D patches with different orientation planes is considered. Multiple streams of 2D convolution networks then process these sets. A dedicated fusion method finally merges their outputs to give the final classification. The network performed with a high detection sensitivity above 85%, and was particularly effective in reducing "false positives", results wrongly indicating the presence of a nodule. 
 
-![](content-images/lungNodule.jpg)
+![Lung nodule scan](content-images/lungNodule.jpg){#fig:2}
 
 ## Data Science Bowl 2017
 
