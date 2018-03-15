@@ -21,8 +21,7 @@ imgs:
   url: "https://www.semanticscholar.org/paper/Video-Salient-Object-Detection-via-Fully-Convoluti-Wang-Shen/022d74ae2f8680e780b18e0cbb041d5c5a57c7a5/figure/1"
 - name: "U-Net Paper"
   figure: 2
-  url: 
-  "https://arxiv.org/pdf/1505.04597.pdf"
+  url: "https://arxiv.org/pdf/1505.04597.pdf"
 - name: "Multi-Scale Context Aggregation by Dilated Convolutions"
   figure: 3
   url: "https://l.facebook.com/l.php?u=https%3A%2F%2Farxiv.org%2Fabs%2F1511.07122&h=ATOVsaU-z__SwQmKIIFgdxdcqeqRPgxd9yL2mxH-rslE3hIHx_uPPToksUy_amrK3auP3fdDi5EcaR8mw2QRFb2uHnbqLw_qT3HoKyKQQjh0SXyfIAP7z5m1vIY"
