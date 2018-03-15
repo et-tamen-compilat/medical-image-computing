@@ -147,12 +147,24 @@
                                     $for(sources)$
                                         <li>
                                             $if(sources.figure)$
-                                                <a href="#fig:$sources.figure$">Figure $sources.figure$</a>: 
+                                                <i><a href="#fig:$sources.figure$">Figure $sources.figure$</a></i>: 
                                             $endif$
                                             <a href="$sources.url$">$sources.name$</a>
                                             $if(sources.isbn)$ 
                                             (ISBN: $sources.isbn$)
                                             $endif$
+                                        </li>
+                                    $endfor$
+                                </ul>
+                            $endif$
+
+                            $if(imgs)$
+                                <h2>Image Sources</h2>
+                                <ul>
+                                    $for(imgs)$
+                                        <li>
+                                            <i><a href="#fig:$imgs.figure$">Figure $imgs.figure$</a></i>: 
+                                            <a href="$imgs.url$">$imgs.name$</a>
                                         </li>
                                     $endfor$
                                 </ul>

@@ -21,6 +21,7 @@ sources:
   url: "https://www.nhs.uk/conditions/x-ray/"
 - name: "World Health Organisation"
   url: "http://www.who.int/diagnostic_imaging/en/"
+imgs:
 - name: "Siemens"
   figure: 1
   url: "https://www.siemens.com/global/en/home.html"
