@@ -84,7 +84,7 @@ As shown in the image below, the patient lies on their back on a panel. This pan
 
 A magnetic resonance imaging scan, more commonly known as an MRI scan, is a detailed cross-sectional image of a part of the body. It is similar to a CT scan, but has a higher quality, so it is easier to see differences in tissues, as shown in the picture below.
 
-![](content-images/CTvsMRI.png){#fig:2}
+![A CT scan vs an MRI scan](content-images/CTvsMRI.png){#fig:2}
 
 ### What do they produce images of?
 
@@ -116,7 +116,7 @@ Unlike a CT scanner, an MRI surrounds the whole body. The patient is pushed into
 
 A PET scan can create a 3D image of the inside of the body. They can be combined with CT and MRI scans to create an even clearer image to show what is going on. They can also be focused on specific parts of the body, and show how well a part of the body is working. The image below shows how a PET scan and CT scan can be combined.
 
-![](content-images/PETScan.png){#fig:3}
+![Combination of a CT scan and a PET scan](content-images/PETScan.png){#fig:3}
 
 ### What do they produce images of?
 
@@ -153,7 +153,7 @@ An ultrasound uses high-frequency waves to show what is inside a part of the bod
 
 Ultrasounds can produce images of unborn children in real time, as shown below.
 
-![](content-images/Ultrasound.png){#fig:4}
+![An ultrasound image of an unborn baby](content-images/Ultrasound.png){#fig:4}
 
 ### What are some common uses?
 
@@ -193,7 +193,7 @@ They can be used to __guide__ surgeons as they are operating. They can also be u
 
 X-rays, which are a type of electromagnetic radiation invisible to humans, pass through the body. The energy is absorbed by different parts of the body at different rates, and a detector on the other side of the person will see how much was absorbed, and will be able to generate an image from this. Denser parts of the body, such as bone, show up as white, as few x-rays could pass through. Sometimes a contrast agent is given to the patient in order for soft tissues to be seen more easily on the image. The x-ray is extremely fast, and the whole procedure should only take a few minutes.
 
-![](content-images/Xray.png){#fig:5}
+![Diagram of how an x-ray scanner works](content-images/Xray.png){#fig:5}
 
 ### What are any advantages and disadvantages?
 
