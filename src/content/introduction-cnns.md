@@ -63,7 +63,7 @@ A widespread method to do so consists in max pooling, in other words using the m
 
 The different types of layers described are combined through a repeated stacking process illustrated below, known as deep stacking. Convolutional layers followed by activation functions, as well as interspersed down-sampling layers, essentially replace width and height with depth until the image is relatively small. 
 
-![](/content-images/deepStacking.png)
+![](/content-images/deepStacking.png){ width=100% }
 
 Once this happens, it can be passed through the last step of the design: a fully connected layer, i.e. the traditional kinds of neural network layers we have seen before. 
 
