@@ -7,14 +7,14 @@ sources:
   url: "http://medicalfuturist.com/the-future-of-radiology-and-ai/"
 - name: "Data Science Bowl"
   url: "https://datasciencebowl.com/competitions/turning-machine-intelligence-against-lung-cancer/"
-- name: "*Cancer Research UK"
+- name: "Cancer Research UK"
   url: "http://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/lung-cancer"
 - name: "ZD Net"
   url: "http://www.zdnet.com/article/google-takes-health-care-to-the-cloud-with-new-api-partnerships/"
 - name: "Google Blog"
   url: "https://blog.google/topics/google-cloud/google-cloud-healthcare-new-apis-customers-partners-and-security-updates/"
 - name: "Medium"
-  url: "https://medium.com/@alexandrecadrin/lung-cancer-bridging-the-gap-between-medical-imaging-and-data-science-a92b0bb08fda"
+  url: "https://tinyurl.com/yabp56q4"
 - name: "Project LUNA"
   url: "https://luna16.grand-challenge.org/results/"
 - name: "Project AiAi"
@@ -29,7 +29,7 @@ Lung cancer is an area in which artificial intelligence is starting to become mo
 
 Earlier detection is important because it allows lots of treatment options which would not be available if the cancer is found at a later stage. CT scans, which are the most common method of detection currently, can give false-positive readings and this is why doctors and computer scientists think that machine learning can be used to increase the accuracy and reliability of scan reading.
 
-![](content-images/lung1.png)
+![](content-images/lung1.png){ width=100% }
 
 ## How would it work?
 
