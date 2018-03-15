@@ -146,6 +146,9 @@
                                 <ul>
                                     $for(sources)$
                                         <li>
+                                            $if(sources.figure)$
+                                                <a href="#fig:$sources.figure$">Figure $sources.figure$</a>: 
+                                            $endif$
                                             <a href="$sources.url$">$sources.name$</a>
                                             $if(sources.isbn)$ 
                                             (ISBN: $sources.isbn$)

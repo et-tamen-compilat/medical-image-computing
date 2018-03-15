@@ -16,7 +16,7 @@ function compile {
     for file in src/$1/*.md; do
         fbname=$(basename "$file" .md)
         echo "Compiling $fbname.md to $fbname.html"
-        pandoc -f markdown+raw_html+link_attributes+fenced_divs+header_attributes -t html --toc --toc-depth 2 --template templates/$1.html -o "output/$fbname.html" --mathjax "$file"  
+        pandoc -f markdown+raw_html+link_attributes+fenced_divs+header_attributes -t html --toc --toc-depth 2 --template templates/$1.html --filter pandoc-fignos -o "output/$fbname.html" --mathjax "$file"  
     done
 }
 

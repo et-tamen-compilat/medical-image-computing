@@ -21,6 +21,9 @@ sources:
   url: "https://www.nhs.uk/conditions/x-ray/"
 - name: "World Health Organisation"
   url: "http://www.who.int/diagnostic_imaging/en/"
+- name: "Siemens"
+  figure: 1
+  url: "https://www.siemens.com/global/en/home.html"
 ---
 
 ## What is Medical Imaging? {#top}
@@ -47,7 +50,7 @@ They are frequently used in __diagnosis__, for example to find tumours, or to se
 
 As shown in the image below, the patient lies on their back on a panel. This panel passes into the scanner, which rotates around the section of your body currently in the scanner. The patient needs to lay still so that the scan can get a clear image. Usually, the radiologist who is operating the machine stands in another room to avoid the radiation, but can communicate with the patient via an intercom. The scan can take from 10 to 20 minutes, but results are available as soon as a computer has analysed the scans.
 
-![](content-images/CTScanner.png)
+![Picture of a CT Scanner](content-images/CTScanner.png){#fig:1}
 
 ### What are any advantages and disadvantages?
 
