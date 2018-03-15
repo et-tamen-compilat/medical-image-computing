@@ -197,14 +197,30 @@ main {
         margin-left:auto;
         margin-right:auto;
     }
+    #mHamburger {
+        display: none;
+    }   
 }
 
-@media screen and (max-width:960px) {
+#mobileMenu {
+    display:none;
+}
+
+@media screen and (max-width:960px) {  
+    .sidenav {
+        display:none;
+    } 
+    .show #mobileMenu {
+        display:block;
+    }
+}
+
+/*@media screen and (max-width:1200px) {*/
     .container {
         padding-left:30px;
         padding-right:30px;
     } 
-}
+/*}*/
 
 @media screen and (max-width:600px) {
     img {

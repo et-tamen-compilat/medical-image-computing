@@ -22,3 +22,5 @@ function compile {
 
 compile "content" "content"
 compile "personal" "personal"
+
+zip -r output.zip output
