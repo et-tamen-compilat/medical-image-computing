@@ -46,6 +46,7 @@ Essentially, the last fully connected layer is replaced by a convolution layer, 
 To allow this to happen padding is added. The amount of padding of transposed convolution depends on the dimensions needed. For instance, suppose the kernel of the original from a $5 \times 5$ to $3 \times 3$, was a $3 \times 3$ with stride 1. Then, side padding of size 2 needs to be added around the output.
 
 ![Diagram of a CNN](/content-images/SegmentationDiagram1.png){#fig:1}
+
 <!--Image source:
 https://www.semanticscholar.org/paper/Video-Salient-Object-Detection-via-Fully-Convoluti-Wang-Shen/022d74ae2f8680e780b18e0cbb041d5c5a57c7a5-->
 
@@ -75,6 +76,7 @@ One approach suggested by researchers in 2016, was to only 2D slices of these 3D
 However, an encoder-decoder architecture is not the only solution to semantic segmentation. An encoder-decoder architecture reduces dimension to get a "global view" of the image, before increasing dimension to get back local context – thus increasing the amount of parameters (or weights) in the network. One wonders whether it is possible for each pixel in the image to get the global context of the image, without reducing the size of the image. This is what was proposed at ICLR (International Conference on Learning Representations) 2016, with dilated convolutions.
 
 ![Diagram of the evolution of receptive fields with dilated convolution](content-images/DilatedImage.png){#fig:3}
+
 <!--Add this image description:
 Layer 1: output F1
 Layer 2: output F2
