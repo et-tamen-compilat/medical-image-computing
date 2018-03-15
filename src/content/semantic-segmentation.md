@@ -52,7 +52,9 @@ V-Net combined a U-Net architecture, but the layers were in blocks, that were de
 
 One approach suggested by researchers in 2016, was to only 2D slices of these 3D volumetric images. These were called sparse annotatons, and elastic deformations were applied to allow the network to be trained. This architecture, based on U-Nets, was trained on *Xenopus* kidneys.
 
-## Dilated convolutions
+::: {.advanced}
+
+## Advanced: Dilated convolutions
 However, an encoder-decoder architecture is not the only solution to semantic segmentation. An encoder-decoder architecture reduces dimension to get a "global view" of the image, before increasing dimension to get back local context – thus increasing the amount of parameters (or weights) in the network. One wonders whether it is possible for each pixel in the image to get the global context of the image, without reducing the size of the image. This is what was proposed at ICLR (International Conference on Learning Representations) 2016, with dilated convolutions.
 
 ![](content-images/DilatedImage.png)
@@ -76,3 +78,4 @@ The global view thus expands exponentially, whilst the number of parameters grow
 
 This figure shows that FCNs based on dilated convolution could obtain smoother and more accurate segmentation results than the standard FCNs. This is confirmed by the quantitative testing that was taken out: when training the 2 networks on 80% of the VHK and testing it on the other 20%, the performance of the dilated convolution network increased on average by a significant 19.6%. Thus, this study suggests the potential of this method in semantic segmentation, and we can expect more studies to be conducted on medical imaging scans in the upcoming years. 
 
+:::

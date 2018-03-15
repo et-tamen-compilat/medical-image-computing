@@ -55,7 +55,7 @@ The network was tasked to output whether a given exam presented a case of the mo
 
 ![](/content-images/skinCancer.png){ width=40% }
 
-On the other hand, other recent papers have chosen to train their CNNs, by taking advantage of unique attributes of medical data to compensate the size of the datasets. For example, using 3D convolutions instead of the 2D convolutions presented in “Convolutional Neural Networks” <!--(ADD hyperlink)--> has been explored to classify patients as having Alzheimer’s. The network corresponds to an encoder-decoder architecture (see “Semantic Segmentation” <!--ADD hyperlink-->) extended to 3D images. It is pre-trained to capture brain shape variations on MRI scans, before fine-tuning its upper fully convolutional layers for Alzheimer’s Disease classification as shown below. Testing the network on two different Alzeimer’s disease datasets showed that it had a higher accuracy than conventional classification networks.
+On the other hand, other recent papers have chosen to train their CNNs, by taking advantage of unique attributes of medical data to compensate the size of the datasets. For example, using 3D convolutions instead of the 2D convolutions presented in [Convolutional Neural Networks](/introduction-cnns.html) has been explored to classify patients as having Alzheimer’s. The network corresponds to an encoder-decoder architecture (see [Semantic Segmentation](/semantic-segmentation.html)) extended to 3D images. It is pre-trained to capture brain shape variations on MRI scans, before fine-tuning its upper fully convolutional layers for Alzheimer’s Disease classification as shown below. Testing the network on two different Alzeimer’s disease datasets showed that it had a higher accuracy than conventional classification networks.
 
 ![](/content-images/3Dcnn.png)
 
@@ -108,13 +108,6 @@ A lesion is a part of a tissue or organ that is injured, and a wound is a lesion
 
 Another reason why it is ripe for improvement with deep learning is due to large datasets available, or at least large compared to what is usual for medical imaging. For instance, the NYU Wound database has 8000 images. In one paper, an encoder-decoder architecture was used to perform segmentation and the hidden layers of this network were passed to an SVM linear classifier, as another way of classifying data in machine learning, similar to a neural network. Meanwhile, the segmentation of the wound would allow surface area to be calculated. Two different images of wounds at two different points in time, would allow the change in surface area. This along with other data such as patient age and gender, would allow an estimate to be given of how long healing would take. 
 
-## Registration
-
-Image registration, or spatial alignement, consists in transforming different data sets into one coordinate system. In medical image analysis, this typically involves different types of scans. This task thus allows us to compare and integrate the data obtained from these varied measurements, in particular when it comes to 2D-3D registration for a more accurate diagnosis or image guidance. Whilst this topic isn't as popular as detection or segmentation for deep learning, its performance can benefit from the use of neural networks. Indeed, in existing methods, 2D-3D registration tends to be achieved via intensity-based registration: 2D X-ray images are derived from 3D X-rays by simulating the attenuation (or reduction of intensity) of virtual X-rays. This process, albeit highly accurate, suffers from long computation time and a small capture range. 
-
-Thus, the use of AI could provide a better alternative. Estimating similarity measures for two images, notably mutual information, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember is that the architecture incorporated a "regression layer" at the end, allowing the network to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.   
-
-
 ## Others: Content-based image retrieval & combining image data with reports
 
 In the "Others" section of the chart at the top of the page, the following two areas are included. Both relate to the analysis of  medical imaging data obtained with deep learning.
@@ -128,12 +121,16 @@ Whilst there haven't been many succesful applications of deep learning yet, this
 The combination of text reports with medical image data can follow one of two approaches. On the one hand, generating text reports from medical imaging is being looked into. On the other, using reports to improve image classification accuracy, for instance by adding semantic descriptions from reports as labels, is another mean of interaction between the two. A short demonstration of the latter, from the 2016 Radiological Society of North America (RSNA) annual meeting, can be found below. Eyes of Watson is a joint initiative between IBM and the RSNA to show how AI, exemplified by Watson, could assist radiologists. In this video, the study of a breast cancer case is presented. Initially, Watson infers relevant clinical concepts from the short report provided. Using deep learning to analyse the image, its inference is then updated accordingly. The most probable diagnosis is finally outputted as its answer and can be compared with a clinician's answers. 
 
 <br>
-<br>
-<!--<a href="http://www.youtube.com/watch?feature=player_embedded&v=XLb0xUe80uo&t=0s
-" target="_blank"><img src="/content-images/breastCancer.jpg" 
-alt="*Eyes of Watson demonstration - Breast Cancer*" width="400" height="300" border="5" /></a> -->
 <div class="container-video">
  <iframe src="https://www.youtube.com/embed/XLb0xUe80uo"></iframe>
 </div>
-<br>
-<br>
+
+::: { .advanced }
+
+## Registration
+
+Image registration, or spatial alignement, consists in transforming different data sets into one coordinate system. In medical image analysis, this typically involves different types of scans. This task thus allows us to compare and integrate the data obtained from these varied measurements, in particular when it comes to 2D-3D registration for a more accurate diagnosis or image guidance. Whilst this topic isn't as popular as detection or segmentation for deep learning, its performance can benefit from the use of neural networks. Indeed, in existing methods, 2D-3D registration tends to be achieved via intensity-based registration: 2D X-ray images are derived from 3D X-rays by simulating the attenuation (or reduction of intensity) of virtual X-rays. This process, albeit highly accurate, suffers from long computation time and a small capture range. 
+
+Thus, the use of AI could provide a better alternative. Estimating similarity measures for two images, notably mutual information, or directly predicting transformation parameters from one image to another, are amongst the strategies currently being considered. The second has been explored in a paper published in 2016, in which CNNs perform registration from 3D models to 2D X-rays to assess the location of an implant during surgery. The mapping from 3D to 2D data in this example is highly complex. The key aspect to remember is that the architecture incorporated a "regression layer" at the end, allowing the network to predict continuous data such as angles or distances instead of storing classification scores as we have previously seen.   
+
+:::

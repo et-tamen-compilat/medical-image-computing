@@ -225,7 +225,8 @@ main {
 }
 
 img {
-    max-width:65%;
+    max-width:100%;
+    width:65%;
     margin-left:auto;
     margin-right:auto;
     display:block;
