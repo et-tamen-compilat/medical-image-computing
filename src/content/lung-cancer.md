@@ -29,7 +29,7 @@ Lung cancer is an area in which artificial intelligence is starting to become mo
 
 Earlier detection is important because it allows lots of treatment options which would not be available if the cancer is found at a later stage. CT scans, which are the most common method of detection currently, can give false-positive readings and this is why doctors and computer scientists think that machine learning can be used to increase the accuracy and reliability of scan reading.
 
-![](content-images/lung1.png)
+![](content-images/lung1.png){ width=100% }
 
 ## How would it work?
 
