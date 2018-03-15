@@ -136,7 +136,7 @@ The combination of text reports with medical image data can follow one of two ap
 
 ::: { .advanced }
 
-## Registration
+## Advanced: Registration
 
 Image registration, or spatial alignment, consists in transforming different data sets into one coordinate system. In medical image analysis, this typically involves different types of scans. This task thus allows us to compare and integrate the data obtained from these varied measurements, in particular when it comes to 2D-3D registration for a more accurate diagnosis or image guidance. Whilst this topic isn't as popular as detection or segmentation for deep learning, its performance can benefit from the use of neural networks. Indeed, in existing methods, 2D-3D registration tends to be achieved via intensity-based registration: 2D X-ray images are derived from 3D X-rays by simulating the attenuation (or reduction of intensity) of virtual X-rays. This process, albeit highly accurate, suffers from long computation time and a small capture range. 
 
