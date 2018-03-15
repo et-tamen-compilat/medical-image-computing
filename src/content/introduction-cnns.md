@@ -19,7 +19,7 @@ As in any other neural network, the input of a CNN, in this case an image, is pa
 
 <br>
 
-![](/content-images/CNNdiagram2.png)
+![](/content-images/CNNdiagram2.png){ width=100% }
 <!-- image source: https://uk.mathworks.com/discovery/convolutional-neural-network.html -->
 
 <br>
