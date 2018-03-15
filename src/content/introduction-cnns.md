@@ -11,6 +11,24 @@ sources:
   url: "https://arxiv.org/pdf/1512.03385.pdf"
 - name: "Stanford CS231n"
   url: "http://cs231n.stanford.edu/"
+imgs:
+- name: "SingularityHub"
+  url: "https://singularityhub.com/2015/08/09/are-artificial-neural-networks-the-key-to-unravelling-the-mysteries-of-autism/#sm.00000zt4rqkd9denfvzhomzf8w139"
+- name: "Mathworks"
+  url: "https://uk.mathworks.com/discovery/convolutional-neural-network.html"
+  figure: 1
+- name: "Stanford CS231n"
+  url: "http://cs231n.stanford.edu/"
+  figure: 2
+- name: "Stanford CS231n"
+  url: "http://cs231n.stanford.edu/"
+  figure: 3
+- name: "Stanford CS231n"
+  url: "http://cs231n.stanford.edu/"
+  figure: 4
+- name: "Towards Data Science"
+  url: "https://towardsdatascience.com/an-overview-of-resnet-and-its-variants-5281e2f56035"
+  figure: 6
 advanced: "ResNet"
 advanced_url: "advanced-resnet"
 ---
@@ -21,8 +39,7 @@ As in any other neural network, the input of a CNN, in this case an image, is pa
 
 <br>
 
-![](/content-images/CNNdiagram2.png){ width=100% }
-<!-- image source: https://uk.mathworks.com/discovery/convolutional-neural-network.html -->
+![A diagram showing the different layers in a CNN](/content-images/CNNdiagram2.png){ width=100% #fig:1 }
 
 <br>
 
@@ -35,13 +52,13 @@ Convolutions have two important attributes, size and stride.  The convolution be
 
 The size and stride of the convolution determines the size of the output image. For instance, 3x3 convolution with stride 1, converts a 5x5 image to a 3x3 image. The question that is raised is how do convolutions convert a grid of pixels to a single pixel. They essentially pass the grid of pixels through a perceptron, in other words take a weighted sum of the input pixels. The weights applied to the pixels, are shown below to the bottom-right of the pixels. In the convolution below, there is no bias (or offset), but as with perceptrons, convolutions typically also have a bias.
 
-![](/content-images/StanfordImage.gif){ width=40% }
+![A diagram showing a convolution](/content-images/StanfordImage.gif){ width=40% #fig:2 }
 
 The convolution above is applied to a monochrome image, but in reality, images will have depth. I.e. they are 3 dimensional, where the first 2 dimensions are width and height, and the third is depth. Initially, depth refers to the different colour components of the image: red, green and blue. So most images will begin with a depth of 3. In addition, pixels values will not be binary, but usually between 0 and 255. Typically, it is assumed that a convolution is applied to the entire depth of the image. So a 3x3 convolution applied to an image of depth 3, will actually take an input consisting of 3x3x3 pixels. 
 
 The output of a convolution applied to a single input will still be a single pixel, and the output of the convolution applied to an entire 3-dimensional image will be a 2-dimensional image. You might think, this means that the image loses its depth, but this is not the case. In fact, as an image goes through convolutional layers, it typically increases in depth. This is as each convolutional layer, applies not one but multiple convolutions to a single image. This produces multiple 2-dimensional outputs for each convolution, which are stacked together to produce a new 3-dimensional image. Thus, the depth of the output of a convolutional layer is the number of convolutions applied. Note that convolutions are sometimes referred to by different terms such as kernels and filters. 
 
-![](/content-images/StanfordImage4.png)
+![A diagram showing the effect of a convolutional layer](/content-images/StanfordImage4.png){ #fig:3 }
 
 ## Normalisation
 
@@ -58,14 +75,16 @@ In addition, there is another kind of layer called a max pooling or down-samplin
 A widespread method to do so consists in max pooling, in other words using the maximum value from a cluster of neurons at a previous layer. Indeed, max-pooling layers have a size and a width. Unlike convolution layers they are applied to the 2-dimensional depth slices of the image, so the resulting image is of the same depth, just of a smaller width and height. The max-pooling layer shown below has size 2x2, so it takes a 2-dimensional input region of size 2x2, and outputs the input with the largest value it received. It also has stride 2, i.e. it advances by 2 each time.
 
 <br>
-![](/content-images/StanfordImage2.png){ width=50% }
+
+![A diagram showing a max pooling layer](/content-images/StanfordImage2.png){ width=50% #fig:4 }
+
 <br>
 
 ## Deep stacking towards a fully connected layer
 
 The different types of layers described are combined through a repeated stacking process illustrated below, known as deep stacking. Convolutional layers followed by activation functions, as well as interspersed down-sampling layers, essentially replace width and height with depth until the image is relatively small. 
 
-![](/content-images/deepStacking.png){ width=100% }
+![A diagram showing the different layers in a CNN](/content-images/deepStacking.png){ width=100% #fig:5 }
 
 Once this happens, it can be passed through the last step of the design: a fully connected layer, i.e. the traditional kinds of neural network layers we have seen before. 
 
@@ -86,17 +105,6 @@ The problem is called the degradation problem. The solution is to add shortcut c
 
 Observe, that in the worst case, when there is no benefit of the extra layers, similar performance can be gained by making $h(x) = 0$. This is the key insight, learning the zero function is easier than learning the identity function. ResNet was used on the ImageNet dataset in 2015 with 152 layers, much more than AlexNet used in 2012. The difference between the identity mapping and the actual mapping wanted is called the residual mapping, i.e. if $f(x) = h(x) + x$, then the residual mapping that is learnt is $f(x) - x$. This gives rise to the name ResNet.
 
-:::
+![A diagram demonstrating ResNet](/content-images/resnet.png){ #fig:6 }
 
-<!-- Note to Hashan, set white to transparent -->
-![A diagram demonstrating ResNet](/content-images/resnet.png)
-</div>
-<!--
-::: {.summary}
-## Summary
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel rutrum felis. Ut pellentesque vel lorem vitae euismod. Cras consectetur, leo ut dapibus tincidunt, justo ante accumsan neque, sit amet hendrerit ante urna eu ex. Phasellus augue lorem, venenatis sit amet lorem viverra, dapibus venenatis dolor. Sed vel vehicula lacus. Curabitur eget risus id enim convallis tempus. Ut vulputate turpis sem, a elementum lorem ultrices nec. Aliquam eros metus, bibendum eget accumsan id, consectetur vitae orci. Nunc justo ipsum, sagittis in dignissim sed, egestas ut lacus. Nullam mollis eu libero at ultrices.
-<<<<<<< HEAD
 :::
-=======
-:::
--->
