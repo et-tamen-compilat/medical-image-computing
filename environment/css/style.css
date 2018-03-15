@@ -616,3 +616,7 @@ main nav ul {
 .advanced {
     background-color: #81dbff
 }
+
+.float-right {
+    float:right;
+}

@@ -1,6 +1,7 @@
 ---
 cover: "stethoscope.png"
 title: "History of Medical Imaging"
+next: "types-medical-imaging"
 description: "In this section, you'll learn about the evolution of medical imaging and it's analysis, and understand why such techniques are needed in modern day patient diagnosis."
 sources:
 - name: "Guide to Medical Image Analysis"

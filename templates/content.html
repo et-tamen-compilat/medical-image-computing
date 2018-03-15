@@ -182,7 +182,12 @@
 
                             <br/>
                             <hr>
-                            <a href="#top">Back to the top.</a>
+                            <div>
+                                <a href="#top">Back to the top.</a>
+                                $if(next)$
+                                <a href="/$next$.html" class="float-right">Next</a>
+                                $endif$
+                            </div>
                         </article>
                     </main>
                 </div>
