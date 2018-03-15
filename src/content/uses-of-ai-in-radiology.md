@@ -67,20 +67,11 @@ On the one hand, transfer learning or inductive learning, by using a pre-trained
 
 The network was tasked to output whether a given exam presented a case of the most common skin cancers, or the deadliest type. It was tested against 21 board-certified dermatologists, and matched their performance. The long-term aim behind this paper would be to equip mobile devices with deep neural networks, and provide cheaper universal access to diagnostic care.
 
-<<<<<<< HEAD
 ![Cover of Nature magazine](/content-images/skinCancer.png){ width=40% #fig:2 }
 
 On the other hand, other recent papers have chosen to train their CNNs, by taking advantage of unique attributes of medical data to compensate the size of the datasets. For example, using 3D convolutions instead of the 2D convolutions presented in [Convolutional Neural Networks](/introduction-cnns.html) has been explored to classify patients as having Alzheimer’s. The network corresponds to an encoder-decoder architecture (see [Semantic Segmentation](/semantic-segmentation.html)) extended to 3D images. It is pre-trained to capture brain shape variations on MRI scans, before fine-tuning its upper fully convolutional layers for Alzheimer’s Disease classification as shown below. Testing the network on two different Alzeimer’s disease datasets showed that it had a higher accuracy than conventional classification networks.
 
 ![Diagram of 3D CNN used to detect Alzheimer's](/content-images/3Dcnn.png){ #fig:3 }
-=======
-![Cover of nature magazine](/content-images/skinCancer.png){ width=40% }
-
-On the other hand, other recent papers have chosen to train their CNNs, by taking advantage of unique attributes of medical data to compensate the size of the datasets. For example, using 3D convolutions instead of the 2D convolutions presented in [Convolutional Neural Networks](/introduction-cnns.html) has been explored to classify patients as having Alzheimer’s. The network corresponds to an encoder-decoder architecture (see [Semantic Segmentation](/semantic-segmentation.html)) extended to 3D images. It is pre-trained to capture brain shape variations on MRI scans, before fine-tuning its upper fully convolutional layers for Alzheimer’s Disease classification as shown below. Testing the network on two different Alzeimer’s disease datasets showed that it had a higher accuracy than conventional classification networks.
-
-![](/content-images/3Dcnn.png)
-
->>>>>>> 7b7fa2d2932652a290aa03854b1d7373f722f513
 
 ### Object or lesion classification:
 
