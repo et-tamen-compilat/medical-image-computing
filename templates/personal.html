@@ -26,7 +26,7 @@
         </nav>
         <div class="Site-content">      
             <!-- for mobile only-->
-            <div id="mobileMenu" style="display:none">
+            <div id="mobileMenu">
                 <main style="margin-bottom:0">
                     <nav class="sidenav" style="width:100%; display:inline-block">
                         <ul id="mobilenav">
@@ -128,7 +128,7 @@
                                 </ul>
                             $endif$
                         </nav>
-                        <article>
+                        <article class="personality">
                             <br/>
                             $if(picture)$
                             <img class="face" src="images/$picture$" width="200" height="200">
@@ -169,26 +169,27 @@
         </footer>
         <script>
 
-            function toggleMenu(x) {
-                x.classList.toggle("change");
-                var x = document.getElementById("mobileMenu");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
+                function toggleMenu(x) {
+                    x.classList.toggle("change");
+                    document.body.classList.toggle("show");
+                    /*var x = document.getElementById("mobileMenu");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }*/
                 }
-            }
-            var isMobile = function () {
-                console.log("Navigator: " + navigator.userAgent);
-                return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
-            };
-            if (!isMobile()) {
-                var elem = document.getElementById('mHamburger');
-                elem.parentNode.removeChild(elem); // hide
-                var elem2 = document.getElementById('mobileMenu');
-                elem2.parentNode.removeChild(elem2);
-            }
-        </script>
+                var isMobile = function () {
+                    console.log("Navigator: " + navigator.userAgent);
+                    return /(iphone|ipod|ipad|android|blackberry|windows ce|palm|symbian)/i.test(navigator.userAgent);
+                };
+                /*if (!isMobile()) {
+                    var elem = document.getElementById('mHamburger');
+                    elem.parentNode.removeChild(elem); // hide
+                    var elem2 = document.getElementById('mobileMenu');
+                    elem2.parentNode.removeChild(elem2);
+                }*/
+            </script>
         <script src="/javascript/jquery.min.js"></script>
         <script src="javascript/jquery.cookie.js"></script>
         <script src="javascript/anime.min.js"></script>

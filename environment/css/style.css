@@ -477,6 +477,10 @@ body.index {
     justify-content: center;
 }
 
+.personality {
+    margin-top:25px;
+}
+
 /*
  * Code for lines
  */
