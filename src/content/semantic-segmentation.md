@@ -15,6 +15,8 @@ sources:
   url: "https://arxiv.org/pdf/1703.04967.pdf"
 - name: "Machine Learning Methods for Medical and Biological Image Computing"
   url: "https://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1015&context=computerscience_etds"
+advanced: "Dilated convolutions"
+advanced_url: "advanced-dilated-convolutions"
 ---
 
 ## What is Semantic Segmentation? {#top}
