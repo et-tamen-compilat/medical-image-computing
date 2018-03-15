@@ -560,8 +560,8 @@ body {
  */
 
 #circle1 {
-    top:18px;
-    left: 108px;
+    top:40px;
+    left: 128px;
 }
 
 #circle2 {
@@ -590,13 +590,13 @@ body {
 }
 
 #circle7 {
-    top:182px;
-    left:200px;
+    top:199px;
+    left:220px;
 }
 
 #circle8 {
-    top:97px;
-    left:128px;
+    top:120px;
+    left:150px;
 }
 
 .circles {
