@@ -3,9 +3,6 @@ name: "Julie Emile"
 picture: "photoJulie.jpg"
 github: "jce317"
 email: "julie.emile17@imperial.ac.uk"
-other: 
-- name: "CV"
-  url: "/cvs/julie-cv.pdf"
 ---
 
 Hi all! My name is Julie, and I am a French student reading Computing at Imperial. Back in the days when I was unfamiliar with "Null Pointer Exceptions", what initially sparked my interest in this field was discovering how IBM's Watson was being used in the Wimbledon Tennis Championships. How this computer system could understand a visitor's queries whilst providing live match analysis fascinated me. To this day, Machine Learning remains one of my main areas of interest. I've particularly enjoyed looking into its applications in fields I hadn't considered before, such as Medical Imaging. 
