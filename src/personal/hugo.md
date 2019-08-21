@@ -7,8 +7,6 @@ linkedin: "hugo-mayo17337"
 other: 
 - name: "Project"
   url: "https://foodmatching.co.uk"
-- name: "CV"
-  url: "/cvs/Hugo Mayo CV.pdf"
 ---
 
 Hi, I'm Hugo. I'm a first year undergraduate computing student at Imperial College London. My main interests in Computing are in Data Science and Machine Learning, particularly in how it can it be applied to social and environmental issues.
